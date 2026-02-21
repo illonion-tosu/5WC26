@@ -4,8 +4,9 @@
 }
 
 :root {
-    --main-text: #10664A;
-    --secondary-text: #F7F6DA;
+    --main-text: #F3BBFF;
+    --secondary-text: #FDECFC;
+    --background-color: #6828D5;
     --nowPlayingWrapperWidth: 527.38px;
 }
 
@@ -62,7 +63,7 @@
     width: 586px;
     height: 594px;
     border-radius: 20px;
-    background-color: var(--main-text);
+    background-color: var(--background-color);
 }
 .beatmap-metadata-section {
     position: relative;
@@ -129,7 +130,7 @@
     font-size: 31px;
     letter-spacing: -0.5px;
     line-height: 23px;
-    color: var(--main-text);
+    color: var(--background-color);
     text-align: center;
 }
 /* Invisible */
@@ -372,7 +373,7 @@
     display: flex;
 }
 .beatmap-stats-titles { width: 300px; }
-.beatmap-stats-titles-first-letter { color: #DFED87; }
+.beatmap-stats-titles-first-letter { color: var(--main-text); }
 .beatmap-stats-numbers {
     width: calc(100% - 308px);
     text-align: right;
@@ -452,7 +453,7 @@
     font-size: 20px;
     text-align: center;
     margin-top: 10px;
-    color: var(--main-text);
+    color: var(--background-color);
 }
 .sidebar-text {
     width: 80%;
@@ -466,7 +467,7 @@
     margin: 0 25px;
     width: 80%;
     height: 100px;
-    border: 2px solid var(--main-text);
+    border: 2px solid var(--background-color);
     text-align: center;
     font-family: "Poppins";
     font-size: 16px;
@@ -475,16 +476,16 @@
 .sidebar-button {
     margin: 10px 25px 0 25px;
     width: 200px;
-    border: 2px solid var(--main-text);
+    border: 2px solid var(--background-color);
     background-color: transparent;
     height: 50px;
     font-family: "Poppins";
     font-size: 16px;
     font-weight: 900;
-    color: var(--main-text);
+    color: var(--background-color);
     border-radius: 10px;
 }
 .sidebar-button:active {
-    background-color: var(--main-text);
+    background-color: var(--background-color);
     color: var(--secondary-text);
 }
