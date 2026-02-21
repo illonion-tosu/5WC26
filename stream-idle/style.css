@@ -4,8 +4,8 @@
 }
 
 :root {
-    --main-text: #10664A;
-    --secondary-text: #F7F6DA;
+    --main-text: #F3BBFF;
+    --secondary-text: #FDECFC;
 }
 
 body {
@@ -92,7 +92,7 @@ body {
     font-family: "Never Brat";
     top: 556px;
     right: calc(38px + 393px);
-    color: white;
+    color: darkslategrey;
     text-shadow: 7.08px 10.9px 6px rgba(0, 0, 0, 0.25);
     font-size: 100px;
 }
@@ -160,7 +160,7 @@ body {
     width: 750px;
     height: 1080px;
     background-color: var(--main-text);
-    color: white;
+    color: darkslategrey;
     font-size: 1.25rem;
 }
 
@@ -168,7 +168,7 @@ body {
 .sidebar-timer {
     width: 250px;
     height: inherit;
-    border-right: 2px solid white;
+    border-right: 2px solid darkslategrey;
 }
 .sidebar-timer > * { margin-left: 20px; }
 .sidebar-stream-idle-text {
@@ -177,7 +177,7 @@ body {
     top: 0;
     width: 230px;
     height: inherit;
-    border-right: 2px solid white;
+    border-right: 2px solid darkslategrey;
 }
 .sidebar-team-text {
     position: absolute; 
@@ -198,8 +198,8 @@ body {
 }
 /* Sidebar text */
 .sidebar-text { margin-bottom: 10px; }
-#sidebar-red-team-text { color: lightpink; }
-#sidebar-blue-team-text { color: lightblue; }
+#sidebar-red-team-text { color: maroon; }
+#sidebar-blue-team-text { color: darkblue; }
 
 /* Sidebar input */
 .sidebar-input {
@@ -209,9 +209,9 @@ body {
     font-size: inherit;
     font-weight: inherit;
     background: none;
-    color: white;
+    color: darkslategrey;
     border: none;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid darkslategrey;
     margin-bottom: 10px;
 }
 .sidebar-input[type="number"]::-webkit-inner-spin-button, 
@@ -230,16 +230,16 @@ body {
     height: 50px;
     border-radius: 10px;
     background: none;
-    border: 2px solid white;
+    border: 2px solid darkslategrey;
     margin-top: 20px;
-    color: white;
+    color: darkslategrey;
     font-family: inherit;
     font-weight: inherit;
     font-size: inherit;
     cursor: pointer;
 }
 .sidebar-button:active {
-    background-color: white;
+    background-color: darkslategrey;
     color: var(--main-text);
 }
 .sidebar-button-large { height: 80px; }
@@ -251,7 +251,7 @@ body {
 /* Timer Error Message */
 .timer-error-message {
     margin-top: 10px;
-    color: lightpink;
+    color: maroon;
     margin-right: 20px;
     display: none;
 }
@@ -261,19 +261,19 @@ body {
 
 /* Border Light Pink */
 .light-green-button {
-    border-color: lightgreen;
-    color: lightgreen;
+    border-color: darkgreen;
+    color: darkgreen;
 }
 .light-green-button:active {
-    background-color: lightgreen;
+    background-color: darkgreen;
     color: var(--main-text);
 }
 .light-pink-button { 
-    border-color: lightpink;
-    color: lightpink;
+    border-color: maroon;
+    color: maroon;
 }
 .light-pink-button:active {
-    background-color: lightpink;
+    background-color: maroon;
     color: var(--main-text);
 }
 
@@ -284,9 +284,9 @@ body {
 .sidebar-textarea {
     width: 200px;
     height: 100px;
-    background-color: #1d8d68;
-    color: white;
-    border: 2px solid white;
+    background-color: transparent;
+    color: darkslategrey;
+    border: 2px solid darkslategrey;
     font-family: inherit;
     font-size: 1.25rem;
     font-weight: inherit;
