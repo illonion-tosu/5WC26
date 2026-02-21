@@ -4,7 +4,7 @@ function submit() {
     const textareaValue = textarea.value
     const countries = textareaValue.split("\n")
     for (let i = 0; i < countries.length; i++) {
-        const dataPoints = countries[i].split(",")
+        const dataPoints = countries[i].split("\t")
         const teamObject = {
             "country_name": dataPoints[0],
             "flag_code": dataPoints[1],
