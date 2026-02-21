@@ -13,15 +13,6 @@ body {
     font-weight: 900;
 }
 
-/* Background Video */
-.background-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1920px;
-    height: 1080px;
-}
-
 /* Whole Page */
 .main {
     position: absolute;

@@ -10,15 +10,6 @@
     --nowPlayingWrapperWidth: 527.38px;
 }
 
-/* Background Video */
-.background-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1920px;
-    height: 1080px;
-}
-
 /* Whole Page */
 .main {
     position: absolute;
