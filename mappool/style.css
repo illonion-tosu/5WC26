@@ -1,0 +1,579 @@
+:root {
+    --green: #116649;
+    --secondary-colour: #F7F6DA;
+
+    --team-colour-horizontal-rule: 80px;
+    --team-name-horizontal-rule: 10px;
+    --team-flag-horizontal-rule: 21px;
+    --team-stats-text-horizontal-rule: 14px;
+}
+
+.background-video {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 1080px;
+    background-image: url("static/background.png");
+    font-family: "Poppins";
+    font-weight: 900;
+}
+
+/* Team Colours */
+.team-colour {
+    position: absolute;
+    top: 118px;
+    font-size: 23px;
+    line-height: 2em;
+}
+.red-team-colour { 
+    left: var(--team-colour-horizontal-rule);
+    color: #db4c4c;
+}
+.blue-team-colour {
+    right: var(--team-colour-horizontal-rule);
+    color: #5b6ac6; 
+}
+
+/* Team Name */
+.team-name {
+    position: absolute;
+    top: 154px;
+    font-size: 62px;
+    letter-spacing: -1px;
+    line-height: 74px;
+    color: var(--secondary-colour);
+}
+.red-team-name { left: var(--team-name-horizontal-rule); }
+.blue-team-name { right: var(--team-name-horizontal-rule); }
+
+/* Team Flag */
+.team-flag {
+    position: absolute;
+    top: 107px;
+}
+.red-team-flag { left: var(--team-flag-horizontal-rule); }
+.blue-team-flag { right: var(--team-flag-horizontal-rule); }
+
+/* Team Stars */
+.team-star-container {
+    position: absolute;
+    top: 234px;  
+    display: flex;
+}
+.team-star-container > * {
+    width: 50px;
+    transform: rotate(100deg);
+}
+.left-team-star-container { left: var(--team-name-horizontal-rule); }
+.right-team-star-container { 
+    right: var(--team-name-horizontal-rule); 
+    flex-direction: row-reverse;
+}
+
+/* Team Stats Text */
+.team-stats-text {
+    position: absolute;
+    top: 275px;
+    font-size: 37px;
+    letter-spacing: -0.5px;
+    line-height: 43px;
+    
+    color: var(--green);
+}
+.red-team-stats-text { left: var(--team-stats-text-horizontal-rule); }
+.blue-team-stats-text { right: var(--team-stats-text-horizontal-rule); }
+
+/* Team Stats */
+.team-stats-title {
+    position: absolute;
+    font-size: 23px;
+    letter-spacing: -0.5px;
+    line-height: 25px;
+    color: var(--secondary-colour);
+}
+/* Red / Blue */
+.red-team-stats-title { left: 14px; }
+.blue-team-stats-title { right: 14px; }
+/* Different Stats */
+.team-stats-title-aim { top: 316px; }
+.team-stats-title-speed { top: 357px; }
+.team-stats-title-stamina { top: 398px; }
+.team-stats-title-finger-control { top: 439px; }
+.team-stats-title-precision { top: 480px; }
+.team-stats-title-reading { top: 521px; }
+.team-stats-title-technical { top: 562px; }
+
+/* Team Stats Boxes */
+.team-stats-box { 
+    position: absolute;
+    width: 194px;
+    height: 13px;
+    border: 0.5px solid #f7f6da;
+}
+/* Red / Blue */
+.red-team-stats-box { left: 14px; }
+.blue-team-stats-box { right: 14px; }
+/* Different Stats */
+.team-stats-box-aim { top: 340px; }
+.team-stats-box-speed { top: 381px; }
+.team-stats-box-stamina { top: 422px; }
+.team-stats-box-finger-control { top: 463px; }
+.team-stats-box-precision { top: 504px; }
+.team-stats-box-reading { top: 545px; }
+.team-stats-box-technical { top: 586px; }
+/* Team Stats Bar */
+.team-stats-box > div {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 0px;
+    height: 9px;
+    background-color: white;
+    transition: 500ms ease-in-out;
+}
+.blue-team-stats-box > div {
+    left: unset;
+    right: 2px;
+}
+
+/* Team Stats Numbers */
+.team-stats-number {
+    position: absolute;
+    font-size: 23px;
+    letter-spacing: -0.5px;
+    line-height: 25px;
+    color: var(--secondary-colour);
+}
+/* Red / Blue */
+.red-team-stats-number { left: 215px; }
+.blue-team-stats-number { right: 215px; }
+/* Different Stats */
+.team-stats-number-aim { top: 335px; }
+.team-stats-number-speed { top: 376px; }
+.team-stats-number-stamina { top: 417px; }
+.team-stats-number-finger-control { top: 458px; }
+.team-stats-number-precision { top: 499px; }
+.team-stats-number-reading { top: 540px; }
+.team-stats-number-technical { top: 581px; }
+
+/* Players Text */
+.players-text {
+    position: absolute;
+    top: 325px;
+    font-size: 37px;
+    letter-spacing: -1px;
+    line-height: 40px;
+    color: var(--green);
+}
+.red-players-text { left: 310px; }
+.blue-players-text { right: 310px; }
+
+/* Player Names */
+.player-names {
+    position: absolute;
+    top: 370px;
+}
+.red-player-names { left: 305px; }
+.blue-player-names { right: 305px; }
+/* Player Name Container */
+.player-name-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+}
+.blue-player-name-container { 
+    flex-direction: row-reverse;
+    text-align: right;
+}
+/* Player Dot Ellipsis */
+.player-dot-ellipsis {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: var(--secondary-colour);
+    margin: 0 5px;
+}
+/* Player Name */
+.player-name {
+    font-size: 23px;
+    letter-spacing: -0.5px;
+    line-height: 23px;
+    color: var(--secondary-colour);
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.blue-player-name { text-align: right; }
+
+/* Protect Text */
+.protect-text {
+    position: absolute;
+    top: 650px;
+    font-size: 58px;
+    letter-spacing: -1px;
+    line-height: 40px;
+    color: var(--green);
+}
+.red-protect-ban { 
+    left: 305px; 
+    transform: translateX(-50%);
+}
+.blue-protect-ban {
+    right: 305px;
+    transform: translateX(50%);
+}
+
+/* Protect Map */
+.protect-map {
+    position: absolute;
+    top: 707px;
+    width: 270px;
+    height: 84px;
+    display: none;
+}
+/* Protect Mod ID */
+.side-mod-background {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 265px;
+    height: 99px;
+    background-image: url("https://assets.ppy.sh/beatmaps/2115827/covers/cover.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.side-mod-id {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 78px;
+    height: 39px;
+    background-color: #212323;
+    color: white;
+
+    font-size: 27px;
+    letter-spacing: -1px;
+    line-height: 39px;
+    text-align: center;
+}
+
+/* Ban Text */
+.ban-text {
+    position: absolute;
+    top: 857px;
+    font-size: 58px;
+    letter-spacing: -1px;
+    line-height: 40px;
+    color: var(--green);
+}
+/* Ban Map Container */
+.ban-map-container {
+    position: absolute;
+    top: 914px;
+    display: flex;
+    gap: 35px;
+}
+.ban-map {
+    position: relative;
+    width: 270px;
+    height: 104px;
+    display: none;
+}
+
+/* Mappool Section */
+.mappool-section {
+    position: absolute;
+    top: 131px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    height: 803px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.mappool-main-section {
+    display: flex;
+    justify-content: space-between;
+}
+/* Normal Tile */
+.map-pick-tile {
+    position: relative;
+    background-image: url("https://assets.ppy.sh/beatmaps/2115827/covers/cover.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 340px;
+    height: 200.75px;
+    display: none;
+}
+.map-pick-mod-id {
+    width: 78px;
+    height: 39px;
+    background-color: #212323;
+    color: silver;
+
+    font-size: 27px;
+    letter-spacing: -1px;
+    line-height: 39px;
+    text-align: center;
+}
+.map-pick-picked-won {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 25px;
+    background-color: #212323;
+    color: gold;
+    text-align: center;
+}
+
+/* Tiebreaker Tile */
+.tiebreaker-tile {
+    position: absolute;
+    top: 401.5px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 960px;
+    height: 250px;
+    background-image: url("https://assets.ppy.sh/beatmaps/2115827/covers/cover.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.tiebreaker-mod-id {
+    color: black;
+    font-size: 5em;
+    margin-left: 25px;
+}
+.tiebreaker-round {
+    position: absolute;
+    bottom: 50px;
+    right: 25px;
+    font-size: 2em;
+}
+.tiebreaker-song-title-artist {
+    position: absolute;
+    bottom: 0;
+    right: 25px;
+    font-size: 3em;
+    max-width: 910px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: right;
+}
+
+/* Bottom Chat */
+.bottom-section {
+    position: absolute;
+    bottom: -146px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    height: 146px;
+    background-image: url("static/bottom-chat.png")
+}
+/* Chat Display */
+.chat-display {
+    padding: 10px;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+.chat-display::-webkit-scrollbar {
+    display: none;
+}
+
+/* Message Container */
+.message-container {
+    display: flex;
+    color: var(--secondary-colour);
+    font-size: 1.1em;
+    width: inherit;
+}
+.message-time {
+    width: 12%;
+    text-align: center;
+}
+.message-wrapper {
+    width: 92%;
+    display: flex;
+}
+.message-name {
+    margin-right: 10px;
+    white-space: nowrap;
+}
+.unknown { color: rgb(220, 182, 255); }
+.bot { color: gold; }
+.left { color: rgb(255, 176, 176); }
+.right { color: lightblue; }
+
+/* Sidebar */
+.sidebar {
+    position: absolute;
+    left: 1920px;
+    top: 0;
+    width: 750px;
+    height: 1080px;
+    background-color: #222;
+    background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+}
+
+/* Sidebar column */
+.column { 
+    position: absolute;
+    top: 0;
+    width: 250px; 
+}
+.column-1 { left: 0; }
+.column-2 { left: 250px; }
+.column-3 { left: 500px; }
+
+/* Divider */
+.divider {
+    position: absolute;
+    width: 2px;
+    height: 1080px;
+    background-color: var(--secondary-colour);
+}
+.divider-1 { left: 249px; }
+.divider-2 { left: 499px; }
+
+/* Normal Text */
+.sidebar-title {
+    margin: 10px 0;
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 1.5em;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+.sidebar-text {
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+/* Buttons!! */
+.mappool-management-system-button-container {
+    width: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.mappool-management-button {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 1.25em;
+    font-family: "Poppins";
+    font-weight: 700;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+.mappool-management-button:active {
+    background-color: white;
+    color: #333;
+}
+
+/* Next Autopick */
+.set-autopick {
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--secondary-colour);
+}
+#next-autopick-title { margin-bottom: 0; }
+#next-autopick { margin: 0 0 10px 0; }
+#toggle-next-pick { width: 210px;}
+#toggle-next-pick {
+    height: 80px;
+}
+
+/**/
+.pick-ban-protect-management-select {
+    width: 250px;
+    text-align: center;
+    font-size: 1em;
+    color: var(--secondary-colour);
+    background-color: transparent;
+    border: none;
+    font-family: "Poppins";
+    font-weight: 700;
+}
+.pick-ban-protect-management-select::-webkit-scrollbar { display: none; }
+
+/* Which Map */
+.which-map-select {
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.which-side-button {
+    height: 25px;
+    font-size: 1em;
+    font-family: "Poppins";
+    font-weight: 400;
+    color: var(--secondary-colour);
+    background-color: transparent;
+    border: none;
+}
+.which-map-button { width: 70px; }
+.which-pick-button { width: 100px; }
+.apply-changes-button {
+    width: 210px;
+    height: 60px;
+    background-color: transparent;
+    color: var(--secondary-colour);
+    border: 3px solid white;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 1.25em;
+    font-weight: 700;
+    border-radius: 20px;
+}
+
+/* Auto advance */
+#auto-advance-button {
+    width: 210px;
+    height: 80px;
+    margin: 20px 0 0 20px;
+}
+.controlLabel {
+    font-family: "Poppins";
+    text-align: center;
+    color: white;
+}
+.scene-button {
+    width: 210px;
+    padding: 10px 0;
+    height: unset;
+    margin: 10px 0 0 20px;
+    font-size: 1em;
+}
+.active-scene { background-color: var(--green); }
+.sidebar-button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid white;
+}

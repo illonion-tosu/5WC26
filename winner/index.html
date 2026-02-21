@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/comfy.js@latest/dist/comfy.min.js"></script>
+</head>
+<body>
+    <video class="background-video" autoplay loop muted>
+        <source src="../_shared/assets/background.webm">
+    </video>
+
+    <div class="main">
+        <!-- Logo Left -->
+        <div class="logo">
+            <div class="logo-2025">2025</div>
+            <div class="logo-wc">WC</div>
+            <img class="logo-5" src="static/5-logo.png">
+        </div>
+
+        <div class="winner-flag-container">
+            <img class="winner-flag" id="winner-flag" src="http://placeholder.local">
+        </div>
+
+        <div class="score" id="score">Loading...</div>
+        <div class="players" id="players">
+            <div class="players-name">Player 1</div>
+            <div class="players-name">Player 2</div>
+            <div class="players-name">Player 3</div>
+            <div class="players-name">Player 4</div>
+            <div class="players-name">Player 5</div>
+            <div class="players-name">Player 6</div>
+            <div class="players-name">Player 7</div>
+            <div class="players-name">Player 8</div>
+        </div>
+
+        <!-- Twitch Chat -->
+        <div class="twitch-chat-container" id="twitch-chat-container"></div>
+        <div class="twitch-chat-text">TWITCH CHAT</div>
+    </div>
+
+    <!-- Sidebar-->
+    <section class="sidebar">
+        <div class="sidebar-title">Which twitch channel?</div>
+        <div class="sidebar-button-container" id="twitch-channel-button-container">
+            <button class="sidebar-button" onclick="setAndJoinTwitchChannel('5WC2025')" id="twitch-channel-5WC2025">5WC2025</button>
+            <button class="sidebar-button" onclick="setAndJoinTwitchChannel('aquiii')" id="twitch-channel-aquiii">aquiii</button>
+            <button class="sidebar-button" onclick="setAndJoinTwitchChannel('minusfubukiii')" id="twitch-channel-minusfubukiii">minusfubukiii</button>
+        </div><br><br><br>
+        <div class="sidebar-title">Add another twitch channel?</div>
+        <input class="sidebar-input-text" type="text" id="twitch-channel-input">
+        <button class="sidebar-button sidebar-button-submit" onclick="addTwitchChannel()" id="submit-twitch-channel-button">Submit</button>
+    </section>
+
+    <script src="../_shared/utils.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mappool</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script src="../_shared/deps/countUp.js"></script>
+    <script src="../_shared/deps/reconnecting-websocket.min.js"></script>
+    <script src="../_shared/utils.js"></script>
+</head>
+<body>
+    <video class="background-video" autoplay loop muted>
+        <source src="../_shared/assets/background.webm">
+    </video>
+
+    <div class="main">
+        <!-- Side Panels -->
+
+        <!-- Flag -->
+        <img class="team-flag red-team-flag" id="red-team-flag" src="https://osuflags.omkserver.nl/AU-50.png">
+        <img class="team-flag blue-team-flag" id="blue-team-flag" src="https://osuflags.omkserver.nl/AU-50.png">
+
+        <!-- Teams -->
+        <div class="team-colour red-team-colour">RED TEAM</div>
+        <div class="team-colour blue-team-colour">BLUE TEAM</div>
+
+        <!-- Team Name -->
+        <div class="team-name red-team-name" id="red-team-name">ARGENTINA</div>
+        <div class="team-name blue-team-name" id="blue-team-name">ARGENTINA</div>
+
+        <!-- Stars -->
+        <div class="team-star-container left-team-star-container" id="left-team-star-container">
+            <img src="static//star-full.png">
+            <img src="static//star-empty.png">
+            <img src="static//star-empty.png">
+            <img src="static//star-empty.png">
+            <img src="static//star-empty.png">
+            <img src="static//star-empty.png">
+        </div>
+        <div class="team-star-container right-team-star-container" id="right-team-star-container">
+            <img src="static//star-full.png">
+            <img src="static//star-empty.png">
+            <img src="static//star-empty.png">
+            <img src="static//star-empty.png">
+            <img src="static//star-empty.png">
+            <img src="static//star-empty.png">
+        </div>
+
+        <!-- Team Stats Text -->
+        <div class="team-stats-text red-team-stats-text">TEAM STATS</div>
+        <div class="team-stats-text blue-team-stats-text">TEAM STATS</div>
+
+        <!-- Team Stats Titles -->
+        <!-- Red -->
+        <div class="team-stats-title red-team-stats-title team-stats-title-aim">AIM</div>
+        <div class="team-stats-title red-team-stats-title team-stats-title-speed">SPEED</div>
+        <div class="team-stats-title red-team-stats-title team-stats-title-stamina">STAMINA</div>
+        <div class="team-stats-title red-team-stats-title team-stats-title-finger-control">FINGER CONTROL</div>
+        <div class="team-stats-title red-team-stats-title team-stats-title-precision">PRECISION</div>
+        <div class="team-stats-title red-team-stats-title team-stats-title-reading">READING</div>
+        <div class="team-stats-title red-team-stats-title team-stats-title-technical">TECHNICAL</div>
+        <!-- Blue -->
+        <div class="team-stats-title blue-team-stats-title team-stats-title-aim">AIM</div>
+        <div class="team-stats-title blue-team-stats-title team-stats-title-speed">SPEED</div>
+        <div class="team-stats-title blue-team-stats-title team-stats-title-stamina">STAMINA</div>
+        <div class="team-stats-title blue-team-stats-title team-stats-title-finger-control">FINGER CONTROL</div>
+        <div class="team-stats-title blue-team-stats-title team-stats-title-precision">PRECISION</div>
+        <div class="team-stats-title blue-team-stats-title team-stats-title-reading">READING</div>
+        <div class="team-stats-title blue-team-stats-title team-stats-title-technical">TECHNICAL</div>
+
+        <!-- Team Stats Boxes -->
+        <!-- Red -->
+        <div class="team-stats-box red-team-stats-box team-stats-box-aim"><div class="team-stats-bar" id="team-stats-bar-red-aim"></div></div>
+        <div class="team-stats-box red-team-stats-box team-stats-box-speed"><div class="team-stats-bar" id="team-stats-bar-red-speed"></div></div>
+        <div class="team-stats-box red-team-stats-box team-stats-box-stamina"><div class="team-stats-bar" id="team-stats-bar-red-stamina"></div></div>
+        <div class="team-stats-box red-team-stats-box team-stats-box-finger-control"><div class="team-stats-bar" id="team-stats-bar-red-finger-control"></div></div>
+        <div class="team-stats-box red-team-stats-box team-stats-box-precision"><div class="team-stats-bar" id="team-stats-bar-red-precision"></div></div>
+        <div class="team-stats-box red-team-stats-box team-stats-box-reading"><div class="team-stats-bar" id="team-stats-bar-red-reading"></div></div>
+        <div class="team-stats-box red-team-stats-box team-stats-box-technical"><div class="team-stats-bar" id="team-stats-bar-red-technical"></div></div>
+        <!-- Blue -->
+        <div class="team-stats-box blue-team-stats-box team-stats-box-aim"><div class="team-stats-bar" id="team-stats-bar-blue-aim"></div></div>
+        <div class="team-stats-box blue-team-stats-box team-stats-box-speed"><div class="team-stats-bar" id="team-stats-bar-blue-speed"></div></div>
+        <div class="team-stats-box blue-team-stats-box team-stats-box-stamina"><div class="team-stats-bar" id="team-stats-bar-blue-stamina"></div></div>
+        <div class="team-stats-box blue-team-stats-box team-stats-box-finger-control"><div class="team-stats-bar" id="team-stats-bar-blue-finger-control"></div></div>
+        <div class="team-stats-box blue-team-stats-box team-stats-box-precision"><div class="team-stats-bar" id="team-stats-bar-blue-precision"></div></div>
+        <div class="team-stats-box blue-team-stats-box team-stats-box-reading"><div class="team-stats-bar" id="team-stats-bar-blue-reading"></div></div>
+        <div class="team-stats-box blue-team-stats-box team-stats-box-technical"><div class="team-stats-bar" id="team-stats-bar-blue-technical"></div></div>
+
+        <!-- Team Stats Numbers -->
+        <!-- Red -->
+        <div class="team-stats-number red-team-stats-number team-stats-number-aim" id="team-stats-number-aim-red">10.00</div>
+        <div class="team-stats-number red-team-stats-number team-stats-number-speed" id="team-stats-number-speed-red">10.00</div>
+        <div class="team-stats-number red-team-stats-number team-stats-number-stamina" id="team-stats-number-stamina-red">10.00</div>
+        <div class="team-stats-number red-team-stats-number team-stats-number-finger-control" id="team-stats-number-finger-control-red">10.00</div>
+        <div class="team-stats-number red-team-stats-number team-stats-number-precision" id="team-stats-number-precision-red">10.00</div>
+        <div class="team-stats-number red-team-stats-number team-stats-number-reading" id="team-stats-number-reading-red">10.00</div>
+        <div class="team-stats-number red-team-stats-number team-stats-number-technical" id="team-stats-number-technical-red">10.00</div>
+        <!-- Blue -->
+        <div class="team-stats-number blue-team-stats-number team-stats-number-aim" id="team-stats-number-aim-blue">10.00</div>
+        <div class="team-stats-number blue-team-stats-number team-stats-number-speed" id="team-stats-number-speed-blue">10.00</div>
+        <div class="team-stats-number blue-team-stats-number team-stats-number-stamina" id="team-stats-number-stamina-blue">10.00</div>
+        <div class="team-stats-number blue-team-stats-number team-stats-number-finger-control" id="team-stats-number-finger-control-blue">10.00</div>
+        <div class="team-stats-number blue-team-stats-number team-stats-number-precision" id="team-stats-number-precision-blue">10.00</div>
+        <div class="team-stats-number blue-team-stats-number team-stats-number-reading" id="team-stats-number-reading-blue">10.00</div>
+        <div class="team-stats-number blue-team-stats-number team-stats-number-technical" id="team-stats-number-technical-blue">10.00</div>
+
+        <!-- Players Text -->
+        <div class="players-text red-players-text">PLAYERS</div>
+        <div class="players-text blue-players-text">PLAYERS</div>
+
+        <!-- Player Names -->
+        <!-- Red Players -->
+        <div class="player-names red-player-names" id="red-player-names"></div>
+        <div class="player-names blue-player-names" id="blue-player-names"></div>
+
+        <!-- Protects -->
+        <div class="protect-text red-protect-ban">PROTECTS</div>   
+        <div class="protect-map red-protect-ban" id="red-protect-map">
+            <div class="side-mod-background"></div>
+            <div class="side-mod-id">NM1</div>
+        </div>
+        <div class="protect-text blue-protect-ban">PROTECTS</div>   
+        <div class="protect-map blue-protect-ban" id="blue-protect-map">
+            <div class="side-mod-background"></div>
+            <div class="side-mod-id">NM1</div>
+        </div>
+        
+        <!-- BANS -->
+        <div class="ban-text red-protect-ban">BANS</div>
+        <div class="ban-text blue-protect-ban">BANS</div>
+
+        <div class="ban-map-container red-protect-ban" id="red-ban-map-container">
+            <div class="ban-map">
+                <div class="side-mod-background"></div>
+                <div class="side-mod-id">NM1</div>
+            </div>
+            <div class="ban-map">
+                <div class="side-mod-background"></div>
+                <div class="side-mod-id">NM1</div>
+            </div>
+        </div>
+        <div class="ban-map-container blue-protect-ban" id="blue-ban-map-container">
+            <div class="ban-map">
+                <div class="side-mod-background"></div>
+                <div class="side-mod-id">NM1</div>
+            </div>
+            <div class="ban-map">
+                <div class="side-mod-background"></div>
+                <div class="side-mod-id">NM1</div>
+            </div>
+        </div>
+
+        <!-- Mappool Section -->
+        <section class="mappool-section">
+            <section class="mappool-main-section">
+                <section class="mappool-main-section-left" id="mappool-main-section-left"></section>
+                <section clas="mappool-main-section-right" id="mappool-main-section-right"></section>
+        </section>
+        <!-- Tiebreaker -->
+        <div class="tiebreaker-tile" id="tiebreaker-tile">
+            <div class="tiebreaker-mod-id">TB</div>
+            <div class="tiebreaker-round">GRAND FINALS</div>
+            <div class="tiebreaker-song-title-artist">ARTIST - SONG TITLE</div>
+        </div>
+
+        <!-- Bottom Chat -->
+        <section class="bottom-section">
+            <div class="chat-display" id="chat-display"></div>
+        </section>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <section class="column column-1">
+            <section class="set-autopick">
+                <div class="sidebar-title" id="next-autopick-title">NEXT PICK:</div>
+                <div class="sidebar-text" id="next-autopick"></div>
+                <div class="mappool-management-system-button-container" id="set-autopick-button-container">
+                    <button class="mappool-management-button" onclick="setNextPick('left')">Red</button>
+                    <button class="mappool-management-button" onclick="setNextPick('right')">Blue</button>
+                    <button class="mappool-management-button" id="toggle-next-pick" onclick="toggleAutoPick()">Toggle Autopick: OFF</button>
+                </div>
+            </section>
+            <section class="mappool-management-system">
+                <div class="sidebar-title">MAPPOOL MANAGEMENT</div>
+                <div class="sidebar-text">
+                    Left Click (LC) = Red Pick<br>
+                    Right Click (RC) = Blue Pick<br>
+                    CTRL + LC = Red Ban<br>
+                    CTRL + RC = Blue Ban<br>
+                    Shift + LC = Red Protect<br>
+                    Shfit + RC = Blue Protect<br>
+                </div>
+                <div class="mappool-management-system-button-container" id="mappool-management-system-button-container"></div>
+            </section>
+        </section>
+        <div class="divider divider-1"></div>
+        <section class="column column-2">
+            <section class="pick-ban-protect-management" id="pick-ban-protect-management">
+                <div class="sidebar-title">PROTECT / PICK / BAN MANAGEMENT</div>
+                <div class="sidebar-text">Which Action?</div>
+                <select class="pick-ban-protect-management-select" id="pick-ban-protect-management-select-action" size="8" onchange="setPickBanProtectAction()">
+                    <option value="setProtect">Set Protect</option>
+                    <option value="removeProtect">Remove Protect</option>
+                    <option value="setBan">Set Ban</option>
+                    <option value="removeBan">Remove Ban</option>
+                    <option value="setPick">Set Pick</option>
+                    <option value="removePick">Remove Pick</option>
+                    <option value="setWinner">Set Winner</option>
+                    <option value="removeWinner">Remove Winner</option>
+                </select>
+            </section>
+        </section>
+        <div class="divider divider-2"></div>
+        <section class="column column-3" id="sideBarColumn3">
+            <div class="sidebar-title">STARS</div>
+            <div class="sidebar-button-container">
+                <button class="mappool-management-button" onclick="updateStarCount('red', 'plus')">Red ++</button>
+                <button class="mappool-management-button" onclick="updateStarCount('blue', 'plus')">Blue ++</button>
+                <button class="mappool-management-button" onclick="updateStarCount('red', 'minus')">Red --</button>
+                <button class="mappool-management-button" onclick="updateStarCount('blue', 'minus')">Blue --</button>
+                <button class="mappool-management-button" style="width: 210px;" onclick="toggleStars()">Toggle Stars</button>
+            </div>
+            <div class="sidebar-title">Scene<br>Management</div>
+            <button id="auto-advance-button" class="mappool-management-button" onclick="switchAutoAdvance()">AUTO ADVANCE: OFF</button>
+            <div id="autoAdvanceTimer" class="controlLabel">
+                <span id="autoAdvanceTimerLabel"></span> <span id="autoAdvanceTimerTime"></span>
+            </div>
+            <h1 class="controlLabel">Scenes<br>(click to override)</h1>
+            <div id="sceneCollection">
+                <template id="sceneButtonTemplate">
+                    <div class="mappool-management-button scene-button">SWITCH TO __SCENE_NAME__</div>
+                </template>
+            </div>
+        </section> 
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

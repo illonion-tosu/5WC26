@@ -1,0 +1,434 @@
+:root {
+	--red: #fd2664;
+    --lightGreen: #77BF82;
+    --green: #116649;
+    --lightBeige: #F6F6DA;
+    /* --lightRed: #BF3040; */
+    --lightRed: rgb(143,36,48);
+    --darkerBeige: rgb(185,185,164)
+}
+
+@font-face {
+    font-family: Coluna Rounded;
+    src: url(../static/fonts/Coluna_Rounded.otf);
+}
+
+body,html{
+    padding: 0;
+    margin: 0;
+    overflow-y: hidden;
+    overflow: hidden
+}
+
+#main{
+    position: absolute;
+    font-family: Coluna Rounded;
+    font-weight: normal;
+    color: white;
+	background-color: transparent;
+    width: 1920px;
+    height: 1080px;
+    z-index: 1;
+    background-image: url("../static/background.png");
+    font-family: "Poppins"
+}
+#predictionOverlay {
+	position: absolute; top: 0; left: 0;
+    width: 1920px; height: 1080px;
+	z-index: 0;
+}
+
+/* Flags */
+#pastviewFlag{
+    position: absolute;
+    top: 353px;
+    right: 58px;
+    height: 100%;
+    width: 155px;
+    background-size: contain;
+	background-repeat: no-repeat;
+    z-index: 3;
+}
+#currentTeamFlag {
+    position: absolute;
+    top: 524px;
+    right: 37px;
+    width: 200px;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+#previewFlag{
+    position: absolute;
+    top: 740px;
+    right: 58px;
+    height: 100%;
+    width: 155px;
+    background-size: contain;
+	background-repeat: no-repeat;
+    z-index: 3;
+}
+
+/* Buttons */
+.teamDisplayButton {
+    position: absolute;
+    right: 108px;
+    height: 114px;
+    width: 60px;
+    transform: rotate(90deg) scaleY(1.75);
+    font-size: 32px;
+    z-index: 100;
+    font-family: "Poppins";
+    font-weight: 900;
+    border: none;
+    background: transparent;
+}
+#teamDisplaybuttonleft { top: 460px; }
+#teamDisplaybuttonright { top: 671px; }
+
+/* Comparison Box */
+#compareBox {
+    position: absolute;
+    width: 762px;
+    height: 670px;
+    left: 797px;
+    top: 374px;
+    background-color: transparent;
+    opacity: 1;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+    font-family: "Poppins";
+    font-weight: 700;
+    z-index: 10;
+    background-color: var(--lightGreen);
+    border-radius: 12px;
+}
+.rightbox {
+    position: absolute;
+    right: 20px;
+    border-radius: 8px;
+    height: 40px;
+    width: 325px;
+    border: 4px solid var(--green);
+    background: var(--lightBeige);
+    text-align: center;
+    padding: 10px 0px;
+    text-shadow: 0 0 2px var(--lightBeige), 0 0 4px var(--lightBeige);
+    color: var(--green);
+}
+.leftbox {
+    position: absolute;
+    left: 20px;
+    border-radius: 8px;
+    height: 40px;
+    width: 325px;
+    border: 4px solid var(--lightRed);
+    background: var(--darkerBeige);
+    text-align: center;
+    padding: 10px 0px;
+    text-shadow: 0 0 2px var(--darkerBeige), 0 0 4px var(--darkerBeige);
+    color: var(--lightRed);
+}
+.pointer {
+    position: absolute;
+    left: 381px;
+    border-top: 10px solid transparent;
+    border-left: 12px solid var(--lightRed);
+    border-bottom: 10px solid transparent;
+    transform: translateX(-50%);
+}
+
+/* Tier List */
+.prediction-background {
+    position: absolute;
+    left: 107px;
+    top: 302px;
+    height: 744px;
+    width: 602px;
+    background-color: var(--lightGreen);
+    border-radius: 12px;
+}
+.placements {
+    position: absolute;
+    left: 106px;
+    top: 302px;
+}
+#tierList{
+    margin: 0;
+    position: absolute;
+    left: 230px; top: 302px;
+    width: 480px; height: 840px;
+    z-index: 2;
+}
+.tierListRow {
+    background-color: transparent;
+    width: 470px; height: 73px;
+    padding: 0.3px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#twoPlaceRow { height: 55px; }
+#threePlaceRow { height: 46px; }
+#fivetosixPlaceRow { height: 55px; }
+#seventoeightPlaceRow { height: 55px; }
+#ninetotwelvePlaceRow { height: 55px; }
+#thirteentosixteenPlaceRow { height: 65px; }
+#seventeentotwentyfourPlaceRow { height: 55px; }
+#twentyfivetothrirtytwoPlaceRow { height: 60px; }
+.tierListRowBottom {
+    background-color: transparent;
+    width: 480px; height: 145px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+
+.tierListStandardRowImage {
+    margin-left: 8px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 70px; 
+    height: 55px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.tierListBottomRowImage {
+    margin-left: 8px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 30px; 
+    height: 21.4px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Control Panel */
+#controlPanel {
+    position: absolute; left: 1920px; top: 0;
+    width: 950px;
+    height: 1080px;
+    background-color: rgb(46, 53, 90);
+    color: white;
+    /* font-family: RenogareSoft-Regular; */
+}
+#controlPanelSectionOne {
+    width: 250px;
+}
+#controlPanelSectionTwo {
+    position: absolute; right: 450px; top: 0px;
+    width: 250px;
+}
+#controlPanelSectionThree {
+    position: absolute; right: 0px; top: 0px;
+    width: 450px;
+}
+.controlPanelAddRemoveSectionButtons {
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+#controlPanelAddRemovePlacesTitle {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 24px;
+}
+.controlPanelButton {
+    position: absolute;
+    width: 60px; height: 50px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.controlPanelButton:active {
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+}
+.controlPanelAddButton {
+    top: 0px; left: 10px;
+    width: 100px; height: 60px;
+}
+.controlPanelRemoveButton {
+    top: 0px; right: 10px;
+    width: 100px; height: 60px;
+}
+#selectList {
+    color: white;
+    background-color: transparent;
+    font-size: 13px;
+    border: none;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+#selectList option {
+    width: 210px;
+    text-align: center;
+    font-size: 13px;
+}
+
+#selectList::-webkit-scrollbar {
+    display: none;
+}
+
+/* Caster Cameras */
+#casterCameras {
+    position: absolute;
+    top: 30px;
+    left: 73px;
+    width: 1776px;
+    display: flex;
+    justify-content: space-between;
+}
+.casterCamera {
+    position: relative;
+    background-color: #005BFF;
+    width: 289px;
+    height: 178px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.casterName {
+    position: absolute;
+    bottom: 0;
+    width: inherit;
+    height: 41px;
+    background-color: var(--lightBeige);
+    color: #0f0f0f;
+    line-height: 41px;
+    font-weight: 900;
+    font-size: 31px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* Caster */
+#castingCouch {
+    position: absolute;
+    position: absolute;
+    top: 215px;
+    left: 150px;
+    width: 1625px;
+    background-color: transparent;
+    z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: space-between;
+}
+.castBox {
+    width: 136px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: var(--green);
+    margin-top: 0px;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    line-height: 50px;
+    font-weight: 700;
+}
+#sponsor { position: absolute; left: 75px; bottom: -25px; z-index: 1; }
+#caster1{
+    top: 0px;
+}
+#caster2{
+    top: 190px;
+}
+#caster3{
+    top:382px;
+}
+#caster4{
+    top:577px;
+}
+#caster5{
+    top:765px;
+}
+#firstcaster {
+    position: absolute;
+    left: 0px;
+}
+#secondcaster {
+    position: absolute;
+    left: 100px;
+}
+#thirdcaster {
+    position: absolute;
+    left: 200px;
+}
+#fourthcaster {
+    position: absolute;
+    left: 300px;
+}
+#fifthcaster {
+    position: absolute;
+    left: 400px;
+}
+
+#first {
+    top: 50px;
+}
+#second {
+    top: 100px;
+}
+#third {
+    top: 150px;
+}
+#fourth {
+    top: 200px;
+}
+#fifth {
+    top: 250px;
+}
+#sixth {
+    top: 300px;
+}
+#seventh {
+    top: 350px;
+}
+#eighth {
+    top: 400px;
+}
+#nineth {
+    top: 450px;
+}
+#tenth {
+    top: 500px;
+}
+#eleventh {
+    top: 550px;
+}
+
+#lastyearplacement{
+    position: absolute;
+    top: 327px;
+    left: 1088px;
+    z-index: 2;
+    font-size: 30px;
+    font-family: "Poppins";
+    font-weight: 700;
+    color: black;
+}
+#lastyearseeding{
+    position: absolute;
+    top: 298px;
+    left: 1088px;
+    z-index: 2;
+    font-size: 30px;
+    font-family: "Poppins";
+    font-weight: 700;
+    color: black;
+}
+#lastyeartext {
+    position: absolute;
+    top: 303px;
+    left: 825px;
+    z-index: 2;
+    font-size: 46px;
+    font-family: "Poppins";
+    font-weight: 800;
+    color: var(--green);
+}

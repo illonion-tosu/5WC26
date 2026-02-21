@@ -1,0 +1,205 @@
+:root {
+    --main-text: #10664A;
+    --secondary-text: #F7F6DA;
+}
+
+body {
+    font-family: "Poppins";
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Never Brat";
+    src: url("../fonts/Never\ Brat.otf")
+}
+
+/* Background Video */
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 1080px;
+}
+
+/* Whole Page */
+.main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+}
+
+/* Main Logo */
+.logo {
+    position: absolute;
+    left: 150px;
+    transform: scale(0.6);
+}
+/* 5 Logo */
+.logo-5 {
+    position: absolute;
+    top: 73px;
+    left: 45px;
+}
+/* Logo WC */
+.logo-wc {
+    position: absolute;
+    top: 76px;
+    left: 302px;
+    font-size: 196px;
+    letter-spacing: -12px;
+    color: var(--secondary-text);
+    filter: drop-shadow(-7.08px 10.903px 0px rgba(0, 0, 0, 0.25));
+}
+/* Logo 2025 */
+.logo-2025 {
+    position: absolute;
+    top: 276px;
+    left: 406px;
+    font-size: 101px;
+    letter-spacing: -4px;
+    color: var(--main-text);
+    filter: drop-shadow(-2.723px 4.193px 0px rgba(0, 0, 0, 0.25));
+    transform: scale(1, 1.05);
+}
+
+/* Winner Flag */
+.winner-flag-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50px;
+    padding: 5px;
+    border: 10px solid var(--main-text);
+    border-radius: 80px;
+    height: 435px;
+}
+.winner-flag {
+    position: relative;
+    top: -83px;
+}
+
+/* Score */
+.score {
+    position: absolute;
+    top: 100px;
+    right: 150px;
+    color: var(--main-text);
+    font-size: 3em;
+    width: 990px;
+    text-align: center;
+}
+
+/* Players */
+.players {
+    position: absolute;
+    top: 200px;
+    right: 150px;
+    width: 1050px;
+    font-size: 2.5em;
+    color: var(--main-text);
+    margin-left: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+.players-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 495px;
+    text-align: center;
+}
+
+/* Twitch Chat */
+.twitch-chat-text {
+    position: absolute;
+    left: 45%;
+    top: 500px;
+    transform: translateY(-50%);
+    color: var(--secondary-text);
+    font-style: italic;
+    font-family: "Poppins";
+    font-size: 3em;
+}
+.twitch-chat-container {
+    padding: 20px;
+    position: absolute;
+    top: 520px;
+    right: 122px;
+    width: 920px;
+    height: 395px;
+    background-color: #10664AD0;
+    border-radius: 80px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    outline: 20px solid #10664AD0;
+}
+.twitch-chat-container::-webkit-scrollbar { display: none; }
+/* Twitch Chat Message Container*/
+.twitch-message-container {
+    color: var(--secondary-text);
+    font-size: 1.25em;
+    margin-left: 25px;
+    width: 920px;
+    margin: 5px 20px;
+    display: flex;
+}
+/* Twitch Message Details */
+.twitch-message {
+    margin-left: 10px;
+}
+
+/* Sidebar */
+.sidebar {
+    position: absolute; 
+    left: 1920px;
+    top: 0;
+    width: 250px;
+    height: 1080px;
+    background-color: var(--secondary-text);
+    font-family: "Poppins";
+}
+.sidebar-title {
+    margin: 10px 0;
+    width: inherit;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.25em;
+    color: var(--main-text);
+}
+.sidebar-input-text {
+    margin: 5px 20px;
+    border: none;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.25em;
+    width: 210px;
+    border-bottom: 2px solid var(--main-text);
+    background-color: transparent;
+}
+.sidebar-button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}                                                                   
+.sidebar-button {
+    width: 210px;
+    height: 50px;
+    border: 2px solid var(--main-text);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 1.25em;
+    border-radius: 5px;
+    background: transparent;
+    color: var(--main-text);
+}
+.sidebar-button-submit { margin: 10px 20px; }
+.sidebar-button-submit:active {
+    background-color: var(--main-text);
+    color: var(--secondary-text);
+}

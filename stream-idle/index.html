@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream Idle</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <video class="background-video" autoplay loop muted>
+        <source src="../_shared/assets/background.webm">
+    </video>
+
+    <div class="main">
+
+        <!-- Logo Left -->
+        <div class="logo-2025">2025</div>
+        <div class="logo-wc">WC</div>
+        <img class="logo-5" src="static/5-logo.png">
+
+        <!-- Main Text -->
+        <div class="right-text stream-idle-text" id="stream-idle-text">PLACEMENT<br>PREDICTIONS</div>
+
+        <!-- Who vs Who Text -->
+        <div id="teams-text">
+            <div class="right-text team-vs-team-text left-team-text" id="left-team-text">UNITED STATES</div>
+            <div class="right-text team-vs-team-text right-team-text" id="right-team-text">AUSTRALIA</div>
+            <div class="right-text team-vs-team-text vs-text" id="vs-text">VS</div>
+        </div>
+
+        <!-- Timer -->
+        <div id="timer-container">
+            <img class="timer-logo" src="static/timer-logo.png">
+            <div class="timer" id="timer">07:27</div>
+            <div class="up-next">UP NEXT</div>
+        </div>
+
+        <!-- Sponsor -->
+        <div class="sponsor">YOU</div>
+        <div class="powered-by-text">5WC IS POWERED BY</div>
+    </div>
+
+    <!-- Sidebar -->
+    <section class="sidebar">
+        <div class="sidebar-timer">
+            <div class="sidebar-title">Timer</div>
+            <section id="normal-timer">
+                <div class="sidebar-text">Set timer for: </div>
+                <input id="minutes-number" class="sidebar-input" type="number"> minutes<br>
+                <input id="seconds-number" class="sidebar-input" type="number"> seconds<br>
+                <button class="sidebar-button" onclick="setAndStartTimer()">Set / Start Timer</button>
+                <button class="sidebar-button" onclick="setMinuteSecondTimer()">Set Timer Only</button>
+                <button class="sidebar-button" onclick="startTimer()">Start Timer Only</button>
+                <div class="sidebar-text timer-error-message" id="timer1-error-message">Make sure your timer is positive!</div>
+            </section>
+            <section id="utc-timer">
+                <div class="sidebar-text">or... set timer for: </div>
+                <div>
+                    <input id="hours-number-utc" class="sidebar-input time-input" type="number">:
+                    <input id="minutes-number-utc" class="sidebar-input time-input" type="number"> UTC
+                </div>
+                <button class="sidebar-button" onclick="startUTCTimer()">Start Timer</button>
+                <div class="sidebar-text timer-error-message" id="timer2-error-message">Make sure your hours and minutes are over 0!</div>
+            </section>
+            <button class="sidebar-button light-pink-button" onclick="stopTimer()">Stop Timer</button>
+            <button class="sidebar-button light-pink-button" onclick="resetTimer()">Reset Timer</button>
+            <button class="sidebar-button light-green-button" onclick="showTimer()">Show Timer</button>
+            <button class="sidebar-button light-pink-button" onclick="removeTimer()">Remove Timer</button>
+        </div>
+        <div class="sidebar-stream-idle-text">
+            <div class="sidebar-title">Stream Idle Text</div>
+            <button class="sidebar-button sidebar-button-large" onclick="setStreamIdleText('Placement Predictions')">Placement Predictions</button>
+            <button class="sidebar-button sidebar-button-large" onclick="setStreamIdleText('Starting Soon')">Staring Soon</button>
+            <button class="sidebar-button sidebar-button-large" onclick="setStreamIdleText('Ending Soon')">Ending Soon</button>
+            <button class="sidebar-button sidebar-button-large" onclick="setStreamIdleText('Intermission')">Intermission</button>
+            <button class="sidebar-button sidebar-button-large" onclick="setStreamIdleText('Technical Difficulties')">Technical Difficulties</button><br><br><br>
+            <div class="sidebar-text" id="sidebar-custom-text">or for custom texts, type here: </div>
+            <textarea class="sidebar-textarea" id="strema-idle-text-textarea"></textarea>
+            <button class="sidebar-button light-green-button sidebar-button-large" onclick="setStreamIdleText(document.getElementById('strema-idle-text-textarea').value)">Submit Stream Idle Text</button>
+            <button class="sidebar-button light-pink-button sidebar-button-large" onclick="removeStreamIdleText()">Remove Stream Idle Text</button>
+        </div>
+        <div class="sidebar-team-text">
+            <div class="sidebar-title" id="team-vs-text">Team VS Text</div>
+            <div class="sidebar-text" id="sidebar-red-team-text">Red Team: </div>
+            <input id="sidebar-red-team" class="sidebar-input sidebar-input-long" type="text"><br><br><br>
+            <div class="sidebar-text" id="sidebar-blue-team-text">Blue Team: </div>
+            <input id="sidebar-blue-team" class="sidebar-input sidebar-input-long" type="text"><br>
+            <button class="sidebar-button light-green-button sidebar-button-large" onclick="setTeamsText()">Set Teams Text</button>
+            <button class="sidebar-button light-pink-button sidebar-button-large" onclick="removeTeamsText()">Remove Teams Text</button>
+            <div class="sidebar-text timer-error-message" id="team-vs-error-message">Make sure you have two team names!</div>
+        </div>
+    </section>
+    <section class="column" id="column2">
+
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
