@@ -1,11 +1,12 @@
 :root {
 	--red: #fd2664;
-    --lightGreen: #77BF82;
-    --green: #116649;
-    --lightBeige: #F6F6DA;
-    /* --lightRed: #BF3040; */
-    --lightRed: rgb(143,36,48);
-    --darkerBeige: rgb(185,185,164)
+    --lightGreen: #F3BBFF;
+    --lightBeige: #FDECFC;
+    --lightRed: rgb(209, 55, 55);
+    --darkerBeige: rgb(221, 182, 182);
+
+    --panelBG: #F6E6F6;
+    --headings: #5B2C82;
 }
 
 @font-face {
@@ -13,7 +14,7 @@
     src: url(../static/fonts/Coluna_Rounded.otf);
 }
 
-body,html{
+body, html{
     padding: 0;
     margin: 0;
     overflow-y: hidden;
@@ -83,6 +84,7 @@ body,html{
     font-weight: 900;
     border: none;
     background: transparent;
+    color: var(--panelBG)
 }
 #teamDisplaybuttonleft { top: 460px; }
 #teamDisplaybuttonright { top: 671px; }
@@ -101,7 +103,7 @@ body,html{
     font-family: "Poppins";
     font-weight: 700;
     z-index: 10;
-    background-color: var(--lightGreen);
+    background-color: var(--panelBG);
     border-radius: 12px;
 }
 .rightbox {
@@ -110,12 +112,12 @@ body,html{
     border-radius: 8px;
     height: 40px;
     width: 325px;
-    border: 4px solid var(--green);
+    border: 4px solid var(--headings);
     background: var(--lightBeige);
     text-align: center;
     padding: 10px 0px;
     text-shadow: 0 0 2px var(--lightBeige), 0 0 4px var(--lightBeige);
-    color: var(--green);
+    color: var(--headings);
 }
 .leftbox {
     position: absolute;
@@ -146,7 +148,7 @@ body,html{
     top: 302px;
     height: 744px;
     width: 602px;
-    background-color: var(--lightGreen);
+    background-color: var(--panelBG);
     border-radius: 12px;
 }
 .placements {
@@ -323,7 +325,7 @@ body,html{
     width: 136px;
     height: 50px;
     border-radius: 4px;
-    background-color: var(--green);
+    background-color: var(--headings);
     margin-top: 0px;
     text-align: center;
     color: white;
@@ -410,9 +412,9 @@ body,html{
     font-size: 30px;
     font-family: "Poppins";
     font-weight: 700;
-    color: black;
+    color: var(--lightGreen);
 }
-#lastyearseeding{
+#lastyearseeding {
     position: absolute;
     top: 298px;
     left: 1088px;
@@ -420,7 +422,7 @@ body,html{
     font-size: 30px;
     font-family: "Poppins";
     font-weight: 700;
-    color: black;
+    color: var(--lightGreen);
 }
 #lastyeartext {
     position: absolute;
@@ -430,5 +432,5 @@ body,html{
     font-size: 46px;
     font-family: "Poppins";
     font-weight: 800;
-    color: var(--green);
+    color: var(--lightGreen);
 }
