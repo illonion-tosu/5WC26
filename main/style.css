@@ -49,10 +49,7 @@
     top: 85px;  
     display: flex;
 }
-.team-star-container > * {
-    width: 50px;
-    transform: rotate(100deg);
-}
+.team-star-container > * { width: 50px; }
 .left-team-star-container { left: calc(var(--team-name-horizontal-rule) - 12px); }
 .right-team-star-container { 
     right: calc(var(--team-name-horizontal-rule) - 12px); 
@@ -132,7 +129,7 @@
     width: 600px;
     height: 190px;
     border-radius: 10px;
-    background-color: #F3BBFFbb;
+    background-color: #F3BBFF80;
     display: flex;
     flex-direction: column;
     opacity: 0;
@@ -162,10 +159,10 @@
     margin-right: 10px;
     white-space: nowrap;
 }
-.unknown { color: rgb(220, 182, 255); }
-.bot { color: gold; }
-.left { color: rgb(255, 176, 176); }
-.right { color: lightblue; }
+.unknown { color: rgb(255, 143, 79); }
+.bot { color: rgb(255, 243, 79); }
+.left { color: rgb(255, 109, 109) }
+.right { color: rgb(79, 234, 255); }
 
 /* Now Playing Section */
 #now-playing-section {
