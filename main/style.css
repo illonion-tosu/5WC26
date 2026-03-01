@@ -4,11 +4,14 @@
     --team-flag-horizontal-rule: 27.5px;
     --team-name-horizontal-rule: calc(150px + var(--team-flag-horizontal-rule) * 2);
     --score-bar-horizontal-rule: 50%;
+    --score-bar-height: 25px;
+    --score-bar-height-half: calc(var(--score-bar-height) / 2);
 
     --red: #db4c4c;
     --blue: #5b6ac6;
 
     --lightPink: #F3BBFF;
+    --darkerPink: #B68CBF;
 }
 
 .background-video {
@@ -46,13 +49,14 @@
 /* Team Stars */
 .team-star-container {
     position: absolute;
-    top: 85px;  
+    top: 83px;  
     display: flex;
+    gap: 10px;
 }
-.team-star-container > * { width: 50px; }
-.left-team-star-container { left: calc(var(--team-name-horizontal-rule) - 12px); }
+.team-star-container > * { width: 45px; }
+.left-team-star-container { left: var(--team-name-horizontal-rule); }
 .right-team-star-container { 
-    right: calc(var(--team-name-horizontal-rule) - 12px); 
+    right: var(--team-name-horizontal-rule);
     flex-direction: row-reverse;
 }
 
@@ -87,10 +91,14 @@
     height: 25px;
     background-color: var(--lightPink);
 }
-.left-score-bar { right: var(--score-bar-horizontal-rule); }
+.left-score-bar {
+    right: var(--score-bar-horizontal-rule);
+    border-radius: var(--score-bar-height-half) 0 0 var(--score-bar-height-half);
+}
 .right-score-bar { 
     left: var(--score-bar-horizontal-rule);
     width: 200px;
+    border-radius: 0 var(--score-bar-height-half) var(--score-bar-height-half) 0;
 }
 
 /* Play Score */
@@ -172,8 +180,8 @@
     width: 1820px;
     height: 80px;
     border-radius: 50px;
-    background-color: #F3BBFF60;
-    border: 5px solid var(--lightPink);
+    background-color: #B68CBF60;
+    border: 5px solid var(--darkerPink);
     overflow: hidden;
     transition: 500ms ease-in-out;
 }
@@ -193,7 +201,7 @@
     transform: translateX(-50%);
     width: 1365px;
     height: inherit;
-    background-color: #F3BBFFA0;
+    background-color: #B68CBFA0;
     border-radius: inherit;
     color: var(--secondary-text);
     line-height: 30px;
@@ -214,9 +222,9 @@
     transform: translateX(-50%);
     width: 800px;
     height: inherit;
-    background-color: var(--lightPink);
+    background-color: var(--darkerPink);
     border-radius: inherit;
-    border: 5px solid var(--lightPink);
+    border: 5px solid var(--darkerPink);
     background-image: url("https://assets.ppy.sh/beatmaps/2257992/covers/cover.jpg");
     background-size: cover;
     background-position: center;
@@ -242,7 +250,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: var(--secondary-text);
+    color: white;
     text-align: center;
     font-size: 1.5em;
 }
@@ -250,7 +258,7 @@
 .now-playing-section-mapper-difficulty {
     position: absolute;
     top: 35px;
-    color: var(--secondary-text);
+    color: white;
     font-weight: 400;
     max-width: calc(45% - 25px);
     white-space: nowrap;

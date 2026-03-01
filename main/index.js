@@ -394,7 +394,6 @@ function createStarDisplay() {
     // Create Star
     function createStar(status) {
         const newStar = document.createElement("img")
-        newStar.classList.add("team-stard")
         newStar.setAttribute("src", `static/star-${status}.png`)
         return newStar
     }
