@@ -1,6 +1,7 @@
 :root {
     --country-banner-x: 502px;
     --country-name-x: 488px;
+    --country-star-container-x: 500px;
 
     --lightPink: #F3BBFF;
 }
@@ -46,3 +47,12 @@
 }
 .red-country-name { left: var(--country-name-x); }
 .blue-country-name { right: var(--country-name-x); }
+
+/* Country Stars */
+.country-star-container {
+    position: absolute;
+    top: 85px;
+}
+.country-star-container > * { width: 18px; }
+.red-country-star-container { left: var(--country-star-container-x); }
+.blue-country-star-container { right: var(--country-star-container-x); }
