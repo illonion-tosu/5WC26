@@ -2,6 +2,7 @@
     --country-banner-x: 502px;
     --country-name-x: 488px;
     --country-star-container-x: 500px;
+    --country-flag-x: 393px;
 
     --lightPink: #F3BBFF;
 }
@@ -17,6 +18,17 @@
 }
 
 /* Country Flags */
+.country-flag {
+    position: absolute;
+    top: 38px;
+    width: 97px;
+    height: 66px;
+    background: center / cover;
+    background-image: url(https://osuflags.omkserver.nl/AU-300.png);
+    border-radius: 10px;
+}
+.red-country-flag { left: var(--country-flag-x); }
+.blue-country-flag { right: var(--country-flag-x); }
 
 /* Country Banner */
 .country-banner {
