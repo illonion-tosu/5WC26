@@ -5,7 +5,7 @@
     --lightRed: rgb(209, 55, 55);
     --darkerBeige: rgb(221, 182, 182);
 
-    --panelBG: #F6E6F6;
+    --panelBG: rgba(246, 230, 246, 0.6);
     --headings: #5B2C82;
 }
 
@@ -146,7 +146,7 @@ body, html{
     position: absolute;
     left: 107px;
     top: 302px;
-    height: 744px;
+    height: 758px;
     width: 602px;
     background-color: var(--panelBG);
     border-radius: 12px;
@@ -179,9 +179,10 @@ body, html{
 #thirteentosixteenPlaceRow { height: 65px; }
 #seventeentotwentyfourPlaceRow { height: 55px; }
 #twentyfivetothrirtytwoPlaceRow { height: 60px; }
+#thirtythreetofortyPlaceRow { height: 60px; }
 .tierListRowBottom {
     background-color: transparent;
-    width: 480px; height: 145px;
+    width: 480px; height: 100px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -402,6 +403,9 @@ body, html{
 }
 #eleventh {
     top: 550px;
+}
+#twelfth {
+    top: 600px;
 }
 
 #lastyearplacement{

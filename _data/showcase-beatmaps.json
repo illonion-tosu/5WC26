@@ -2,87 +2,87 @@
     "roundName": "qualifiers",
     "beatmaps": [
         {
-            "songName": "The Order...",
-            "difficultyName": "PUNISHMENT...",
-            "mapper": "pnky",
+            "songName": "Kokuodu Slope",
+            "difficultyName": "January",
+            "mapper": "3y3s",
             "modId": "NM1"
         },
         {
-            "songName": "Troposphere",
-            "difficultyName": "Into the Stratosphere",
-            "mapper": "Astronic",
+            "songName": "NIGHTMARE INVITATION",
+            "difficultyName": "Cellina's Masquerade",
+            "mapper": "Mattay",
             "modId": "NM2"
         },
         {
-            "songName": "Resist",
-            "difficultyName": "Expert",
-            "mapper": "Kine",
+            "songName": "ALWAYS BE WITH YOU XD",
+            "difficultyName": "Flashback?",
+            "mapper": "Rtyzen",
             "modId": "NM3"
         },
         {
-            "songName": "Neuron",
-            "difficultyName": "Feiri x Nanachi's Collab Expert",
-            "mapper": "Feiri",
+            "songName": "Sunset Tea Cup",
+            "difficultyName": "100% Orange Juice",
+            "mapper": "iBell",
             "modId": "NM4"
         },
         {
-            "songName": "LUVORATORRRRRY! ver Reol feat. nqrse",
-            "difficultyName": "Beasty Gimmick",
-            "mapper": "Ryuusei Aika",
+            "songName": "Off-grid",
+            "difficultyName": "Another",
+            "mapper": "xidorn",
             "modId": "NM5"
         },
         {
-            "songName": "Guerilla Radio",
-            "difficultyName": "Lights Out",
-            "mapper": "VINXIS",
+            "songName": "ROT FOR CLOUT",
+            "difficultyName": "fooders's CLOUT CHASER",
+            "mapper": "Ducky-",
             "modId": "HD1"
         },
         {
-            "songName": "Darling Dance",
-            "difficultyName": "Sea Food Extra",
-            "mapper": "Kuro Fuyusaki",
+            "songName": "The Sealer ~A Milia to Milia no Tami~",
+            "difficultyName": "Extra",
+            "mapper": "ScubDomino",
             "modId": "HD2"
         },
         {
-            "songName": "Mafain",
-            "difficultyName": "expert",
-            "mapper": "procq",
+            "songName": "Hurtful & Painful",
+            "difficultyName": "WhiteCookies' Extra",
+            "mapper": "JauiPlaY",
             "modId": "HD3"
         },
         {
-            "songName": "STORIA",
-            "difficultyName": "My Story",
-            "mapper": "- AzRaeL -",
+            "songName": "Up From The Bottom",
+            "difficultyName": "Apex",
+            "mapper": "Sotarks",
             "modId": "HR1"
         },
         {
-            "songName": "Deer Dance",
-            "difficultyName": "Atrocity",
-            "mapper": "AdeAAa",
+            "songName": "Lotus",
+            "difficultyName": "Chai's Insane+",
+            "mapper": "Wispy",
             "modId": "HR2"
         },
         {
-            "songName": "HERE COMES HOPE",
-            "difficultyName": "Refrain",
-            "mapper": "newton-",
+            "songName": "Blastix Riotz",
+            "difficultyName": "CS 3.6 OD 9.2",
+            "mapper": "raikoh",
             "modId": "HR3"
         },
         {
-            "songName": "As It Was",
-            "difficultyName": "In this world, it's just us <3",
-            "mapper": "Kyouren",
+            "songName": "Usotsuki",
+            "difficultyName": "Collab Insane",
+            "mapper": "Cellina",
             "modId": "DT1"
         },
         {
-            "songName": "Ura-Omote Lovers feat. Hatsune Miku",
-            "difficultyName": "Doinkus",
-            "mapper": "jellium",
+            "songName": "Last Liar Standing",
+            "difficultyName": "Lunatic",
+            "mapper": "Sanch-KK",
             "modId": "DT2"
         },
         {
-            "songName": "Sempronius",
-            "difficultyName": "COHORTES::#I[PRAETORIAE]",
-            "mapper": "Stick2Glue",
+            "songName": "Follow Tomorrow (for future mix)",
+            "difficultyName": "ktgster's Insane",
+            "mapper": "Asaba Harumasa",
             "modId": "DT3"
         }
     ]

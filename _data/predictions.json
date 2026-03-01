@@ -1,68 +1,86 @@
 [
     {
+        "country_name": "Algeria",
+        "flag_code": "DZ",
+        "last_seed": "DNP",
+        "last_placement": "DNP",
+        "played_before": "FALSE",
+        "last_year": [],
+        "current_year": [
+            "ilyvss",
+            "nouw",
+            "FatChicken420",
+            "Anyonix",
+            "YEPSTARE",
+            "karimovic",
+            "sami dz",
+            "Heaki"
+        ]
+    },
+    {
         "country_name": "Argentina",
         "flag_code": "AR",
-        "last_seed": "30th",
-        "last_placement": "25th-32nd",
+        "last_seed": "31",
+        "last_placement": "25-32",
         "played_before": "TRUE",
         "last_year": [
             [
-                "Mikelito069",
-                false
-            ],
-            [
-                "Rodr1h-",
-                false
-            ],
-            [
-                "Fib_02",
-                false
-            ],
-            [
                 "Alokas",
-                true
-            ],
-            [
-                "TheARGovernment",
-                false
-            ],
-            [
-                "M A T O I",
-                false
-            ],
-            [
-                "Nxtcho",
                 false
             ],
             [
                 "-Maxi-",
                 true
+            ],
+            [
+                "Rio Tsukatsuki",
+                false
+            ],
+            [
+                "Benisuzume",
+                true
+            ],
+            [
+                "N4me",
+                false
+            ],
+            [
+                "Kaoruko Waguri",
+                false
+            ],
+            [
+                "APRL03",
+                false
+            ],
+            [
+                "Miya_",
+                false
             ]
         ],
         "current_year": [
-            "Alokas",
-            "-Maxi-",
-            "Rio Tsukatsuki",
             "Benisuzume",
-            "N4me",
-            "Kaoruko Waguri",
-            "APRL03",
-            "Miya_"
+            "-Maxi-",
+            "Bubon_",
+            "teru o",
+            "hiruma996",
+            "MarkDjVj",
+            "-Norlax-",
+            "Sayowi"
         ]
     },
     {
         "country_name": "Australia",
         "flag_code": "AU",
-        "last_seed": "17th",
-        "last_placement": "13th-16th",
+        "last_seed": "6",
+        "last_placement": "2",
         "played_before": "TRUE",
         "last_year": [
             [
-                "TheTopaz",
+                "AllBlue",
                 false
             ],
             [
-                "Naoi Rei",
+                "PoYuTo",
                 false
             ],
             [
@@ -70,50 +88,66 @@
                 true
             ],
             [
-                "UnwaryTuba77",
+                "Supernye",
                 false
             ],
             [
-                "Trainjumper",
-                false
+                "47w47",
+                true
             ],
             [
                 "Fault",
-                true
+                false
             ],
             [
-                "Supernye",
-                true
+                "Wishender",
+                false
             ],
             [
-                "loveleft",
+                "Toaru",
                 false
             ]
         ],
         "current_year": [
-            "AllBlue",
-            "PoYuTo",
             "hayley",
-            "Supernye",
+            "Albatrauz",
+            "Fentos",
             "47w47",
-            "Fault",
-            "Wishender",
-            "Toaru"
+            "Arto",
+            "AwesomeAldine",
+            "TomatoesGoBoom",
+            "John Osu"
         ]
     },
     {
         "country_name": "Austria",
         "flag_code": "AT",
-        "last_seed": "50th",
-        "last_placement": "DNQ",
+        "last_seed": "32",
+        "last_placement": "25-32",
         "played_before": "TRUE",
         "last_year": [
             [
                 "Floflorian",
+                false
+            ],
+            [
+                "Ayoukiro",
+                false
+            ],
+            [
+                "KAAAL",
                 true
             ],
             [
-                "gadse",
+                "hakashii",
+                true
+            ],
+            [
+                "Lunai",
+                false
+            ],
+            [
+                "read umineko",
                 false
             ],
             [
@@ -121,407 +155,313 @@
                 true
             ],
             [
-                "KAAAL",
-                true
-            ],
-            [
-                "Ayoukiro",
-                true
-            ],
-            [
-                "HwangOnWheels",
+                "greeeal",
                 false
-            ],
-            [
-                "JustBecause",
-                false
-            ],
-            [
-                "hakashii",
-                true
             ]
         ],
         "current_year": [
-            "Floflorian",
-            "Ayoukiro",
             "KAAAL",
+            "Calamityx7",
+            "Cappi",
             "hakashii",
-            "Lunai",
-            "read umineko",
+            "NichtNinjaa",
             "studya",
-            "greeeal"
+            "Volki",
+            "zynua"
         ]
     },
     {
         "country_name": "Belarus",
         "flag_code": "BY",
-        "last_seed": "55th",
+        "last_seed": "42",
         "last_placement": "DNQ",
         "played_before": "TRUE",
         "last_year": [
             [
-                "xunev",
+                "Bekus",
                 false
             ],
             [
-                "RemTouk",
-                true
-            ],
-            [
-                "Neonith",
+                "Satte",
                 false
             ],
             [
-                "durashcka",
+                "L1ssak",
+                false
+            ],
+            [
+                "MrGoose",
+                false
+            ],
+            [
+                "sdnssndmchsffng",
+                false
+            ],
+            [
+                "Endorika",
                 false
             ],
             [
                 "sh1z0idik",
-                true
-            ],
-            [
-                "Yudek",
                 false
             ],
             [
-                "Bekus",
-                true
-            ],
-            [
-                "-serko-",
+                "RemTouk",
                 false
             ]
         ],
         "current_year": [
-            "Bekus",
-            "Satte",
-            "L1ssak",
-            "MrGoose",
-            "sdnssndmchsffng",
-            "Endorika",
-            "sh1z0idik",
-            "RemTouk"
+            "HosimachiSuisei",
+            "N1shiami",
+            "LoPij",
+            "kasikomi",
+            "chonado",
+            "Togipy",
+            "Difender",
+            "Amur_"
         ]
     },
     {
         "country_name": "Belgium",
         "flag_code": "BE",
-        "last_seed": "43rd",
+        "last_seed": "39",
         "last_placement": "DNQ",
         "played_before": "TRUE",
         "last_year": [
             [
-                "FADED THAN A HO",
+                "megafasator",
                 true
-            ],
-            [
-                "Koni",
-                false
             ],
             [
                 "Kaja",
                 true
             ],
             [
-                "OptimismJR",
-                false
-            ],
-            [
                 "Kayziix",
+                false
+            ],
+            [
+                "[ Unmei ]",
+                false
+            ],
+            [
+                "Pot Of Greed",
+                false
+            ],
+            [
+                "-Lurie",
+                false
+            ],
+            [
+                "nxvia",
+                false
+            ],
+            [
+                "blueflareblitz",
                 true
-            ],
-            [
-                "Bl1tz_OwO",
-                false
-            ],
-            [
-                "Gigatn",
-                false
-            ],
-            [
-                "arnevdh",
-                false
             ]
         ],
         "current_year": [
-            "FADED THAN A HO",
+            "megafasator",
             "Kaja",
-            "Kayziix",
-            "[ Unmei ]",
-            "Pot Of Greed",
-            "-Lurie",
-            "nxvia",
-            "blueflareblitz"
+            "HD3",
+            "blueflareblitz",
+            "Yukino",
+            "Bl1tz_OwO",
+            "acc demon",
+            "armpitlover69"
+        ]
+    },
+    {
+        "country_name": "Bosnia and Herzegovina",
+        "flag_code": "BA",
+        "last_seed": "DNP",
+        "last_placement": "DNP",
+        "played_before": "FALSE",
+        "last_year": [],
+        "current_year": [
+            "Dan_Z",
+            "ripmansion",
+            "AbduSubasa",
+            "WinDoge",
+            "alisha-",
+            "b0t1cH"
         ]
     },
     {
         "country_name": "Brazil",
         "flag_code": "BR",
-        "last_seed": "10th",
-        "last_placement": "17th-24th",
+        "last_seed": "7",
+        "last_placement": "7-8",
         "played_before": "TRUE",
         "last_year": [
+            [
+                "cai0",
+                false
+            ],
             [
                 "KakirM",
                 true
             ],
             [
-                "Yelan",
-                false
+                "Ketsui",
+                true
             ],
             [
                 "zStormk19",
                 true
             ],
             [
-                "DoTrO",
-                false
-            ],
-            [
-                "T-Light",
-                true
-            ],
-            [
-                "999kalel999",
-                false
-            ],
-            [
-                "Sunda3",
+                "est",
                 false
             ],
             [
                 "thacer",
+                false
+            ],
+            [
+                "caua",
                 true
+            ],
+            [
+                "T-Light",
+                false
             ]
         ],
         "current_year": [
-            "cai0",
+            "zStormk19",
+            "AlefGdxD",
+            "caua",
+            "Iucany",
             "KakirM",
             "Ketsui",
-            "zStormk19",
-            "est",
-            "thacer",
-            "caua",
-            "T-Light"
-        ]
-    },
-    {
-        "country_name": "Brunei",
-        "flag_code": "BN",
-        "last_seed": "64th",
-        "last_placement": "DNQ",
-        "played_before": "TRUE",
-        "last_year": [
-            [
-                "FourCan",
-                true
-            ],
-            [
-                "rafs",
-                false
-            ],
-            [
-                "glitchtrrp",
-                true
-            ],
-            [
-                "Blight-kun",
-                true
-            ],
-            [
-                "Saraishii",
-                false
-            ],
-            [
-                "Fused1376",
-                false
-            ],
-            [
-                "Epixia",
-                false
-            ],
-            [
-                "erutobi",
-                false
-            ]
-        ],
-        "current_year": [
-            "FourCan",
-            "HoximachiSuisei",
-            "Terran",
-            "Blight-kun",
-            "nunaa",
-            "felixgg",
-            "glitchtrrp",
-            "Saji123"
-        ]
-    },
-    {
-        "country_name": "Bulgaria",
-        "flag_code": "BG",
-        "last_seed": "34th",
-        "last_placement": "DNQ",
-        "played_before": "TRUE",
-        "last_year": [
-            [
-                "Prahosnika",
-                false
-            ],
-            [
-                "Rengmain",
-                true
-            ],
-            [
-                "Hanabi -",
-                false
-            ],
-            [
-                "LazerDynamiX",
-                true
-            ],
-            [
-                "robatrt",
-                false
-            ],
-            [
-                "RioMisstery",
-                true
-            ],
-            [
-                "MyAngelLumei",
-                false
-            ],
-            [
-                "Ivanix",
-                false
-            ]
-        ],
-        "current_year": [
-            "Rengmain",
-            "RioMisstery",
-            "Valcsh",
-            "Azazzel168",
-            "duner s airqn",
-            "ViktorSMG",
-            "LazerDynamiX",
-            "SkBg"
+            "Simabuco",
+            "Sunda3"
         ]
     },
     {
         "country_name": "Canada",
         "flag_code": "CA",
-        "last_seed": "2nd",
-        "last_placement": "2nd",
+        "last_seed": "4",
+        "last_placement": "4",
         "played_before": "TRUE",
         "last_year": [
             [
-                "ploot",
-                false
-            ],
-            [
-                "Jolly Ranchers",
-                false
-            ],
-            [
-                "Acer",
-                true
-            ],
-            [
-                "FetherFall",
-                false
-            ],
-            [
                 "Lexic",
-                true
-            ],
-            [
-                "ExiaXD",
-                false
-            ],
-            [
-                "Birchman",
                 false
             ],
             [
                 "jykca",
                 true
+            ],
+            [
+                "sumyeon",
+                true
+            ],
+            [
+                "zebedee",
+                true
+            ],
+            [
+                "ExiaXD",
+                true
+            ],
+            [
+                "jiaxunjason",
+                true
+            ],
+            [
+                "Acer",
+                false
+            ],
+            [
+                "[Caveman]",
+                false
             ]
         ],
         "current_year": [
-            "Lexic",
-            "jykca",
-            "sumyeon",
             "zebedee",
-            "PinkEyeFan2017",
-            "jiaxunjason",
-            "Acer",
-            "[Caveman]"
+            "sumyeon",
+            "Nevarinn",
+            "ExiaXD",
+            "jykca",
+            "Dragon20942",
+            "WolfBoi",
+            "jiaxunjason"
         ]
     },
     {
         "country_name": "Chile",
         "flag_code": "CL",
-        "last_seed": "8th",
-        "last_placement": "9th-12th",
+        "last_seed": "17",
+        "last_placement": "9-12",
         "played_before": "TRUE",
         "last_year": [
-            [
-                "Lasseh",
-                false
-            ],
-            [
-                "Siiphs",
-                false
-            ],
-            [
-                "l Akemi l",
-                false
-            ],
-            [
-                "Nevzz",
-                false
-            ],
-            [
-                "Paxyh",
-                false
-            ],
             [
                 "dekay",
                 true
             ],
             [
-                "Yumbtah",
+                "paxyh",
                 false
             ],
             [
-                "Shiny Froakie",
+                "hinami-chi",
+                true
+            ],
+            [
+                "sarondres",
+                true
+            ],
+            [
+                "piopollo",
+                true
+            ],
+            [
+                "Sucralosa",
                 false
+            ],
+            [
+                "pascualito",
+                false
+            ],
+            [
+                "yGantu",
+                true
             ]
         ],
         "current_year": [
             "dekay",
-            "dekay Kitten",
-            "hinami-chi",
             "sarondres",
+            "yGantu",
             "piopollo",
-            "Sucralosa",
-            "pascualito",
-            "yGantu"
+            "hinami-chi",
+            "Rei Adachi",
+            "maqueroon",
+            "[ MG ]Painesito"
         ]
     },
     {
         "country_name": "China",
         "flag_code": "CN",
-        "last_seed": "18th",
-        "last_placement": "25th-32nd",
+        "last_seed": "13",
+        "last_placement": "9-12",
         "played_before": "TRUE",
         "last_year": [
             [
-                "Knd",
-                true
+                "Sana Chitose",
+                false
             ],
             [
-                "Sand-Star",
+                "Knd",
+                false
+            ],
+            [
+                "YRScarlet",
+                false
+            ],
+            [
+                "shigure_rino",
                 false
             ],
             [
@@ -529,41 +469,33 @@
                 true
             ],
             [
-                "Ask to Wind",
+                "-Inui Sana-",
                 false
             ],
             [
-                "WorthlessPlayer",
+                "Kuaikuai27",
                 false
             ],
             [
-                "No rank",
-                false
-            ],
-            [
-                "Trolloli",
-                false
-            ],
-            [
-                "Aporia",
+                "Mangent",
                 false
             ]
         ],
         "current_year": [
-            "Sana Chitose",
-            "Knd",
-            "YRScarlet",
-            "shigure_rino",
+            "oliwakami",
+            "My Angel Bronya",
+            "FujiwaraNoMokou",
             "gxytcgxytc",
-            "-Inui Sana-",
-            "Kuaikuai27",
-            "Mangent"
+            "fuyukiS",
+            "MogenNotFound",
+            "Hunxin",
+            "-SummerSky-"
         ]
     },
     {
         "country_name": "Colombia",
         "flag_code": "CO",
-        "last_seed": "51st",
+        "last_seed": "41",
         "last_placement": "DNQ",
         "played_before": "TRUE",
         "last_year": [
@@ -572,364 +504,331 @@
                 true
             ],
             [
-                "ChukiTheWolf",
-                false
-            ],
-            [
                 "- scubi -",
                 true
             ],
             [
-                "confYYdent_",
+                "Thanatos System",
+                true
+            ],
+            [
+                "_Chris",
                 false
             ],
             [
-                "MyAngelEve",
+                "Alexnix",
                 false
             ],
             [
-                "Naberuu",
+                "cnfyy",
                 false
             ],
             [
-                "Strxwberrymilk",
+                "Tibusanti",
                 false
             ],
             [
-                "xSalcedo",
+                "Klonmasd",
                 false
             ]
         ],
         "current_year": [
             "hlv",
             "- scubi -",
+            "Ichinose Rika",
+            "not_goorig",
             "Thanatos System",
-            "_Chris",
-            "Alexnix",
-            "cnfyy",
-            "Tibusanti",
-            "Klonmasd"
+            "Bierox",
+            "yiyi mano",
+            "UrbanKS"
         ]
     },
     {
         "country_name": "Czechia",
         "flag_code": "CZ",
-        "last_seed": "35th",
-        "last_placement": "DNQ",
+        "last_seed": "15",
+        "last_placement": "17-24",
         "played_before": "TRUE",
         "last_year": [
             [
-                "dad0ja",
-                false
-            ],
-            [
-                "Eiko Tsukimi",
+                "ManhattanCafe",
                 true
             ],
             [
-                "--Corpse--",
+                "Hazuki Sendai",
                 true
-            ],
-            [
-                "Kem_",
-                false
             ],
             [
                 "Fordor",
                 true
             ],
             [
-                "Ryugene",
+                "KeqingMyBeloved",
+                false
+            ],
+            [
+                "--Corpse--",
+                true
+            ],
+            [
+                "-Jajamaru-",
+                false
+            ],
+            [
+                "Vaklav",
                 false
             ],
             [
                 "Andysaur_",
                 true
-            ],
-            [
-                "Vojta99",
-                false
             ]
         ],
         "current_year": [
             "ManhattanCafe",
-            "Eiko Tsukimi",
-            "Fordor",
-            "KeqingMyBeloved",
+            "Hazuki Sendai",
+            "Andysaur_",
             "--Corpse--",
-            "-Jajamaru-",
-            "Vaklav",
-            "Andysaur_"
+            "Fordor",
+            "VVi11iam",
+            "3nxie",
+            "JoReDa"
         ]
     },
     {
         "country_name": "Denmark",
         "flag_code": "DK",
-        "last_seed": "24th",
-        "last_placement": "25th-32nd",
+        "last_seed": "40",
+        "last_placement": "DNQ",
         "played_before": "TRUE",
         "last_year": [
-            [
-                "-Dever",
-                false
-            ],
             [
                 "stealfth",
                 true
             ],
             [
-                "tjukas",
-                false
-            ],
-            [
-                "Lothjon",
-                false
-            ],
-            [
-                "Cromalia",
-                false
-            ],
-            [
                 "PandaguinDK",
-                true
+                false
             ],
             [
                 "[raz]",
                 true
             ],
             [
-                "progaa",
+                "My Angel Amogus",
+                true
+            ],
+            [
+                "-Basic-",
+                true
+            ],
+            [
+                "THEDUCK",
+                false
+            ],
+            [
+                "Vindrue",
+                false
+            ],
+            [
+                "TheVodkaDog",
                 false
             ]
         ],
         "current_year": [
             "stealfth",
-            "PandaguinDK",
-            "[raz]",
-            "MyOjou",
+            "Lothjon",
             "-Basic-",
-            "[THEDUCK]",
-            "Vindrue",
-            "TheVodkaDog"
+            "[raz]",
+            "My Angel Amogus",
+            "tjukas",
+            "Drayko",
+            "-Shiro"
+        ]
+    },
+    {
+        "country_name": "Estonia",
+        "flag_code": "EE",
+        "last_seed": "DNP",
+        "last_placement": "DNP",
+        "played_before": "FALSE",
+        "last_year": [],
+        "current_year": [
+            "MEGAHELLO",
+            "blourgh",
+            "MrF1sh",
+            "bpr",
+            "applew_",
+            "qerial",
+            "pluto720",
+            "pookish"
         ]
     },
     {
         "country_name": "Finland",
         "flag_code": "FI",
-        "last_seed": "33rd",
-        "last_placement": "DNQ",
+        "last_seed": "30",
+        "last_placement": "17-24",
         "played_before": "TRUE",
         "last_year": [
             [
-                "daoxide",
+                "OhLivi",
                 false
             ],
             [
-                "Stemuu",
-                false
-            ],
-            [
-                "Kyttis",
-                false
-            ],
-            [
-                "Jokupoika24",
-                false
-            ],
-            [
-                "CPU_Cartel",
-                false
-            ],
-            [
-                "L3nnu",
-                false
-            ],
-            [
-                "EsRiku",
+                "Vaiski",
                 true
             ],
             [
-                "ilkka",
+                "EsRiku",
+                false
+            ],
+            [
+                "nikulix",
+                false
+            ],
+            [
+                "Kasimir08",
+                true
+            ],
+            [
+                "jonttu45",
+                false
+            ],
+            [
+                "Asairan",
+                true
+            ],
+            [
+                "makkara",
                 false
             ]
         ],
         "current_year": [
-            "OhLivi",
-            "Vaiski",
-            "EsRiku",
-            "nikulix",
-            "Kasimir08",
-            "jonttu45",
+            "Pickxarro",
             "Asairan",
-            "makkara"
+            "henq",
+            "Kasimir08",
+            "matsubishi",
+            "PepsoDens",
+            "Vaiski",
+            "WhiteCatMyMommy"
         ]
     },
     {
         "country_name": "France",
         "flag_code": "FR",
-        "last_seed": "5th",
-        "last_placement": "4th",
+        "last_seed": "8",
+        "last_placement": "7-8",
         "played_before": "TRUE",
         "last_year": [
             [
-                "Jiuchu",
-                true
-            ],
-            [
-                "MyzeJD",
+                "_yosh",
                 false
-            ],
-            [
-                "XiaoMyMommy",
-                false
-            ],
-            [
-                "Adrean",
-                true
             ],
             [
                 "Punkysteria",
                 true
             ],
             [
-                "Hardstcukc 2",
+                "Jiuchu",
+                true
+            ],
+            [
+                "Adrean",
                 false
             ],
             [
-                "Drakkles",
+                "FaunaMyBeloved",
                 false
             ],
             [
-                "Ryshult",
+                "Les Voix",
+                false
+            ],
+            [
+                "ZaBoo",
+                false
+            ],
+            [
+                "LouisD",
                 false
             ]
         ],
         "current_year": [
-            "_yosh",
+            "Mykado le gato",
             "Punkysteria",
-            "Jiuchu",
-            "Adrean",
-            "FaunaMyBeloved",
-            "Les Voix",
-            "ZaBoo",
-            "LouisD"
+            "Hyuras",
+            "shibenz",
+            "Fayar",
+            "enfant maudit",
+            "retraite",
+            "Jiuchu"
         ]
     },
     {
         "country_name": "Germany",
         "flag_code": "DE",
-        "last_seed": "7th",
-        "last_placement": "5th-6th",
+        "last_seed": "2",
+        "last_placement": "5-6",
         "played_before": "TRUE",
         "last_year": [
             [
-                "jaaysfa",
+                "Katharsis",
                 false
             ],
             [
-                "EulaFootEnjoyer",
+                "vin",
                 false
             ],
             [
-                "Th1",
+                "tplc",
                 false
             ],
             [
-                "Christiaaan",
+                "young tplc",
                 false
             ],
             [
-                "POLANDTRUCKER13",
+                "-mira",
                 false
             ],
             [
-                "Kurumi--",
+                "eating rocks",
                 false
             ],
             [
-                "Cerelydra",
+                "Spunout",
                 false
             ],
             [
                 "-Jayden",
-                true
+                false
             ]
         ],
         "current_year": [
-            "Katharsis",
-            "vin",
-            "tplc",
-            "young tplc",
-            "-mira",
-            "eating rocks",
-            "Spunout",
-            "-Jayden"
-        ]
-    },
-    {
-        "country_name": "Greece",
-        "flag_code": "GR",
-        "last_seed": "38th",
-        "last_placement": "DNQ",
-        "played_before": "TRUE",
-        "last_year": [
-            [
-                "snap",
-                true
-            ],
-            [
-                "W1nn1e",
-                false
-            ],
-            [
-                "BilboNP",
-                false
-            ],
-            [
-                "KittyLikeme",
-                true
-            ],
-            [
-                "Serafeim",
-                false
-            ],
-            [
-                "Faylie",
-                false
-            ],
-            [
-                "xlepas",
-                false
-            ],
-            [
-                "[Teo]",
-                true
-            ]
-        ],
-        "current_year": [
-            "snap",
-            "KittyLikeme",
-            "Data Vortex",
-            "subzoomer",
-            "[Teo]",
-            "Lagtrain",
-            "KaphGeK",
-            "SpokenAway"
+            "Tangela Merkel",
+            "Mankichiro",
+            "yiyao1229",
+            "-theoo",
+            "-Matti",
+            "Jontea",
+            "Elexy-",
+            "baikalsk"
         ]
     },
     {
         "country_name": "Hong Kong",
         "flag_code": "HK",
-        "last_seed": "23rd",
-        "last_placement": "17th-24th",
+        "last_seed": "14",
+        "last_placement": "9-12",
         "played_before": "TRUE",
         "last_year": [
             [
-                "AbbeyChan6203",
-                true
+                "- kouyuu -",
+                false
             ],
             [
-                "RiceballUwU",
+                "AbbeyChan6203",
                 false
             ],
             [
@@ -937,352 +836,352 @@
                 true
             ],
             [
+                "Fallen_HK",
+                true
+            ],
+            [
+                "-xxx Rumia-",
+                false
+            ],
+            [
+                "vols",
+                false
+            ],
+            [
                 "Piggice",
-                true
-            ],
-            [
-                "Twistedreality",
                 false
             ],
             [
-                "MeowZero_Emilia",
+                "wanderloop",
                 false
-            ],
-            [
-                "Ayaneruuu",
-                false
-            ],
-            [
-                "- kouyuu -",
-                true
             ]
         ],
         "current_year": [
-            "- kouyuu -",
-            "AbbeyChan6203",
-            "lelxdme",
+            "volition",
+            "RiceballUwU",
+            "whyia",
             "Fallen_HK",
-            "-xxx Rumia-",
-            "vols",
-            "Piggice",
-            "wanderloop"
+            "Ayaneruuu",
+            "Mithra Tercera",
+            "lelxdme",
+            "epicercaner"
         ]
     },
     {
         "country_name": "Hungary",
         "flag_code": "HU",
-        "last_seed": "49th",
+        "last_seed": "47",
         "last_placement": "DNQ",
         "played_before": "TRUE",
         "last_year": [
-            [
-                "ffelix",
-                true
-            ],
-            [
-                "TibO123",
-                false
-            ],
             [
                 "HyBer",
                 true
             ],
             [
-                "nyarvis",
+                "Billupwind",
                 false
             ],
             [
-                "Nidasimno",
+                "Hirvaaad",
+                true
+            ],
+            [
+                "Terciusz",
+                true
+            ],
+            [
+                "Rikka Taichou",
                 false
             ],
             [
-                "balloon_",
+                "burhi",
                 false
             ],
             [
-                "worst hu player",
-                false
+                "Sploid",
+                true
             ],
             [
-                "raven_waffles",
+                "ffelix",
                 false
             ]
         ],
         "current_year": [
-            "HyBer",
-            "Billupwind",
             "Hirvaaad",
+            "681743801",
+            "Ninaa",
             "Terciusz",
-            "Rikka Taichou",
-            "burhi",
             "Sploid",
-            "ffelix"
+            "Hunnus",
+            "HyBer",
+            "Microharcos"
         ]
     },
     {
         "country_name": "India",
         "flag_code": "IN",
-        "last_seed": "39th",
+        "last_seed": "55",
         "last_placement": "DNQ",
         "played_before": "TRUE",
         "last_year": [
             [
-                "ArtoriaMyAngel",
+                "MikaMyPrincess",
+                true
+            ],
+            [
+                "chinception",
                 false
+            ],
+            [
+                "qazz6",
+                false
+            ],
+            [
+                "cryogon",
+                true
             ],
             [
                 "Juggernaut",
                 true
             ],
             [
-                "OsuMaster1290",
-                false
-            ],
-            [
-                "KurumiTokisaki0",
-                false
-            ],
-            [
                 "wRoNk",
-                true
-            ],
-            [
-                "dard",
-                false
-            ],
-            [
-                "Speshimen",
-                false
-            ],
-            [
-                "zmecha",
                 false
             ]
         ],
         "current_year": [
             "MikaMyPrincess",
-            "chinception",
-            "qazz6",
-            "cryogon",
             "Juggernaut",
-            "wRoNk",
-            "",
-            ""
+            "-cream",
+            "SirYourPizza",
+            "cryogon",
+            "Clone",
+            "Clairentea",
+            "Nxghtmare"
         ]
     },
     {
         "country_name": "Indonesia",
         "flag_code": "ID",
-        "last_seed": "21st",
-        "last_placement": "17th-24th",
+        "last_seed": "24",
+        "last_placement": "17-24",
         "played_before": "TRUE",
         "last_year": [
             [
-                "honeymint",
+                "Kozakura-",
                 false
             ],
             [
-                "fnayR",
-                false
+                "tung",
+                true
             ],
             [
                 "Icun",
-                true
+                false
+            ],
+            [
+                "Crownest",
+                false
+            ],
+            [
+                "-Blue21-",
+                false
+            ],
+            [
+                "RockingSushi",
+                false
+            ],
+            [
+                "PreDexine",
+                false
             ],
             [
                 "retot",
-                true
-            ],
-            [
-                "-Rizie",
-                false
-            ],
-            [
-                "Bunan-",
-                false
-            ],
-            [
-                "mymeatfelloff",
-                false
-            ],
-            [
-                "SDKO",
                 false
             ]
         ],
         "current_year": [
-            "Kozakura-",
+            "-Rizie",
+            "Xerillia",
             "tung",
-            "Icun",
-            "Crownest",
-            "-Blue21-",
-            "RockingSushi",
-            "PreDexine",
-            "retot"
+            "AlpiAz",
+            "Patto",
+            "CeIine",
+            "FishStar",
+            "Cygni"
         ]
     },
     {
         "country_name": "Ireland",
         "flag_code": "IE",
-        "last_seed": "42nd",
+        "last_seed": "38",
         "last_placement": "DNQ",
         "played_before": "TRUE",
         "last_year": [
             [
-                "PoSharTo",
-                true
+                "rbk",
+                false
             ],
             [
                 "KSTBAD",
                 true
             ],
             [
-                "rbk",
+                "KaiWhen",
+                false
+            ],
+            [
+                "PoSharTo",
                 true
             ],
             [
-                "Sensta",
+                "ProAlex",
                 false
             ],
             [
-                "nat",
+                "Shattered0_0",
                 false
             ],
             [
-                "Twig583",
-                false
+                "-Coor-",
+                true
             ],
             [
-                "Vanti",
-                false
-            ],
-            [
-                "don_chan",
+                "fatalex",
                 false
             ]
         ],
         "current_year": [
-            "rbk",
-            "KSTBAD",
-            "KaiWhen",
             "PoSharTo",
-            "ProAlex",
-            "Shattered0_0",
+            "KSTBAD",
             "-Coor-",
-            "fatalex"
+            "MySliderClank",
+            "Impressive Duck",
+            "Shredsta",
+            "Nouar",
+            "FREEXL"
         ]
     },
     {
         "country_name": "Israel",
         "flag_code": "IL",
-        "last_seed": "56th",
+        "last_seed": "46",
         "last_placement": "DNQ",
         "played_before": "TRUE",
         "last_year": [
-            [
-                "LayUp",
-                false
-            ],
-            [
-                "Flyco",
-                false
-            ],
             [
                 "ChaosEater",
                 true
             ],
             [
-                "Osh3r212",
+                "DarkerSniper",
                 false
             ],
             [
-                "IlayOwO",
+                "G8pple",
                 false
             ],
             [
-                "sosuu",
+                "Furrniks",
                 false
             ],
             [
-                "decordy_",
+                "LayUp",
+                true
+            ],
+            [
+                "-wwww",
                 false
             ],
             [
-                "the boss bob",
+                "ophircs",
                 false
+            ],
+            [
+                "McAlbertHabolea",
+                true
             ]
         ],
         "current_year": [
             "ChaosEater",
-            "DarkerSniper",
-            "G8pple",
-            "Furrniks",
-            "Meiiyuki",
-            "-wwww",
-            "ophircs",
-            "McAlbertHabolea"
+            "LayUp",
+            "McAlbertHabolea",
+            "MahmoodPlaysYT",
+            "Soii",
+            "decordy_",
+            "maor",
+            "Flyco"
         ]
     },
     {
         "country_name": "Italy",
         "flag_code": "IT",
-        "last_seed": "27th",
-        "last_placement": "25th-32nd",
+        "last_seed": "51",
+        "last_placement": "DNQ",
         "played_before": "TRUE",
         "last_year": [
             [
-                "frewayk",
-                true
+                "Klevsify",
+                false
+            ],
+            [
+                "Dark98",
+                false
             ],
             [
                 "Poof",
                 true
             ],
             [
-                "Loreriv",
+                "Rynko",
                 false
             ],
             [
-                "SIMONETRAPANI",
+                "frewayk",
+                true
+            ],
+            [
+                "No0b_Gaia7",
+                true
+            ],
+            [
+                "maarv",
                 false
             ],
             [
-                "lia27",
-                false
-            ],
-            [
-                "-Poggi-",
-                false
-            ],
-            [
-                "gionuaS",
-                false
-            ],
-            [
-                "Proioxis",
+                "Koffein -",
                 false
             ]
         ],
         "current_year": [
-            "Rushiki",
-            "Klevsify",
+            "Loreriv",
             "Poof",
-            "Rynko",
+            "-Poggi-",
             "frewayk",
+            "Dantsu Flame",
             "No0b_Gaia7",
-            "maarv",
-            "Koffein -"
+            "Minion24",
+            "Saimolol"
         ]
     },
     {
         "country_name": "Japan",
         "flag_code": "JP",
-        "last_seed": "25th",
-        "last_placement": "13th-16th",
+        "last_seed": "25",
+        "last_placement": "25-32",
         "played_before": "TRUE",
         "last_year": [
             [
-                "RAiMEi_BOTTliUM",
+                "_Hachikun_",
+                false
+            ],
+            [
+                "Choco001",
+                true
+            ],
+            [
+                "Heil__",
                 false
             ],
             [
@@ -1290,223 +1189,164 @@
                 true
             ],
             [
-                "_Hachikun_",
-                true
-            ],
-            [
-                "skit_3980",
+                "cfe",
                 false
             ],
             [
-                "Tsubaban",
+                "Menajis6",
                 false
             ],
             [
-                "kotomori_",
+                "Chaoiscream",
                 false
             ],
             [
-                "Toxicat",
+                "hyeok2044fanboy",
                 false
-            ],
-            [
-                "Heil__",
-                true
             ]
         ],
         "current_year": [
-            "_Hachikun_",
+            "kotomori_",
+            "Amber397",
             "Choco001",
-            "Heil__",
+            "eisuke0530",
             "Jerryyy",
-            "cfe",
-            "Menajis6",
-            "Chaoiscream",
-            "hyeok2044fanboy"
+            "Kiriya18",
+            "levica",
+            "Rum1a"
         ]
     },
     {
         "country_name": "Kazakhstan",
         "flag_code": "KZ",
-        "last_seed": "19th",
-        "last_placement": "17th-24th",
+        "last_seed": "23",
+        "last_placement": "17-24",
         "played_before": "TRUE",
         "last_year": [
-            [
-                "Po1SoN3SS",
-                false
-            ],
-            [
-                "MyAngelhwtochko",
-                false
-            ],
-            [
-                "ItzZeroIce",
-                false
-            ],
             [
                 "JustRoxy",
+                false
+            ],
+            [
+                "hahahami",
                 true
             ],
             [
-                "rxys",
+                "argentum_m",
                 false
             ],
             [
-                "naraxx",
+                "Kopog",
                 false
             ],
             [
-                "Sykezs",
+                "emo4kapro",
                 false
             ],
             [
-                "ShamiruKi",
+                "zajoha",
+                true
+            ],
+            [
+                "K1rrubieL",
                 false
+            ],
+            [
+                "OfFCourse_",
+                true
             ]
         ],
         "current_year": [
-            "JustRoxy",
+            "OfFCourse_",
             "hahahami",
-            "argentum_m",
-            "Kopog",
-            "emo4kapro",
+            "dxprxsslve",
+            "caqopuTT",
+            "perruH",
+            "ASecretCube",
             "zajoha",
-            "K1rrubieL",
-            "OfFCourse_"
-        ]
-    },
-    {
-        "country_name": "Kyrgyzstan",
-        "flag_code": "KG",
-        "last_seed": "52nd",
-        "last_placement": "DNQ",
-        "played_before": "TRUE",
-        "last_year": [
-            [
-                "ded24lol",
-                false
-            ],
-            [
-                "RInatGM",
-                true
-            ],
-            [
-                "akenao",
-                false
-            ],
-            [
-                "benztruckz",
-                false
-            ],
-            [
-                "heartpart",
-                false
-            ],
-            [
-                "SiIva",
-                false
-            ],
-            [
-                "TSUBEKA",
-                false
-            ],
-            [
-                "Razak_",
-                false
-            ]
-        ],
-        "current_year": [
-            "RInatGM",
-            "- Ek1n",
-            "nette",
-            "xGod13",
-            "FL1pSTaR",
-            "Tigerses24",
-            "",
-            ""
+            "osigman"
         ]
     },
     {
         "country_name": "Latvia",
         "flag_code": "LV",
-        "last_seed": "36th",
+        "last_seed": "43",
         "last_placement": "DNQ",
         "played_before": "TRUE",
         "last_year": [
             [
-                "TheBigDrop",
-                false
+                "hydrogen bot",
+                true
             ],
             [
-                "olivers31",
+                "Sqlslammer_LV",
                 false
             ],
             [
                 "kuriumn",
-                true
+                false
+            ],
+            [
+                "seichii-",
+                false
             ],
             [
                 "Xerxony",
+                false
+            ],
+            [
+                "misha",
                 true
             ],
             [
-                "taiglem",
+                "Mezpils Enjoyer",
                 false
             ],
             [
-                "Hellldestroer",
+                "-tax_evader-",
                 false
-            ],
-            [
-                "kola kao",
-                false
-            ],
-            [
-                "Sqlslammer_LV",
-                true
             ]
         ],
         "current_year": [
+            "TheBigDrop",
+            "Joyy",
+            "frostbite-",
             "hydrogen bot",
-            "Sqlslammer_LV",
-            "kuriumn",
-            "seichii-",
-            "Xerxony",
             "misha",
-            "Mezpils Enjoyer",
-            "-tax_evader-"
+            "FartMonster14",
+            "ejnah",
+            ""
         ]
     },
     {
         "country_name": "Lithuania",
         "flag_code": "LT",
-        "last_seed": "57th",
+        "last_seed": "37",
         "last_placement": "DNQ",
         "played_before": "TRUE",
         "last_year": [
             [
-                "Mancis",
+                "surfing",
                 true
             ],
             [
-                "tnt",
+                "Darnix",
                 false
             ],
             [
-                "Gabytex",
+                "Z3uN",
                 false
             ],
             [
-                "Sunless_",
-                false
-            ],
-            [
-                "ramojusd",
+                "IOugisI",
                 true
             ],
             [
-                "_eLSe_",
+                "nkz",
+                true
+            ],
+            [
+                "Aetra",
                 false
             ],
             [
@@ -1514,93 +1354,77 @@
                 true
             ],
             [
-                "PakaZ",
-                false
+                "ramojusd",
+                true
             ]
         ],
         "current_year": [
             "surfing",
-            "Darnix",
-            "Z3uN",
-            "Mancis",
-            "nkz",
-            "Aetra",
+            "how2style",
+            "IOugisI",
             "Arijus",
+            "badapple102",
+            "PracticeDummy",
+            "nkz",
             "ramojusd"
-        ]
-    },
-    {
-        "country_name": "Luxembourg",
-        "flag_code": "LU",
-        "last_seed": "N/A",
-        "last_placement": "DNP",
-        "played_before": "TRUE",
-        "last_year": [],
-        "current_year": [
-            "EndmeKov",
-            "Icy252",
-            "InfernalKing",
-            "suiseism",
-            "I_Am_Afo",
-            "Frangomango"
         ]
     },
     {
         "country_name": "Malaysia",
         "flag_code": "MY",
-        "last_seed": "14th",
-        "last_placement": "17th-24th",
+        "last_seed": "26",
+        "last_placement": "25-32",
         "played_before": "TRUE",
         "last_year": [
-            [
-                "Blethz",
-                false
-            ],
-            [
-                "Floth",
-                false
-            ],
-            [
-                "GG_com2016",
-                true
-            ],
-            [
-                "VenDService",
-                false
-            ],
-            [
-                "Hu_Ai",
-                true
-            ],
-            [
-                "daro",
-                false
-            ],
             [
                 "milo Penguin",
                 true
             ],
             [
-                "DuoX",
+                "Ramizel",
                 true
+            ],
+            [
+                "Flashback9",
+                false
+            ],
+            [
+                "Hu_Ai",
+                false
+            ],
+            [
+                "Axorite",
+                true
+            ],
+            [
+                "Xation",
+                false
+            ],
+            [
+                "GG_com2016",
+                false
+            ],
+            [
+                "niksx",
+                false
             ]
         ],
         "current_year": [
-            "milo Penguin",
-            "DuoX",
-            "Flashback9",
-            "Hu_Ai",
+            "seoster",
             "Axorite",
-            "Xation",
-            "GG_com2016",
-            "Chocoki"
+            "balls420",
+            "My Waifu Rem",
+            "CelestiaKT",
+            "Houshou Marine",
+            "milo Penguin",
+            "Ramizel"
         ]
     },
     {
         "country_name": "Mexico",
         "flag_code": "MX",
-        "last_seed": "41st",
-        "last_placement": "DNQ",
+        "last_seed": "27",
+        "last_placement": "25-32",
         "played_before": "TRUE",
         "last_year": [
             [
@@ -1608,11 +1432,15 @@
                 true
             ],
             [
-                "-Line-",
+                "mUFfin5",
                 false
             ],
             [
-                "[Toni]",
+                "daviddv",
+                true
+            ],
+            [
+                "Mizan19",
                 false
             ],
             [
@@ -1620,38 +1448,50 @@
                 true
             ],
             [
-                "Muffin5k",
+                "[Inimint]",
                 false
             ],
             [
                 "Roller-",
-                true
-            ],
-            [
-                "Agamalpa",
                 false
             ],
             [
-                "daviddv",
-                true
+                "ElWarachi05",
+                false
             ]
         ],
         "current_year": [
             "kevinm31",
-            "mUFfin5",
             "daviddv",
-            "Mizan19",
+            "Mizan",
+            "Inimint",
+            "Locas1000",
+            "nnui-",
             "chiliawa52",
-            "[Inimint]",
-            "Roller-",
-            "ElWarachi05"
+            "JunkyTrack"
+        ]
+    },
+    {
+        "country_name": "Montenegro",
+        "flag_code": "ME",
+        "last_seed": "DNP",
+        "last_placement": "DNP",
+        "played_before": "FALSE",
+        "last_year": [],
+        "current_year": [
+            "ronaldonater",
+            "Petronix",
+            "Velarix",
+            "Mojanovic",
+            "sajixuu",
+            "roshenpozer"
         ]
     },
     {
         "country_name": "Netherlands",
         "flag_code": "NL",
-        "last_seed": "28th",
-        "last_placement": "25th-32nd",
+        "last_seed": "16",
+        "last_placement": "17-24",
         "played_before": "TRUE",
         "last_year": [
             [
@@ -1659,8 +1499,12 @@
                 true
             ],
             [
-                "Just Lucan",
+                "faze-dank",
                 false
+            ],
+            [
+                "SecretlyShiro",
+                true
             ],
             [
                 "Heavymetal4life",
@@ -1671,467 +1515,474 @@
                 true
             ],
             [
+                "boterham",
+                false
+            ],
+            [
                 "Devrimon",
                 true
             ],
             [
-                "faze-dank",
-                true
-            ],
-            [
-                "Stellamaris",
-                false
-            ],
-            [
-                "blexdark",
+                "nik",
                 false
             ]
         ],
         "current_year": [
-            "CMeFly",
-            "faze-dank",
-            "SecretlyShiro",
             "Heavymetal4life",
             "PotjeNutella",
-            "boterham",
+            "CMeFly",
+            "Dezmert",
+            "UnveiledGolem",
+            "SecretlyShiro",
             "Devrimon",
-            "nik"
+            "HiuraMyBeloved"
         ]
     },
     {
         "country_name": "New Zealand",
         "flag_code": "NZ",
-        "last_seed": "40th",
+        "last_seed": "49",
         "last_placement": "DNQ",
         "played_before": "TRUE",
         "last_year": [
             [
-                "ges",
+                "sooky",
                 false
             ],
             [
-                "[ O Y O] baa",
-                false
-            ],
-            [
-                "Neavako",
-                false
-            ],
-            [
-                "Moxytone",
-                false
-            ],
-            [
-                "Tulza",
-                false
-            ],
-            [
-                "- Snowz -",
-                false
-            ],
-            [
-                "Thumb",
+                "-Anatidae-",
                 false
             ],
             [
                 "Goofster",
+                false
+            ],
+            [
+                "Ben Breeze",
+                false
+            ],
+            [
+                "fwals",
+                false
+            ],
+            [
+                "Rarth",
+                false
+            ],
+            [
+                "lip",
                 true
+            ],
+            [
+                "beIIa",
+                false
             ]
         ],
         "current_year": [
-            "sooky",
-            "-Anatidae-",
-            "Goofster",
-            "Ben Breeze",
-            "fwals",
-            "Rarth",
+            "maxb",
+            "coriander67",
+            "Flaming Goat",
             "lip",
-            "beIIa"
+            "oppanboy",
+            "Decayed",
+            "basilisk666",
+            "WackyFlo"
         ]
     },
     {
         "country_name": "Norway",
         "flag_code": "NO",
-        "last_seed": "47th",
+        "last_seed": "54",
         "last_placement": "DNQ",
         "played_before": "TRUE",
         "last_year": [
+            [
+                "Fragocir",
+                false
+            ],
             [
                 "Bismarck",
                 true
             ],
             [
-                "lol-ok",
+                "antimarker",
+                true
+            ],
+            [
+                "Nados",
+                true
+            ],
+            [
+                "Mart1n",
                 false
             ],
             [
-                "m r v",
-                false
+                "Laurus",
+                true
             ],
             [
-                "FREEWAVE 4",
-                false
-            ],
-            [
-                "toti",
-                false
-            ],
-            [
-                "-Gaz",
-                false
-            ],
-            [
-                "Ksyro_",
-                false
-            ],
-            [
-                "Ctski",
+                "Akaane",
                 false
             ]
         ],
         "current_year": [
-            "Fragocir",
-            "Bismarck",
+            "Laurus",
+            "Isanya",
             "antimarker",
             "Nados",
-            "Mart1n",
-            "Laurus",
-            "Akaane",
-            ""
+            "NiHoDi",
+            "Ravn",
+            "VXB",
+            "Bismarck"
         ]
     },
     {
         "country_name": "Pakistan",
         "flag_code": "PK",
-        "last_seed": "N/A",
-        "last_placement": "DNP",
+        "last_seed": "59",
+        "last_placement": "DNQ",
         "played_before": "TRUE",
-        "last_year": [],
+        "last_year": [
+            [
+                "EB-",
+                false
+            ],
+            [
+                "wyncxxx",
+                false
+            ],
+            [
+                "Itachi42O",
+                false
+            ],
+            [
+                "Kisty",
+                false
+            ],
+            [
+                "mcmdonald",
+                true
+            ],
+            [
+                "_Murasaki",
+                false
+            ],
+            [
+                "SurvoIt",
+                true
+            ],
+            [
+                "lag17",
+                false
+            ]
+        ],
         "current_year": [
-            "EB-",
-            "wyncxxx",
-            "Itachi42O",
-            "Kisty",
+            "il-legal",
+            "Cbdog",
             "mcmdonald",
-            "_Murasaki",
-            "Darkside Orbit",
-            "Cbdog"
-        ]
-    },
-    {
-        "country_name": "Panama",
-        "flag_code": "PA",
-        "last_seed": "N/A",
-        "last_placement": "DNP",
-        "played_before": "FALSE",
-        "last_year": [],
-        "current_year": [
-            "AlvaroS046",
-            "ADDION_",
-            "Yelocp",
-            "Koboss2x",
-            "mrj_28",
-            "AndresFu",
-            "xXplayer20204",
-            "asperyfox"
-        ]
-    },
-    {
-        "country_name": "Paraguay",
-        "flag_code": "PY",
-        "last_seed": "N/A",
-        "last_placement": "DNP",
-        "played_before": "FALSE",
-        "last_year": [],
-        "current_year": [
-            "Alecsitoxd",
-            "oliver24",
-            "Kobby",
-            "D R A G O N",
-            "baatyy",
-            "jonathan_69"
+            "Kanae",
+            "-Decrypted",
+            "Rick Shaw",
+            "SurvoIt",
+            "Grimreaperhere"
         ]
     },
     {
         "country_name": "Peru",
         "flag_code": "PE",
-        "last_seed": "22nd",
-        "last_placement": "17th-24th",
+        "last_seed": "29",
+        "last_placement": "25-32",
         "played_before": "TRUE",
         "last_year": [
             [
-                "zecutor",
+                "DairekutoDany",
                 false
             ],
             [
-                "SomeBoi",
+                "Sonak",
                 false
             ],
             [
-                "old fart",
+                "Darko",
                 false
             ],
             [
-                "Anita Max Wyn",
+                "-Adrooh-",
                 false
             ],
             [
-                "SIGMA MALE",
-                false
+                "Miguelonh2O",
+                true
             ],
             [
-                "SapeSape",
-                false
+                "ganyu lover",
+                true
             ],
             [
-                "-Kairy-",
-                false
+                "Anqse",
+                true
             ],
             [
-                "dakiwii",
+                "Alonso2903",
                 false
             ]
         ],
         "current_year": [
-            "DairekutoDany",
-            "Sonak",
-            "Darko",
-            "-Adrooh-",
-            "Miguelonh2O",
-            "ganyu lover",
             "Anqse",
-            "Alonso2903"
+            "Miguelonh2O",
+            "YozEEEE",
+            "Dayse",
+            "ganyu lover",
+            "ShiroNai",
+            "Dishh",
+            "doaru"
         ]
     },
     {
         "country_name": "Philippines",
         "flag_code": "PH",
-        "last_seed": "11th",
-        "last_placement": "9th-12th",
+        "last_seed": "5",
+        "last_placement": "3",
         "played_before": "TRUE",
         "last_year": [
             [
-                "LeFerraille",
-                true
-            ],
-            [
-                "MPDisplay",
-                false
-            ],
-            [
-                "Zorokii",
-                true
-            ],
-            [
-                "Aryuii",
-                false
-            ],
-            [
-                "GabberSS",
-                false
-            ],
-            [
-                "[Shua]",
+                "Elle-",
                 false
             ],
             [
                 "ZaNy_",
+                false
+            ],
+            [
+                "LeFerraille",
+                false
+            ],
+            [
+                "-Elle",
+                false
+            ],
+            [
+                "JayAreEee",
                 true
             ],
             [
-                "seeeen11l1",
+                "Hetzer357",
+                false
+            ],
+            [
+                "Twisted_Chimera",
+                false
+            ],
+            [
+                "Risa Yuzuki",
                 false
             ]
         ],
         "current_year": [
-            "yukixo",
-            "ZaNy_",
-            "LeFerraille",
-            "Zorokii",
-            "JayAreEee",
-            "Hetzer357",
-            "Twisted_Chimera",
-            "Bens_"
+            "Seija Kijin",
+            "EViLseeeen11l1",
+            "qaur",
+            "Xyphox",
+            "Maron",
+            "peroroo",
+            "Minii-nii",
+            "JayAreEee"
         ]
     },
     {
         "country_name": "Poland",
         "flag_code": "PL",
-        "last_seed": "1st",
-        "last_placement": "1st",
+        "last_seed": "21",
+        "last_placement": "13-16",
         "played_before": "TRUE",
         "last_year": [
             [
-                "LewusekX44",
-                false
-            ],
-            [
-                "lys",
-                false
-            ],
-            [
-                "Asriel",
-                false
-            ],
-            [
-                "-BocheN-",
-                false
-            ],
-            [
-                "TilerXk",
-                false
-            ],
-            [
-                "Quartal",
+                "BALL 3D",
                 true
             ],
             [
-                "Nutricula",
+                "Quartal",
                 false
             ],
             [
-                "squarem",
+                "Krzempek_Pasta",
+                true
+            ],
+            [
+                "declained1",
                 false
+            ],
+            [
+                "Opcjami",
+                false
+            ],
+            [
+                "artos2002",
+                false
+            ],
+            [
+                "KULUBUL",
+                false
+            ],
+            [
+                "Kyori_",
+                true
             ]
         ],
         "current_year": [
             "BALL 3D",
-            "Quartal",
+            "ironq_",
+            "Willumina",
+            "ArturBestia69PL",
             "Krzempek_Pasta",
-            "declained1",
-            "Opcjami",
-            "artos2002",
-            "KULUBUL",
+            "0Bread",
+            "marcell0",
             "Kyori_"
         ]
     },
     {
         "country_name": "Portugal",
         "flag_code": "PT",
-        "last_seed": "46th",
+        "last_seed": "35",
         "last_placement": "DNQ",
         "played_before": "TRUE",
         "last_year": [
             [
-                "iceGOD",
+                "-ice-",
                 false
             ],
             [
-                "_Foxy",
+                "Kenzol",
+                true
+            ],
+            [
+                "KirbDaBeast",
+                true
+            ],
+            [
+                "m t g",
+                true
+            ],
+            [
+                "MakiDonalds Jr",
                 false
             ],
             [
-                "ILLKID13",
-                false
-            ],
-            [
-                "J P",
-                false
-            ],
-            [
-                "Astravan",
-                false
+                "Mihail223",
+                true
             ],
             [
                 "ReDLinE-",
                 true
             ],
             [
-                "MakiDonalds Jr",
+                "wijqay",
                 true
-            ],
-            [
-                "held",
-                false
             ]
         ],
         "current_year": [
-            "-ice-",
-            "Kenzol",
-            "KirbDaBeast",
             "m t g",
-            "MakiDonalds Jr",
+            "Kenzol",
             "Mihail223",
+            "wijqay",
             "ReDLinE-",
-            "wijqay"
+            "dumb idiot",
+            "ShotZ5",
+            "KirbDaBeast"
+        ]
+    },
+    {
+        "country_name": "Puerto Rico",
+        "flag_code": "PR",
+        "last_seed": "DNP",
+        "last_placement": "DNP",
+        "played_before": "FALSE",
+        "last_year": [],
+        "current_year": [
+            "Yadi",
+            "JoseSucks",
+            "apolouu",
+            "My Angel Nimi",
+            "Kumadex",
+            "SparkyisJack"
         ]
     },
     {
         "country_name": "Romania",
         "flag_code": "RO",
-        "last_seed": "29th",
-        "last_placement": "25th-32nd",
+        "last_seed": "50",
+        "last_placement": "DNQ",
         "played_before": "TRUE",
         "last_year": [
-            [
-                "AlexBelea",
-                false
-            ],
-            [
-                "jqvi",
-                false
-            ],
-            [
-                "_Nino_",
-                false
-            ],
-            [
-                "pessi555",
-                false
-            ],
-            [
-                "sorinica17",
-                false
-            ],
-            [
-                "Korinna",
-                false
-            ],
             [
                 "mishifuari",
                 true
             ],
             [
-                "swagDIVIN",
+                "xDavid06",
+                false
+            ],
+            [
+                "harumachi vlad",
+                false
+            ],
+            [
+                "xSonny",
+                false
+            ],
+            [
+                "Alamacabra",
+                true
+            ],
+            [
+                "vladiu5an",
+                false
+            ],
+            [
+                "awky",
                 false
             ]
         ],
         "current_year": [
             "mishifuari",
-            "xDavid06",
-            "harumachi vlad",
-            "xSonny",
+            "Korinna",
             "Alamacabra",
-            "streamline",
-            "awky",
-            "vladiu5an"
+            "prodii",
+            "jqvi",
+            "RainbowViolent",
+            "pessi555",
+            "kRionik"
         ]
     },
     {
         "country_name": "Russian Federation",
         "flag_code": "RU",
-        "last_seed": "6th",
-        "last_placement": "7th-8th",
+        "last_seed": "3",
+        "last_placement": "5-6",
         "played_before": "TRUE",
         "last_year": [
             [
-                "Ice Shark",
+                "BOPKYTA",
                 false
             ],
             [
-                "shadevr",
+                "_necroplasma",
                 false
             ],
             [
-                "miageto",
+                "6e3darb228",
                 false
             ],
             [
-                "Bobyr",
+                "Antolions",
                 false
             ],
             [
-                "Konetto",
+                "doxxsan_",
+                false
+            ],
+            [
+                "SpidiMun",
                 false
             ],
             [
@@ -2139,97 +1990,140 @@
                 true
             ],
             [
-                "B4rISka",
-                false
-            ],
-            [
-                "mija-",
-                false
+                "SoundBoomer",
+                true
             ]
         ],
         "current_year": [
-            "BOPKYTA",
-            "_necroplasma",
-            "6e3darb228",
-            "Antolions",
-            "doxxsan_",
-            "SpidiMun",
+            "Boriska",
             "Meowzarte",
-            "SoundBoomer"
+            "Wavewy",
+            "RagingDashie12",
+            "lefrutit228",
+            "Whyolence",
+            "SoundBoomer",
+            "nikzz"
         ]
     },
     {
         "country_name": "Serbia",
         "flag_code": "RS",
-        "last_seed": "N/A",
-        "last_placement": "DNP",
-        "played_before": "FALSE",
-        "last_year": [],
+        "last_seed": "57",
+        "last_placement": "DNQ",
+        "played_before": "TRUE",
+        "last_year": [
+            [
+                "Skroz Dobra",
+                false
+            ],
+            [
+                "cancer patient",
+                true
+            ],
+            [
+                "KillerPaja",
+                false
+            ],
+            [
+                "paundze",
+                false
+            ],
+            [
+                "Lavke",
+                false
+            ],
+            [
+                "adam3021",
+                false
+            ],
+            [
+                "chepy",
+                false
+            ]
+        ],
         "current_year": [
-            "Skroz Dobra",
+            "MarkoXDDD",
+            "Dzabula",
+            "Fedora Chan",
             "cancer patient",
-            "KillerPaja",
-            "paundze",
-            "Lavke",
-            "adam3021",
-            "chepy"
+            "Matija",
+            "d0a",
+            ""
         ]
     },
     {
         "country_name": "Singapore",
         "flag_code": "SG",
-        "last_seed": "15th",
-        "last_placement": "7th-8th",
+        "last_seed": "18",
+        "last_placement": "17-24",
         "played_before": "TRUE",
         "last_year": [
             [
-                "DVDthe1st",
+                "Tapses",
                 false
             ],
             [
-                "CopyPasted",
+                "chaeng",
                 false
             ],
             [
-                "JokThree",
+                "AlmondMal",
+                true
+            ],
+            [
+                "DinglingChen",
+                true
+            ],
+            [
+                "irumi",
+                true
+            ],
+            [
+                "Moltenfury",
                 false
             ],
             [
-                "Junkmaniac",
+                "Ai Yashajin",
                 false
             ],
             [
-                "hollowknees",
-                false
-            ],
-            [
-                "Baechuu",
-                false
-            ],
-            [
-                "m0fum0fu",
-                false
-            ],
-            [
-                "AppleTier",
-                false
+                "lao sai",
+                true
             ]
         ],
         "current_year": [
-            "Tapses",
-            "chaeng",
-            "Can Never FC",
-            "DinglingChen",
             "irumi",
-            "Moltenfury",
-            "Ai Yashajin",
-            "lao sai"
+            "Junkmaniac",
+            "AlmondMal",
+            "AthoraX",
+            "DinglingChen",
+            "AppleTier",
+            "lao sai",
+            "LycaonMyHusband"
+        ]
+    },
+    {
+        "country_name": "Slovakia",
+        "flag_code": "SK",
+        "last_seed": "DNP",
+        "last_placement": "DNP",
+        "played_before": "FALSE",
+        "last_year": [],
+        "current_year": [
+            "My Angel Sylphy",
+            "EnchantedSpider",
+            "Suzuka Nakamoto",
+            "Arthias",
+            "SneznyKocur",
+            "S1LTY",
+            "Dawiisko",
+            "pipogg"
         ]
     },
     {
         "country_name": "South Africa",
         "flag_code": "ZA",
-        "last_seed": "53rd",
+        "last_seed": "48",
         "last_placement": "DNQ",
         "played_before": "TRUE",
         "last_year": [
@@ -2238,19 +2132,19 @@
                 true
             ],
             [
+                "Adam40505",
+                true
+            ],
+            [
                 "Tjoma",
-                true
-            ],
-            [
-                "Artix",
-                true
-            ],
-            [
-                "Rophone",
                 false
             ],
             [
-                "Adam40505",
+                "0rbit",
+                false
+            ],
+            [
+                "Koshiki",
                 true
             ],
             [
@@ -2258,242 +2152,254 @@
                 true
             ],
             [
-                "Sir Qumm",
+                "Slowp0ke",
                 false
             ],
             [
-                "25 pringles",
-                false
+                "Artix",
+                true
             ]
         ],
         "current_year": [
             "DragonMage",
             "Adam40505",
-            "Tjoma",
-            "0rbit",
-            "Koshiki",
+            "FourthWah",
             "IssaKun_",
-            "Slowp0ke",
-            "Artix"
+            "Edldin",
+            "Artix",
+            "Lex",
+            "Koshiki"
         ]
     },
     {
         "country_name": "South Korea",
         "flag_code": "KR",
-        "last_seed": "3rd",
-        "last_placement": "5th-6th",
+        "last_seed": "9",
+        "last_placement": "13-16",
         "played_before": "TRUE",
         "last_year": [
             [
-                "kailburn",
-                false
-            ],
-            [
-                "Pale Citrus",
-                false
+                "Civil oath",
+                true
             ],
             [
                 "[ ] [ ]",
-                true
-            ],
-            [
-                "yhsphd",
                 false
-            ],
-            [
-                "ch0co",
-                false
-            ],
-            [
-                "Civil oath",
-                true
             ],
             [
                 "HDJump",
                 true
             ],
             [
-                "Pieris",
+                "DalChae",
+                true
+            ],
+            [
+                "khalifia",
+                false
+            ],
+            [
+                "Repo",
+                false
+            ],
+            [
+                "polyphia",
+                false
+            ],
+            [
+                "_NUMBER",
                 false
             ]
         ],
         "current_year": [
-            "Civil oath",
-            "[ ] [ ]",
-            "HDJump",
+            "kailburn",
             "DalChae",
-            "khalifia",
-            "Repo",
-            "polyphia",
-            "_NUMBER"
+            "HDJump",
+            "Civil oath",
+            "_Suyong",
+            "angka",
+            "cocoa",
+            "Aranbo"
         ]
     },
     {
         "country_name": "Spain",
         "flag_code": "ES",
-        "last_seed": "26th",
-        "last_placement": "25th-32nd",
+        "last_seed": "19",
+        "last_placement": "25-32",
         "played_before": "TRUE",
         "last_year": [
             [
-                "-zilva-",
+                "laGmaN",
                 false
             ],
             [
-                "- Izayoi -",
+                "Widelux13",
                 true
-            ],
-            [
-                "MusicDropZ",
-                false
             ],
             [
                 "Palodex",
-                true
+                false
             ],
             [
                 "AngelXC",
                 true
             ],
             [
-                "AitorAmu",
-                false
-            ],
-            [
-                "Sakorii",
-                false
-            ],
-            [
                 "Rumpowl",
+                true
+            ],
+            [
+                "- Izayoi -",
+                false
+            ],
+            [
+                "[Ajoduro]",
+                false
+            ],
+            [
+                "Scaryz",
                 true
             ]
         ],
         "current_year": [
-            "laGmaN",
+            "-zilva-",
             "Widelux13",
-            "Palodex",
             "AngelXC",
             "Rumpowl",
-            "- Izayoi -",
-            "[Ajoduro]",
-            "Scaryz"
+            "MusicDropZ",
+            "alexiiosu",
+            "Scaryz",
+            "Fieera"
         ]
     },
     {
         "country_name": "Sweden",
         "flag_code": "SE",
-        "last_seed": "16th",
-        "last_placement": "17th-24th",
+        "last_seed": "12",
+        "last_placement": "9-12",
         "played_before": "TRUE",
         "last_year": [
             [
-                "Svizza",
+                "MrNeasel",
+                false
+            ],
+            [
+                "Bolej",
                 true
             ],
             [
-                "Klappy",
+                "MICERONI",
                 false
             ],
             [
-                "Villee",
+                "Sigge",
+                true
+            ],
+            [
+                "Tillan",
                 false
             ],
             [
-                "mmeowmeowmeowme",
+                "uge69chin2",
+                true
+            ],
+            [
+                "chawzyyy",
                 false
             ],
             [
-                "-HeadHunter-",
-                false
-            ],
-            [
-                "yumetsu",
-                false
-            ],
-            [
-                "Stefan strains",
-                false
-            ],
-            [
-                "InfraGhozt",
+                "Svizza",
                 false
             ]
         ],
         "current_year": [
-            "MrNeasel",
-            "Bolej",
-            "MICERONI",
+            "RanYakumo",
             "Sigge",
-            "Tillan",
             "uge69chin2",
-            "chawzyyy",
-            "Svizza"
+            "Zeius",
+            "girl liker",
+            "FaZe_Terry",
+            "Bolej",
+            "Pompeijwag"
         ]
     },
     {
         "country_name": "Switzerland",
         "flag_code": "CH",
-        "last_seed": "44th",
+        "last_seed": "45",
         "last_placement": "DNQ",
         "played_before": "TRUE",
         "last_year": [
-            [
-                "xeladir",
-                false
-            ],
-            [
-                "BAGE",
-                true
-            ],
-            [
-                "Shadow 2",
-                false
-            ],
-            [
-                "Depito",
-                false
-            ],
-            [
-                "gg_boi",
-                false
-            ],
             [
                 "Zacatel",
                 true
             ],
             [
-                "Neox420",
+                "kokonokokoro",
                 false
             ],
             [
-                "kokonokokoro",
+                "Emerple",
+                false
+            ],
+            [
+                "Shadowww",
                 true
+            ],
+            [
+                "BAGE",
+                false
+            ],
+            [
+                "Speedy Ben",
+                false
+            ],
+            [
+                "Deramok",
+                false
+            ],
+            [
+                "-Toki-",
+                false
             ]
         ],
         "current_year": [
-            "Zacatel",
-            "kokonokokoro",
-            "Emerple",
             "Shadowww",
-            "BAGE",
-            "Speedy Ben",
-            "Deramok",
-            "-Toki-"
+            "Kayamori Ruka",
+            "Zacatel",
+            "Mai Thai",
+            "Evangelion_guy",
+            "Kirooooooooo",
+            "-Yukari Yakumo-",
+            "gg_boi"
         ]
     },
     {
         "country_name": "Taiwan",
         "flag_code": "TW",
-        "last_seed": "9th",
-        "last_placement": "9th-12th",
+        "last_seed": "11",
+        "last_placement": "13-16",
         "played_before": "TRUE",
         "last_year": [
             [
-                "Summer_Ouo",
+                "MeowHou",
+                true
+            ],
+            [
+                "Silent Rock",
                 false
             ],
             [
-                "Meow_Son",
+                "[ Luka ]",
+                true
+            ],
+            [
+                "YoYu",
+                false
+            ],
+            [
+                "12123435",
                 false
             ],
             [
@@ -2501,287 +2407,252 @@
                 true
             ],
             [
-                "Rayter-",
+                "ImPPT",
                 false
             ],
             [
-                "YoYu",
-                true
-            ],
-            [
-                "Ruyaya",
-                false
-            ],
-            [
-                "[ RoneKu ]",
-                false
-            ],
-            [
-                "Yue0429",
+                "jdewkum",
                 false
             ]
         ],
         "current_year": [
             "MeowHou",
-            "Silent Rock",
+            "Illllll",
+            "[ NekuRo ]",
             "[ Luka ]",
-            "YoYu",
-            "12123435",
             "Zefkiel",
-            "ImPPT",
-            "jdewkum"
+            "koutya_",
+            "[ RoneKu ]",
+            "Ichikawa Hinana"
         ]
     },
     {
         "country_name": "Thailand",
         "flag_code": "TH",
-        "last_seed": "31st",
-        "last_placement": "13th-16th",
+        "last_seed": "33",
+        "last_placement": "DNQ",
         "played_before": "TRUE",
         "last_year": [
-            [
-                "Moca Aoba",
-                false
-            ],
-            [
-                "monkerzaza",
-                false
-            ],
-            [
-                "TzArtifactz",
-                false
-            ],
-            [
-                "Vixera",
-                false
-            ],
             [
                 "Saki Ayase",
                 true
             ],
             [
-                "- PPKM -",
+                "MeowXDDD",
+                true
+            ],
+            [
+                "Nyz",
+                true
+            ],
+            [
+                "Miyagi Shiori",
                 false
             ],
             [
-                "NekoShabeta",
+                "Goaw",
+                true
+            ],
+            [
+                "dazbee fc",
                 false
             ],
             [
-                "Abratexz",
+                "Cheeta",
+                false
+            ],
+            [
+                "dirsevows",
                 false
             ]
         ],
         "current_year": [
-            "Saki Ayase",
-            "MeowXDDD",
-            "Nyz",
-            "Miyagi Shiori",
+            "Moca Aoba",
+            "Vixera",
             "Goaw",
-            "dazbee fc",
-            "Ceheta",
-            "dirsevows"
+            "MeowXDDD",
+            "Saki Ayase",
+            "Comet-chan",
+            "Nyz",
+            "Linennight"
         ]
     },
     {
-        "country_name": "Tunisia",
-        "flag_code": "TN",
-        "last_seed": "63rd",
-        "last_placement": "DNQ",
-        "played_before": "TRUE",
-        "last_year": [
-            [
-                "SkY TN",
-                false
-            ],
-            [
-                "lavocado",
-                false
-            ],
-            [
-                "mahdisiala",
-                false
-            ],
-            [
-                "-Voice-",
-                false
-            ],
-            [
-                "Ahmedzerog",
-                false
-            ],
-            [
-                "Betz",
-                false
-            ]
-        ],
+        "country_name": "Trinidad and Tobago",
+        "flag_code": "TT",
+        "last_seed": "DNP",
+        "last_placement": "DNP",
+        "played_before": "FALSE",
+        "last_year": [],
         "current_year": [
-            "SoraSliderBroke",
-            "hamoudabecha",
-            "bal7on",
-            "med74",
-            "-WOLF-",
-            "kizuna123"
+            "DeadShotPowa",
+            "justicedude",
+            "TronPlayz",
+            "Naldo",
+            "NoxLesedi",
+            "Eaphy",
+            "K b K",
+            "Tripendence"
         ]
     },
     {
         "country_name": "Türkiye",
         "flag_code": "TR",
-        "last_seed": "37th",
+        "last_seed": "34",
         "last_placement": "DNQ",
         "played_before": "TRUE",
         "last_year": [
+            [
+                "Ataturk",
+                false
+            ],
             [
                 "Zybit",
                 true
             ],
             [
-                "Soroic",
+                "Rosaitty",
                 true
             ],
             [
-                "Liery",
+                "tingirmin",
                 false
             ],
             [
-                "Rainres",
+                "Soroic",
                 false
             ],
             [
-                "Tekaii",
+                "Drestau",
+                true
+            ],
+            [
+                "dia23",
                 false
             ],
             [
-                "empi-",
-                false
-            ],
-            [
-                "AgorelL",
-                false
-            ],
-            [
-                "SnakeTwix",
+                "tadashiosu",
                 false
             ]
         ],
         "current_year": [
-            "Ataturk",
             "Zybit",
+            "Aeghil",
+            "MilkyChocolate",
+            "ACLFT",
             "Rosaitty",
-            "tingirmin",
-            "Soroic",
             "Drestau",
-            "dia23",
-            "tadashiosu"
+            "ewisp",
+            "Secretboy"
         ]
     },
     {
         "country_name": "Ukraine",
         "flag_code": "UA",
-        "last_seed": "32nd",
-        "last_placement": "25th-32nd",
+        "last_seed": "20",
+        "last_placement": "17-24",
         "played_before": "TRUE",
         "last_year": [
             [
-                "respective",
-                false
+                "APTEM",
+                true
             ],
             [
                 "Kazuki-",
                 true
             ],
             [
-                "HLN",
+                "Zelretch",
                 false
             ],
             [
-                "BlackJack",
+                "n3kro",
                 false
             ],
             [
-                "APTEM",
+                "Kripton5675",
+                false
+            ],
+            [
+                "edgar06ka",
                 true
             ],
             [
-                "-Des",
+                "Borzilla",
                 false
             ],
             [
-                "KiberMen",
-                false
-            ],
-            [
-                "Zelretch",
+                "hivno",
                 true
             ]
         ],
         "current_year": [
             "APTEM",
+            "kulerbruh",
             "Kazuki-",
-            "Zelretch",
-            "n3kro",
-            "Kripton5675",
+            "L1Only",
             "edgar06ka",
-            "Borzilla",
-            "hivno"
+            "hivno",
+            "FaDoLog",
+            "Busta Rhymes"
         ]
     },
     {
         "country_name": "United Arab Emirates",
         "flag_code": "AE",
-        "last_seed": "48th",
-        "last_placement": "DNQ",
+        "last_seed": "28",
+        "last_placement": "25-32",
         "played_before": "TRUE",
         "last_year": [
+            [
+                "ghous",
+                false
+            ],
+            [
+                "HG-Gaming",
+                false
+            ],
             [
                 "marshysxn",
                 true
             ],
             [
-                "Ayaya5",
-                false
-            ],
-            [
-                "ghous",
+                "Lee Yum",
                 true
             ],
             [
-                "HADES1150",
+                "GreatDivide",
                 false
             ],
             [
-                "wack",
-                false
-            ],
-            [
-                "HG-Gaming",
+                "G4M3ROMAR",
                 true
             ],
             [
-                "VoidHero",
+                "Gmlord",
                 false
             ],
             [
-                "FinzuMyMommy",
+                "Briightt",
                 false
             ]
         ],
         "current_year": [
-            "ghous",
-            "HG-Gaming",
+            "divi",
+            "HADES1150",
+            "Lee Yum",
+            "raxiia",
             "marshysxn",
-            "LeengWan",
-            "GreatDivide",
-            "G4M3ROMAR",
-            "Gmlord",
-            "Briightt"
+            "5msa",
+            "mesho3000",
+            "G4M3ROMAR"
         ]
     },
     {
         "country_name": "United Kingdom",
         "flag_code": "GB",
-        "last_seed": "13th",
-        "last_placement": "9th-12th",
+        "last_seed": "10",
+        "last_placement": "13-16",
         "played_before": "TRUE",
         "last_year": [
             [
@@ -2789,23 +2660,11 @@
                 false
             ],
             [
-                "Wingo",
-                true
-            ],
-            [
-                "NeoPixel201",
+                "Mahmood Fangirl",
                 false
             ],
             [
-                "ielia",
-                false
-            ],
-            [
-                "velcro shoes",
-                false
-            ],
-            [
-                "rubrub",
+                "vonneti",
                 false
             ],
             [
@@ -2813,172 +2672,184 @@
                 true
             ],
             [
-                "kuryyyyy",
+                "FrostTheFoxx",
+                false
+            ],
+            [
+                "mrow",
+                true
+            ],
+            [
+                "Wingo",
+                false
+            ],
+            [
+                "metalface",
                 false
             ]
         ],
         "current_year": [
-            "rice shark",
-            "FlyingTuna Jr",
-            "vonneti",
-            "Niuex",
-            "FrostTheFoxx",
+            "Wiggler",
+            "Silva",
+            "Shamoui",
+            "SparklyFairy400",
             "mrow",
-            "Wingo",
-            "metalface"
+            "Umaroth",
+            "Niuex",
+            "Dragonfire0512"
         ]
     },
     {
         "country_name": "United States",
         "flag_code": "US",
-        "last_seed": "4th",
-        "last_placement": "3rd",
+        "last_seed": "1",
+        "last_placement": "1",
         "played_before": "TRUE",
         "last_year": [
             [
-                "zfr",
-                false
-            ],
-            [
-                "gilgamesh815",
-                false
-            ],
-            [
-                "Stage my mommy",
-                false
-            ],
-            [
                 "hotbread",
-                true
-            ],
-            [
-                "meowmeowmmeowme",
                 false
             ],
             [
-                "tights",
+                "jstyn",
                 false
             ],
             [
-                "Pangetism",
+                "vleth",
                 false
             ],
             [
-                "FILIPINO",
+                "Chichobi",
+                false
+            ],
+            [
+                "AWhitePhoenix",
+                false
+            ],
+            [
+                "Natsume Shiki",
+                false
+            ],
+            [
+                "Asa3",
+                false
+            ],
+            [
+                "Brian Thomas Jr",
                 false
             ]
         ],
         "current_year": [
-            "hotbread",
-            "jstyn",
-            "vleth",
-            "Chichobi",
-            "AWhitePhoenix",
-            "Natsume Shiki",
-            "Asa3",
-            "Brian Thomas Jr"
+            "Skyzie",
+            "thighhigh",
+            "Reymexia",
+            "LittleNebula",
+            "avtori",
+            "Rthr",
+            "shwaerkbilathon",
+            "-Mqre-"
         ]
     },
     {
         "country_name": "Venezuela",
         "flag_code": "VE",
-        "last_seed": "62nd",
+        "last_seed": "44",
         "last_placement": "DNQ",
         "played_before": "TRUE",
         "last_year": [
             [
-                "4rou",
-                false
-            ],
-            [
-                "Macross Plus",
-                false
-            ],
-            [
                 "KingRojasisaac",
-                true
-            ],
-            [
-                "YuyuCat",
                 false
             ],
             [
                 "Darky-",
+                false
+            ],
+            [
+                "OwopoyowO",
                 true
             ],
             [
-                "iJuxn_",
-                false
+                "ZebbyX",
+                true
             ],
             [
-                "-Hikku-",
-                false
+                "4rou",
+                true
             ],
             [
-                "Aqytha",
-                false
+                "phinguus",
+                true
+            ],
+            [
+                "Mochilo",
+                true
+            ],
+            [
+                "GTowers",
+                true
             ]
         ],
         "current_year": [
-            "KingRojasisaac",
-            "Darky-",
+            "4rou",
+            "GTowers",
             "OwopoyowO",
-            "ZebbyX",
-            "JOrge P",
+            "MiquelVZLA",
+            "iJuxn_",
             "phinguus",
             "Mochilo",
-            "GTowers"
+            "ZebbyX"
         ]
     },
     {
         "country_name": "Vietnam",
         "flag_code": "VN",
-        "last_seed": "20th",
-        "last_placement": "13th-16th",
+        "last_seed": "22",
+        "last_placement": "17-24",
         "played_before": "TRUE",
         "last_year": [
-            [
-                "smthelse",
-                false
-            ],
             [
                 "AuroraDieu",
                 true
             ],
             [
-                "[Boy]HaiPhong",
+                "electrostrike",
                 false
             ],
             [
-                "Thinhhhh",
+                "anhnhatbui",
+                true
+            ],
+            [
+                "Llama_The_Goat",
                 false
             ],
             [
-                "s0me",
+                "GhostApple",
                 false
             ],
             [
-                "Kriatix",
+                "_Aren",
                 false
             ],
             [
-                "raifiu",
+                "puckyu poi",
                 false
             ],
             [
-                "tomatohung",
-                false
+                "JerryJumbo",
+                true
             ]
         ],
         "current_year": [
             "AuroraDieu",
-            "electrostrike",
+            "ptl",
+            "aiyern",
             "anhnhatbui",
-            "Llama_The_Goat",
-            "GhostApple",
-            "_Aren",
-            "puckyu poi",
-            "JerryJumbo"
+            "VenomPuffs",
+            "JerryJumbo",
+            "[-Hoshino-]",
+            "- Tojio -"
         ]
     }
 ]

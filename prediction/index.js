@@ -62,6 +62,13 @@ getplayerData.then(playerData => {
     console.log(predictionTeams);
     document.getElementById(`${predictionTeams[currentTeamLocation]}SelectOption`).selected = true
 
+    for (let i = 0; i < predictionTeams.length; i++) {
+        const code = predictionTeams[i][0]; // flag code
+        const img = new Image();
+        img.src = `https://osuflags.omkserver.nl/${code}-200.png`;
+        // browser will cache; errors are ignored
+    }
+
     generateRoster()
 })
 
@@ -95,10 +102,10 @@ function generateRoster() {
             let playersFromLastYearNotInThisYear = []
             let playersFromLastYearAndThisYear = []
             let playersFromLastYear = []
-            let lastyearplacement = document.getElementById("lastyearplacement");
-            lastyearplacement.innerHTML = `<span style="color:#116649">Placement:</span> ${playerData[i].last_placement}`;
-            let lastyearseeding = document.getElementById("lastyearseeding");
-            lastyearseeding.innerHTML = `<span style="color:#116649">Seeding:</span> ${playerData[i].last_seed}`;
+            let lastyearplacement = document.getElementById("lastyearplacement")
+            lastyearplacement.innerHTML = `<span>Placement:</span> ${playerData[i].last_placement}`
+            let lastyearseeding = document.getElementById("lastyearseeding")
+            lastyearseeding.innerHTML = `<span>Seeding:</span> ${playerData[i].last_seed}`
 
             for (var j = 0; j < playerData[i].last_year.length; j++) {
                 playersFromLastYear.push(playerData[i].last_year[j][0])
@@ -115,13 +122,12 @@ function generateRoster() {
                 rightBox.style.top = `${15 + j * 81.5}px`
                 compareBox.append(rightBox)
 
-                if (!playersFromLastYear.includes(playerData[i].current_year[j])) {
-                    let pointer = document.createElement("div")
-                    pointer.classList.add("pointer")
-                    pointer.setAttribute("id",`pointer${j+1}`)
-                    pointer.style.top = `${40 + j * 81.5}px`
-                    compareBox.append(pointer)
-                }
+                // Generating Arrows
+                let pointer = document.createElement("div")
+                pointer.classList.add("pointer")
+                pointer.setAttribute("id",`pointer${j+1}`)
+                pointer.style.top = `${35 + j * 81.5}px`
+                compareBox.append(pointer)
             }
 
             // Generate Left Boxes
@@ -137,13 +143,6 @@ function generateRoster() {
                 leftBox.style.top = `${15 + j * 81.5}px`
                 compareBox.append(leftBox)
                 redBoxCounter++
-
-                // Generating Arrows
-                let pointer = document.createElement("div")
-                pointer.classList.add("pointer")
-                pointer.setAttribute("id",`pointer${j+1}`)
-                pointer.style.top = `${40 + j * 81.5}px`
-                compareBox.append(pointer)
             }
             // When they are not there
             let currentNo = j;
@@ -157,13 +156,6 @@ function generateRoster() {
                     leftBox.style.top = `${10 + (currentNo + k)* 81.5}px`
                     compareBox.append(leftBox)
                     redBoxCounter++
-
-                    // Generating Arrows
-                    let pointer = document.createElement("div")
-                    pointer.classList.add("pointer")
-                    pointer.setAttribute("id",`pointer${j+1}`)
-                    pointer.style.top = `${35 + j * 81.5}px`
-                    compareBox.append(pointer)
                 }
             }
 
@@ -237,6 +229,7 @@ let ninetotwelvePlaceRow = document.getElementById("ninetotwelvePlaceRow")
 let thirteentosixteenPlaceRow = document.getElementById("thirteentosixteenPlaceRow")
 let seventeentotwentyfourPlaceRow = document.getElementById("seventeentotwentyfourPlaceRow")
 let twentyfivetothrirtytwoPlaceRow = document.getElementById("twentyfivetothrirtytwoPlaceRow")
+let thirtythreetofortyPlaceRow = document.getElementById("thirtythreetofortyPlaceRow")
 let dnqPlaceRow = document.getElementById("dnqPlaceRow")
 
 
@@ -245,6 +238,7 @@ let seventoeightPlaceRowImages = seventoeightPlaceRow.children
 let ninetotwelvePlaceRowImages = ninetotwelvePlaceRow.children
 let thirteentosixteenPlaceRowImages = thirteentosixteenPlaceRow.children
 let twentyfivetothrirtytwoPlaceRowImages = twentyfivetothrirtytwoPlaceRow.children
+let thirtythreetofortyPlaceRowImages = thirtythreetofortyPlaceRow.children
 let seventeentotwentyfourPlaceRowImages = seventeentotwentyfourPlaceRow.children
 let dnqPlaceRowImages = dnqPlaceRow.children
 
@@ -256,21 +250,16 @@ function dnqPlaceRowCheckImageSize(container) {
         }
     } else if (container.length <= 14) {
         for (var i = 0; i < container.length; i++) {
-            container[i].style.width = "60px"
-            container[i].style.height = "50px"
-        }
-    } else if (container.length <= 21) {
-        for (var i = 0; i < container.length; i++) {
             container[i].style.width = "55px"
             container[i].style.height = "45px"
         }
-    } 
-    else if (container.length <= 24) {
+    } else if (container.length <= 16) {
         for (var i = 0; i < container.length; i++) {
             container[i].style.width = "50px"
             container[i].style.height = "40px"
         }
-    } else {
+    } 
+    else if (container.length <= 27) {
         for (var i = 0; i < container.length; i++) {
             container[i].style.width = "45px"
             container[i].style.height = "35px"
@@ -316,7 +305,7 @@ function changeFlagToLocation(number) {
 
     // Image Appending
     let newTierListImage = document.createElement("div")
-    if (number == 33) newTierListImage.classList.add("tierListBottomRowImage")
+    if (number == 41) newTierListImage.classList.add("tierListBottomRowImage")
     else newTierListImage.classList.add("tierListStandardRowImage")
     console.log(selectedFlag)
     newTierListImage.style.backgroundImage = `url("https://osuflags.omkserver.nl/${selectedFlag[0]+selectedFlag[1]}-200.png")`
@@ -334,13 +323,15 @@ function changeFlagToLocation(number) {
         case 13: imageAppendedInto = thirteentosixteenPlaceRow; break;
         case 17: imageAppendedInto = seventeentotwentyfourPlaceRow; break;
         case 25: imageAppendedInto = twentyfivetothrirtytwoPlaceRow; break;
-        case 33: imageAppendedInto = dnqPlaceRow; break;
+        case 33: imageAppendedInto = thirtythreetofortyPlaceRow; break;
+        case 41: imageAppendedInto = dnqPlaceRow; break;
     }
 
     imageAppendedInto.append(newTierListImage)
 
     // Checking Image Sizes For New Page
-    if (number == 33) dnqPlaceRowCheckImageSize(dnqPlaceRowImages)
+    if (number == 41) dnqPlaceRowCheckImageSize(dnqPlaceRowImages)
+    else if (number == 33) standardCheckImageSize(thirtythreetofortyPlaceRow)
     else if (number == 25) standardCheckImageSize(twentyfivetothrirtytwoPlaceRowImages)
     else if (number == 17) standardCheckImageSize(seventeentotwentyfourPlaceRowImages)
     else if (number == 13) standardCheckImageSize(thirteentosixteenPlaceRowImages)
@@ -351,6 +342,7 @@ function changeFlagToLocation(number) {
     if (previousImageParentElement == dnqPlaceRow) dnqPlaceRowCheckImageSize(dnqPlaceRowImages)
     else if (previousImageParentElement == twentyfivetothrirtytwoPlaceRow) standardCheckImageSize(twentyfivetothrirtytwoPlaceRowImages)
     else if (previousImageParentElement == seventeentotwentyfourPlaceRow) standardCheckImageSize(seventeentotwentyfourPlaceRowImages)
+    else if (previousImageParentElement == thirtythreetofortyPlaceRow) standardCheckImageSize(thirtythreetofortyPlaceRow)
 }
 
 function removeFlag(number) {
@@ -368,7 +360,8 @@ function removeFlag(number) {
         case 13: parentElement = thirteentosixteenPlaceRow; break;
         case 17: parentElement = seventeentotwentyfourPlaceRow; break;
         case 25: parentElement = twentyfivetothrirtytwoPlaceRow; break;
-        case 33: parentElement = dnqPlaceRow; break;
+        case 33: parentElement = thirtythreetofortyPlaceRow; break;
+        case 41: parentElement = dnqPlaceRow; break;
     }
 
     for (var i = 0; i < parentElement.childElementCount; i++) {
@@ -385,6 +378,7 @@ function removeFlag(number) {
         case 13: standardCheckImageSize(thirteentosixteenPlaceRowImages); break;
         case 17: standardCheckImageSize(seventeentotwentyfourPlaceRowImages); break;
         case 25: standardCheckImageSize(twentyfivetothrirtytwoPlaceRowImages); break;
-        case 33: dnqPlaceRowCheckImageSize(dnqPlaceRowImages); break;
+        case 33: standardCheckImageSize(thirtythreetofortyPlaceRow); break;
+        case 41: dnqPlaceRowCheckImageSize(dnqPlaceRowImages); break;
     }
 }
