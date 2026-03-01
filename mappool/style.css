@@ -68,3 +68,19 @@
 .country-star-container > * { width: 18px; }
 .red-country-star-container { left: var(--country-star-container-x); }
 .blue-country-star-container { right: var(--country-star-container-x); }
+
+/* Current Score */
+.current-score-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px;
+    font-size: 25px;
+    font-family: "Dela Gothic One";
+    color: white;
+    display: flex;
+}
+.current-score {
+    margin: 0 30px;
+    transform: scaleY(2);
+}
