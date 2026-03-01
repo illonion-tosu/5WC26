@@ -1,6 +1,7 @@
 :root {
-    --main-text: #10664A;
-    --secondary-text: #F7F6DA;
+    --lightPink: #10664A;
+    --lightPink: #F3BBFF;
+ 
 }
 
 body {
@@ -35,8 +36,8 @@ body {
 /* Main Logo */
 .logo {
     position: absolute;
-    left: 150px;
-    transform: scale(0.6);
+    left: 50px;
+    height: 300px;
 }
 /* 5 Logo */
 .logo-5 {
@@ -61,7 +62,7 @@ body {
     left: 406px;
     font-size: 101px;
     letter-spacing: -4px;
-    color: var(--main-text);
+    color: var(--lightPink);
     filter: drop-shadow(-2.723px 4.193px 0px rgba(0, 0, 0, 0.25));
     transform: scale(1, 1.05);
 }
@@ -73,7 +74,7 @@ body {
     transform: translateY(-50%);
     left: 50px;
     padding: 5px;
-    border: 10px solid var(--main-text);
+    border: 10px solid var(--lightPink);
     border-radius: 80px;
     height: 435px;
 }
@@ -87,7 +88,7 @@ body {
     position: absolute;
     top: 100px;
     right: 150px;
-    color: var(--main-text);
+    color: var(--lightPink);
     font-size: 3em;
     width: 990px;
     text-align: center;
@@ -100,7 +101,7 @@ body {
     right: 150px;
     width: 1050px;
     font-size: 2.5em;
-    color: var(--main-text);
+    color: white;
     margin-left: 25px;
     display: flex;
     flex-wrap: wrap;
@@ -120,7 +121,7 @@ body {
     left: 45%;
     top: 500px;
     transform: translateY(-50%);
-    color: var(--secondary-text);
+    color: var(--lightPink);
     font-style: italic;
     font-family: "Poppins";
     font-size: 3em;
@@ -132,16 +133,16 @@ body {
     right: 122px;
     width: 920px;
     height: 395px;
-    background-color: #10664AD0;
+    background-color: #F3BBFF80;
     border-radius: 80px;
     overflow-x: hidden;
     overflow-y: scroll;
-    outline: 20px solid #10664AD0;
+    outline: 20px solid #F3BBFF80;
 }
 .twitch-chat-container::-webkit-scrollbar { display: none; }
 /* Twitch Chat Message Container*/
 .twitch-message-container {
-    color: var(--secondary-text);
+    color: white;
     font-size: 1.25em;
     margin-left: 25px;
     width: 920px;
@@ -160,7 +161,8 @@ body {
     top: 0;
     width: 250px;
     height: 1080px;
-    background-color: var(--secondary-text);
+    background-color: #29115E;
+    color: white;
     font-family: "Poppins";
 }
 .sidebar-title {
@@ -169,7 +171,7 @@ body {
     text-align: center;
     font-weight: 700;
     font-size: 1.25em;
-    color: var(--main-text);
+    color: var(--lightPink);
 }
 .sidebar-input-text {
     margin: 5px 20px;
@@ -178,8 +180,9 @@ body {
     font-weight: 700;
     font-size: 1.25em;
     width: 210px;
-    border-bottom: 2px solid var(--main-text);
+    border-bottom: 2px solid var(--lightPink);
     background-color: transparent;
+    color: white;
 }
 .sidebar-button-container {
     display: flex;
@@ -190,16 +193,16 @@ body {
 .sidebar-button {
     width: 210px;
     height: 50px;
-    border: 2px solid var(--main-text);
+    border: 2px solid var(--lightPink);
     font-family: inherit;
     font-weight: 500;
     font-size: 1.25em;
     border-radius: 5px;
     background: transparent;
-    color: var(--main-text);
+    color: var(--lightPink);
 }
 .sidebar-button-submit { margin: 10px 20px; }
 .sidebar-button-submit:active {
-    background-color: var(--main-text);
+    background-color: var(--lightPink);
     color: var(--secondary-text);
 }

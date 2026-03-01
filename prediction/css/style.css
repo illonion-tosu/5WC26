@@ -1,6 +1,6 @@
 :root {
 	--red: #fd2664;
-    --lightGreen: #F3BBFF;
+    --lightPink: #F3BBFF;
     --lightBeige: #FDECFC;
     --lightRed: rgb(209, 55, 55);
     --darkerBeige: rgb(221, 182, 182);
@@ -416,7 +416,7 @@ body, html{
     font-size: 30px;
     font-family: "Poppins";
     font-weight: 700;
-    color: var(--lightGreen);
+    color: var(--lightPink);
 }
 #lastyearseeding {
     position: absolute;
@@ -426,7 +426,7 @@ body, html{
     font-size: 30px;
     font-family: "Poppins";
     font-weight: 700;
-    color: var(--lightGreen);
+    color: var(--lightPink);
 }
 #lastyeartext {
     position: absolute;
@@ -436,5 +436,5 @@ body, html{
     font-size: 46px;
     font-family: "Poppins";
     font-weight: 800;
-    color: var(--lightGreen);
+    color: var(--lightPink);
 }

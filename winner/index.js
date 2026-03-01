@@ -28,7 +28,7 @@ setInterval(() => {
         const newRightTeamName = getCookie("currentRightTeamName")
 
         const teamNamesChanged = newLeftTeamName !== currentLeftTeamName || newRightTeamName !== currentRightTeamName;
-        const scoresChanged = currentLeftStars !== previousLeftStars || currentRightStars !== previousRightStars;
+        const scoresChanged = currentLeftStars == previousLeftStars || currentRightStars !== previousRightStars;
 
         if (teamNamesChanged || scoresChanged) {
             currentLeftTeamName = newLeftTeamName
@@ -86,8 +86,8 @@ function setAndJoinTwitchChannel(channelName) {
     channelButton.style.backgroundColor = "var(--main-text)"
     channelButton.style.color = "var(--secondary-text)"
 }
-ComfyJS.Init( "5WC2025", null, ["5WC2025", "aquiii", "minusfubukiii"] );
-setAndJoinTwitchChannel("5WC2025")
+ComfyJS.Init( "5WC2026", null, ["5WC2026", "aquiii", "minusfubukiii"] );
+setAndJoinTwitchChannel("5WC2026")
 
 // Twitch Chat
 const twitchChatContainer = document.getElementById("twitch-chat-container")
@@ -179,7 +179,7 @@ function generateChatColour(username) {
 
         // Guard clauses
         if (r === 256 || g === 256 || b === 256) continue
-        if (r + g + b >= 400) validColour = true
+        if (r + g + b >= 500) validColour = true
     }
 
     chatColours[username] = {"r": r, "g": g, "b": b}

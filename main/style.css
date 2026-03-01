@@ -8,7 +8,7 @@
     --red: #db4c4c;
     --blue: #5b6ac6;
 
-    --lightGreen: #F3BBFF;
+    --lightPink: #F3BBFF;
 }
 
 .background-video {
@@ -38,7 +38,7 @@
     position: absolute;
     top: 10px;
     font-size: 3.5rem;
-    color: var(--lightGreen);
+    color: var(--lightPink);
 }
 .left-team-name { left: var(--team-name-horizontal-rule); }
 .right-team-name { right: var(--team-name-horizontal-rule); }
@@ -85,7 +85,7 @@
     position: absolute;
     top: 870px;
     height: 25px;
-    background-color: var(--lightGreen);
+    background-color: var(--lightPink);
 }
 .left-score-bar { right: var(--score-bar-horizontal-rule); }
 .right-score-bar { 
@@ -98,7 +98,7 @@
     position: absolute;
     top: 900px;
     font-weight: 600px;
-    color: var(--lightGreen);
+    color: var(--lightPink);
     font-size: 2em;
 }
 .left-score { right: 970px; }
@@ -114,7 +114,7 @@
     position: absolute;
     top: 940px;
     font-weight: 500;
-    color: var(--lightGreen);
+    color: var(--lightPink);
     font-size: 1.25em;
 }
 .left-score-difference { right: 970px; }
@@ -173,7 +173,7 @@
     height: 80px;
     border-radius: 50px;
     background-color: #F3BBFF60;
-    border: 5px solid var(--lightGreen);
+    border: 5px solid var(--lightPink);
     overflow: hidden;
     transition: 500ms ease-in-out;
 }
@@ -214,9 +214,9 @@
     transform: translateX(-50%);
     width: 800px;
     height: inherit;
-    background-color: var(--lightGreen);
+    background-color: var(--lightPink);
     border-radius: inherit;
-    border: 5px solid var(--lightGreen);
+    border: 5px solid var(--lightPink);
     background-image: url("https://assets.ppy.sh/beatmaps/2257992/covers/cover.jpg");
     background-size: cover;
     background-position: center;
