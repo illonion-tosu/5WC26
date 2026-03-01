@@ -1,3 +1,11 @@
+:root {
+    --country-banner-x: 502px;
+    --country-name-x: 488px;
+
+    --lightPink: #F3BBFF;
+}
+
+/* Whole Page */
 .main {
     position: absolute;
     top: 0;
@@ -6,3 +14,35 @@
     height: 1080px;
     background-image: url("static/background.png");
 }
+
+/* Country Flags */
+
+/* Country Banner */
+.country-banner {
+    box-shadow: 0px 4px 3.36px 0.64px rgba(0, 0, 0, 0.41);
+    position: absolute;
+    top: 40px;
+    width: 83px;
+    height: 10px;
+    border-radius: 5px;
+}
+.red-country-banner {
+    background-color: rgb(144, 0, 255);
+    left: var(--country-banner-x);
+}
+.blue-country-banner {
+    background-color: rgb(0, 36, 255);
+    right: var(--country-banner-x)
+}
+
+/* Country Name */
+.country-name {
+    font-size: 26px;
+    font-family: "Dela Gothic One";
+    color: var(--lightPink);
+    position: absolute;
+    top: 50px;
+    transform: scaleX(0.85);
+}
+.red-country-name { left: var(--country-name-x); }
+.blue-country-name { right: var(--country-name-x); }

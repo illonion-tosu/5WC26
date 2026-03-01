@@ -2,7 +2,8 @@
     --green: #116649;
     --secondary-text: #F7F6DA;
     --team-flag-horizontal-rule: 27.5px;
-    --team-name-horizontal-rule: calc(150px + var(--team-flag-horizontal-rule) * 2);
+    --team-star-horizontal-rule: calc(150px + var(--team-flag-horizontal-rule) * 2);
+    --team-name-horizontal-rule: calc(120px + var(--team-flag-horizontal-rule) * 2);
     --score-bar-horizontal-rule: 50%;
     --score-bar-height: 25px;
     --score-bar-height-half: calc(var(--score-bar-height) / 2);
@@ -42,6 +43,8 @@
     top: 10px;
     font-size: 3.5rem;
     color: var(--lightPink);
+    font-family: "Dela Gothic One";
+    transform: scaleX(0.85);
 }
 .left-team-name { left: var(--team-name-horizontal-rule); }
 .right-team-name { right: var(--team-name-horizontal-rule); }
@@ -54,9 +57,9 @@
     gap: 10px;
 }
 .team-star-container > * { width: 45px; }
-.left-team-star-container { left: var(--team-name-horizontal-rule); }
+.left-team-star-container { left: var(--team-star-horizontal-rule); }
 .right-team-star-container { 
-    right: var(--team-name-horizontal-rule);
+    right: var(--team-star-horizontal-rule);
     flex-direction: row-reverse;
 }
 
