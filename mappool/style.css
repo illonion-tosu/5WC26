@@ -1,8 +1,16 @@
 :root {
+    /* Country Variables */
     --country-banner-x: 502px;
     --country-name-x: 488px;
     --country-star-container-x: 500px;
     --country-flag-x: 393px;
+
+    /* Mappool Tag Variables */
+    --top-row-mappool-tag-top: 196px;
+    --mappool-tag-gap: 182px;
+    --second-row-mappool-tag-top: calc(var(--top-row-mappool-tag-top) + var(--mappool-tag-gap));
+    --third-row-mappool-tag-top: calc(var(--top-row-mappool-tag-top) + var(--mappool-tag-gap) * 2);
+    --fourth-row-mappool-tag-top: calc(var(--top-row-mappool-tag-top) + var(--mappool-tag-gap) * 3);
 
     --lightPink: #F3BBFF;
 }
@@ -83,4 +91,56 @@
 .current-score {
     margin: 0 30px;
     transform: scaleY(2);
+}
+
+/* Mappool Tags */
+.mappool-tag {
+    box-shadow: 0px 4px 3.36px 0.64px rgba(0, 0, 0, 0.66);
+    position: absolute;
+    width: 16px;
+    height: 28px;
+    border-radius: 0 5px 0 5px;
+}
+.mappool-tag-left-0 { left: 0px; }
+.mappool-tag-left-463 { left: 463px; }
+.nm-mappool-tag {
+    background-color: rgb(173, 176, 175);
+    top: var(--top-row-mappool-tag-top);
+}
+.hd-mappool-tag {
+    background-color: rgb(246, 184, 51);
+    top: var(--second-row-mappool-tag-top);
+}
+.hr-mappool-tag {
+    background-color: rgb(255, 0, 0);
+    left: 952px;
+    top: var(--second-row-mappool-tag-top);
+}
+.dt-mappool-tag {
+    background-color: rgb(67, 224, 246);
+    top: var(--third-row-mappool-tag-top);
+}
+.fm-mappool-tag {
+    background-color: rgb(240, 91, 179);
+    top: var(--fourth-row-mappool-tag-top);
+}
+
+/* Mappool Section Title */
+.mappool-section-title { position: absolute; }
+.mappool-section-title-left-23 { left: 23px; }
+.mappool-section-title-left-486 { left: 486px; }
+.nm-section-title { top: calc(var(--top-row-mappool-tag-top) + 3px); }
+.hd-section-title { top: calc(var(--second-row-mappool-tag-top) + 3px); }
+.hr-section-title {
+    top: calc(var(--second-row-mappool-tag-top) + 3px);
+    left: 975px;
+}
+.dt-section-title { top: calc(var(--third-row-mappool-tag-top) + 3px); }
+.fm-section-title { top: calc(var(--fourth-row-mappool-tag-top) + 3px); }
+/* Mappool Section Title Font */
+.mappool-section-title-font {
+    position: absolute;
+    top: 1px;
+    left: 50%;
+    transform: translateX(-50%);
 }
