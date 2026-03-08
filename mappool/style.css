@@ -184,6 +184,7 @@
     width: 237px;
     height: 80px;
     border-radius: 10px 10px 0 0;
+    background: center / cover;
 }
 .map-identifier-section {
     position: absolute;
