@@ -15,11 +15,11 @@ const blueTeamStarContainerEl = document.getElementById("blue-country-star-conta
 let allBeatmaps
 async function getBetmaps() {
     const response = await axios.get("../_data/beatmaps.json")
-    allBeatmaps = response.data
+    allBeatmaps = response.data.beatmaps
 
     // Set star
     let bestOf = 0
-    switch (allBeatmaps) {
+    switch (response.data.roundName) {
         case "GROUP STAGE":
             bestOf = 9
             break
@@ -34,6 +34,67 @@ async function getBetmaps() {
     setDefaultStarCount(bestOf, redTeamStarContainerEl, blueTeamStarContainerEl)
 }
 getBetmaps()
+
+// NM Mod containers
+const nmSectionPart1El = document.getElementById("nm-section-part-1")
+const nmSectionPart2El = document.getElementById("nm-section-part-2")
+const nmSection5MapsEl = document.getElementById("nm-section-5-maps")
+// HD Mod containers / HR Mod Containers
+const hdSectionEl = document.getElementById("hd-section")
+const hrSectionEl = document.getElementById("hr-section")
+// DT Mod containers
+const dtSectionPart1El = document.getElementById("dt-section-part-1")
+const dtSectionPart2El = document.getElementById("dt-section-part-2")
+const dtSection3MapsEl = document.getElementById("dt-section-3-maps")
+// FM Mod containers
+const fmSection4MapsPart1El = document.getElementById("fm-section-4-maps-part-1")
+const fmSection4MapsPart2El = document.getElementById("fm-section-4-maps-part-2")
+const fmSection3MapsEl = document.getElementById("fm-section-3-maps")
+const fmSection2MapsPart1El = document.getElementById("fm-section-2-maps-part-1")
+const fmSection2MapsPart2El = document.getElementById("fm-section-2-maps-part-2")
+
+// Render maps
+function renderMaps() {
+    // Set mod information
+    const noOfNMMaps = noOfMapsFromMod("NM")
+    const noOfDTMaps = noOfMapsFromMod("DT")
+    const noOfFMMaps = noOfMapsFromMod("FM")
+
+    for (let i = 0; i < allBeatmaps.beatmaps.length; i++) {
+        let currentModContainers = []
+        
+        // NM mod container
+        // NM
+        if (allBeatmaps[i].mod === "NM" && noOfNMMaps === 6) {
+            currentModContainers.append(nmSectionPart1El, nmSectionPart2El)
+        } else if (allBeatmaps[i].mod === "NM") {
+            currentModContainers.append(nmSection5MapsEl)
+        }
+        // HD
+        else if (allBeatmaps[i].mod === "HD") {
+            currentModContainers.append(hdSectionEl)
+        }
+        // HR
+        else if (allBeatmaps[i].mod === "HR") {
+            currentModContainers.append(hrSectionEl)
+        }
+        // DT
+        else if (allBeatmaps[i].mod === "DT" && noOfDTMaps === 4) {
+            currentModContainers.append(dtSectionPart1El, dtSectionPart2El)
+        } else if (allBeatmaps[i].mod === "DT") {
+            currentModContainers.append(dtSection3MapsEl)
+        }
+        //FM
+        else if (allBeatmaps[i].mod === "FM" && noOfFMMaps === 4) {
+            currentModContainers.append(fmSection4MapsPart1El, fmSection4MapsPart2El)
+        } else if (allBeatmaps[i].mod === "FM" && noOfFMMaps === 3) {
+            currentModContainers.append(fmSection3MapsEl)
+        } else if (allBeatmaps[i].mod === "FM" && noOfFMMaps === 2) {
+            currentModContainers.append(fmSection2MapsPart1El, fmSection2MapsPart2El)
+        }
+    }
+}
+const noOfMapsFromMod = mod => allBeatmaps.filter(map => map.mod === mod).length
 
 // Country
 const redCountryFlagEl = document.getElementById("red-country-flag")
