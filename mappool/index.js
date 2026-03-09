@@ -30,6 +30,9 @@ async function getBetmaps() {
             bestOf = 13
     }
 
+    // Render maps
+    renderMaps()
+
     // Set default star count
     setDefaultStarCount(bestOf, redTeamStarContainerEl, blueTeamStarContainerEl)
 }
@@ -52,6 +55,14 @@ const fmSection4MapsPart2El = document.getElementById("fm-section-4-maps-part-2"
 const fmSection3MapsEl = document.getElementById("fm-section-3-maps")
 const fmSection2MapsPart1El = document.getElementById("fm-section-2-maps-part-1")
 const fmSection2MapsPart2El = document.getElementById("fm-section-2-maps-part-2")
+// Mappool Tags
+const nmMappoolTagEl = document.getElementById("nm-mappool-tag")
+const dtMappoolTagEl = document.getElementById("dt-mappool-tag")
+const fmMappoolTagEl = document.getElementById("fm-mappool-tag")
+// Mappool Section Titles
+const nmSectionTitleEl = document.getElementById("nm-section-title")
+const dtSectionTitleEl = document.getElementById("dt-section-title")
+const fmSectionTitleEl = document.getElementById("fm-section-title")
 
 // Render maps
 function renderMaps() {
@@ -60,37 +71,45 @@ function renderMaps() {
     const noOfDTMaps = noOfMapsFromMod("DT")
     const noOfFMMaps = noOfMapsFromMod("FM")
 
-    for (let i = 0; i < allBeatmaps.beatmaps.length; i++) {
+    for (let i = 0; i < allBeatmaps.length; i++) {
         let currentModContainers = []
         
         // NM mod container
         // NM
         if (allBeatmaps[i].mod === "NM" && noOfNMMaps === 6) {
-            currentModContainers.append(nmSectionPart1El, nmSectionPart2El)
+            currentModContainers.push(nmSectionPart1El, nmSectionPart2El)
         } else if (allBeatmaps[i].mod === "NM") {
-            currentModContainers.append(nmSection5MapsEl)
+            currentModContainers.push(nmSection5MapsEl)
+            nmMappoolTagEl.classList.add("nm-mappool-tag-5-maps")
+            nmSectionTitleEl.classList.add("nm-section-title-5-maps")
         }
         // HD
         else if (allBeatmaps[i].mod === "HD") {
-            currentModContainers.append(hdSectionEl)
+            currentModContainers.push(hdSectionEl)
         }
         // HR
         else if (allBeatmaps[i].mod === "HR") {
-            currentModContainers.append(hrSectionEl)
+            currentModContainers.push(hrSectionEl)
         }
         // DT
         else if (allBeatmaps[i].mod === "DT" && noOfDTMaps === 4) {
-            currentModContainers.append(dtSectionPart1El, dtSectionPart2El)
+            currentModContainers.push(dtSectionPart1El, dtSectionPart2El)
+            dtMappoolTagEl.classList.add("dt-mappool-tag-4-maps")
+            dtSectionTitleEl.classList.add("dt-section-title-4-maps")
         } else if (allBeatmaps[i].mod === "DT") {
-            currentModContainers.append(dtSection3MapsEl)
+            currentModContainers.push(dtSection3MapsEl)
         }
         //FM
         else if (allBeatmaps[i].mod === "FM" && noOfFMMaps === 4) {
-            currentModContainers.append(fmSection4MapsPart1El, fmSection4MapsPart2El)
+            currentModContainers.push(fmSection4MapsPart1El, fmSection4MapsPart2El)
+            fmMappoolTagEl.classList.add("fm-mappool-tag-4-maps")
+            fmSectionTitleEl.classList.add("fm-section-title-4-maps")
         } else if (allBeatmaps[i].mod === "FM" && noOfFMMaps === 3) {
-            currentModContainers.append(fmSection3MapsEl)
+            currentModContainers.push(fmSection3MapsEl)
         } else if (allBeatmaps[i].mod === "FM" && noOfFMMaps === 2) {
-            currentModContainers.append(fmSection2MapsPart1El, fmSection2MapsPart2El)
+            currentModContainers.push(fmSection2MapsPart1El, fmSection2MapsPart2El)
+            fmMappoolTagEl.classList.add("fm-mappool-tag-2-maps")
+            fmSectionTitleEl.classList.add("fm-section-title-2-maps")
         }
     }
 }
