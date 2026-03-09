@@ -162,6 +162,10 @@ const blueCountryFlagEl = document.getElementById("blue-country-flag")
 const blueCountryNameEl = document.getElementById("blue-country-name")
 let currentRedCountryName, currentBlueCountryName
 
+// Chat Display
+const chatContainerEl = document.getElementById("chat-container")
+let chatLen
+
 // Socket
 const socket = createTosuWsSocket()
 socket.onmessage = event => {
@@ -174,6 +178,38 @@ socket.onmessage = event => {
     }
     if (currentBlueCountryName !== data.tourney.team.right) {
         currentBlueCountryName = setCountryDetails(data.tourney.team.right, blueCountryNameEl, blueCountryFlagEl)
+    }
+    
+    // This is also mostly taken from Victim Crasher: https://github.com/VictimCrasher/static/tree/master/WaveTournament
+    if (chatLen !== data.tourney.chat.length) {
+        (chatLen === 0 || chatLen > data.tourney.chat.length) ? (chatContainerEl.innerHTML = "", chatLen = 0) : null
+        const fragment = document.createDocumentFragment()
+
+        for (let i = chatLen; i < data.tourney.chat.length; i++) {
+            const chatColour = data.tourney.chat[i].team
+
+            // Chat message container
+            const chatMessageContainer = document.createElement("div")
+            chatMessageContainer.classList.add("message-container")
+
+            // Name
+            const chatDisplayName = document.createElement("span")
+            chatDisplayName.classList.add("message-name")
+            chatDisplayName.classList.add(chatColour)
+            chatDisplayName.innerText = data.tourney.chat[i].name + ": ";
+
+            // Message
+            const chatDisplayMessage = document.createElement("span")
+            chatDisplayMessage.classList.add("message-content")
+            chatDisplayMessage.innerText = data.tourney.chat[i].message
+
+            chatMessageContainer.append(chatDisplayName, chatDisplayMessage)
+            fragment.append(chatMessageContainer)
+        }
+
+        chatContainerEl.append(fragment)
+        chatLen = data.tourney.chat.length
+        chatContainerEl.scrollTop = chatContainerEl.scrollHeight
     }
 }
 
