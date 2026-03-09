@@ -55,11 +55,11 @@ video {
     border-radius: 5px;
 }
 .red-country-banner {
-    background-color: rgb(144, 0, 255);
+    background-color: lightpink;
     left: var(--country-banner-x);
 }
 .blue-country-banner {
-    background-color: rgb(0, 36, 255);
+    background-color: lightblue;
     right: var(--country-banner-x)
 }
 
