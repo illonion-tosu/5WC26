@@ -1,8 +1,8 @@
 :root {
     /* Country Variables */
-    --country-banner-x: 502px;
-    --country-name-x: 488px;
-    --country-star-container-x: 500px;
+    --country-banner-x: 503px;
+    --country-name-x: 503px;
+    --country-star-container-x: 503px;
     --country-flag-x: 393px;
 
     /* Mappool Tag Variables */
@@ -70,7 +70,6 @@ video {
     color: var(--lightPink);
     position: absolute;
     top: 50px;
-    transform: scaleX(0.85);
 }
 .red-country-name { left: var(--country-name-x); }
 .blue-country-name { right: var(--country-name-x); }
