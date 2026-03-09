@@ -88,7 +88,10 @@ video {
 }
 .country-star-container > * { width: 18px; }
 .red-country-star-container { left: var(--country-star-container-x); }
-.blue-country-star-container { right: var(--country-star-container-x); }
+.blue-country-star-container {
+    right: var(--country-star-container-x);
+    flex-direction: row-reverse;
+}
 
 /* Current Score */
 .current-score-container {
@@ -288,3 +291,127 @@ video {
 .right { color: lightblue; }
 .unknown { color: yellow; }
 .bot { color: lightgreen; }
+
+/* Sidebar */
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: 1920px;
+    width: 250px;
+    height: 1080px;;
+    background-color: #1C124C;
+    overfloW: hidden;
+    color: white;
+    font-family: "Dela Gothic One";
+}
+/* Sidebar Column */
+.column {
+    position: absolute;
+    top: 0;
+    width: var(--sidebar-column-width);
+}
+.column-1 { left: 0; }
+.column-2 { left: var(--sidebar-column-width); }
+.column-3 { left: calc(var(--sidebar-column-width) * 2); }
+/* Sidebar Divider */
+.divider {
+    position: absolute;
+    width: 3px;
+    height: var(--screen-height);
+    background-color: white;
+}
+.divider-1 { left: 298.5px; }
+.divider-2 { left: 598.5px; }
+/* Sidebar Section */
+.sidebar-section {
+    padding-bottom: 13px;
+    border-bottom: 3px solid white;
+}
+/* Sidebar H1s */
+.sidebar-section h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 1.4em;
+}
+.sidebar-section h2 {
+    text-align: center;
+    width: 100%;
+    font-size: 1.15em;
+}
+/* Sidebar Text */
+.sidebar-text {
+    text-align: center;
+    font-family: "Dela Gothic One";
+    font-size: 1.2em;
+}
+/* Sidebar Button Container */
+.sidebar-button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* Sidebar Button */
+.sidebar-button {
+    --height: 30px;
+    width: 110px;
+    height: var(--height);
+    margin: 5px;
+    border-radius: calc(var(--height) / 2);
+    border: 2px solid white;
+    background-color: transparent;
+    font-size: 1em;
+    font-family: inherit;
+    color: inherit;
+}
+.sidebar-button:active {
+    background-color: white;
+    color: var(--sidebar-background-colour);
+}
+/* Full Size Button */
+.full-size-button { width: 230px; }
+.full-size-button:active { color: var(--sidebar-background-colour); }
+/* Apply Changes Button */
+.apply-changes-button, #apply-match {
+    margin-top: 15px;
+    margin-left: 35px;
+    height: 45px;
+}
+/* Toggle Button */
+.toggle-on { background-color: green; }
+.toggle-off { background-color: maroon; }
+
+/* Ban Pick Management Select*/
+.ban-pick-management-select, .match-select {
+    width: var(--sidebar-column-width);
+    text-align: center;
+    color: var(--dark-gray);
+    background-color: transparent;
+    border: none;
+    font-family: "Dela Gothic One";
+    font-weight: 700;
+    font-size: 1.25em;
+}
+.ban-pick-management-select::-webkit-scrollbar,
+.match-select::-webkit-scrollbar { display: none; }
+/* Which Map */
+.which-map-select {
+    width: var(--sidebar-column-width);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.which-side-button {
+    --height: 25px;
+    height: var(--height);
+    line-height: var(--height);
+    font-size: 1.25em;
+    font-family: "Dela Gothic One";
+    color: var(--secondary-colour);
+    background-color: transparent;
+    border: none;
+}
+.which-map-button { width: 70px; }
+.which-pick-button {
+    width: 125px;
+}
