@@ -71,46 +71,86 @@ function renderMaps() {
     const noOfDTMaps = noOfMapsFromMod("DT")
     const noOfFMMaps = noOfMapsFromMod("FM")
 
-    for (let i = 0; i < allBeatmaps.length; i++) {
+    for (let i = 0; i < allBeatmaps.length - 1; i++) {
         let currentModContainers = []
+        const currentMap = allBeatmaps[i]
+        let currentNoOfMaps
         
         // NM mod container
         // NM
-        if (allBeatmaps[i].mod === "NM" && noOfNMMaps === 6) {
+        if (currentMap.mod === "NM" && noOfNMMaps === 6) {
             currentModContainers.push(nmSectionPart1El, nmSectionPart2El)
-        } else if (allBeatmaps[i].mod === "NM") {
+            currentNoOfMaps = noOfNMMaps
+        } else if (currentMap.mod === "NM") {
             currentModContainers.push(nmSection5MapsEl)
             nmMappoolTagEl.classList.add("nm-mappool-tag-5-maps")
             nmSectionTitleEl.classList.add("nm-section-title-5-maps")
+            currentNoOfMaps = noOfNMMaps
         }
         // HD
-        else if (allBeatmaps[i].mod === "HD") {
+        else if (currentMap.mod === "HD") {
             currentModContainers.push(hdSectionEl)
         }
         // HR
-        else if (allBeatmaps[i].mod === "HR") {
+        else if (currentMap.mod === "HR") {
             currentModContainers.push(hrSectionEl)
         }
         // DT
-        else if (allBeatmaps[i].mod === "DT" && noOfDTMaps === 4) {
+        else if (currentMap.mod === "DT" && noOfDTMaps === 4) {
             currentModContainers.push(dtSectionPart1El, dtSectionPart2El)
             dtMappoolTagEl.classList.add("dt-mappool-tag-4-maps")
             dtSectionTitleEl.classList.add("dt-section-title-4-maps")
-        } else if (allBeatmaps[i].mod === "DT") {
+            currentNoOfMaps = noOfDTMaps
+        } else if (currentMap.mod === "DT") {
             currentModContainers.push(dtSection3MapsEl)
         }
         //FM
-        else if (allBeatmaps[i].mod === "FM" && noOfFMMaps === 4) {
+        else if (currentMap.mod === "FM" && noOfFMMaps === 4) {
             currentModContainers.push(fmSection4MapsPart1El, fmSection4MapsPart2El)
             fmMappoolTagEl.classList.add("fm-mappool-tag-4-maps")
             fmSectionTitleEl.classList.add("fm-section-title-4-maps")
-        } else if (allBeatmaps[i].mod === "FM" && noOfFMMaps === 3) {
+            currentNoOfMaps = noOfFMMaps
+        } else if (currentMap.mod === "FM" && noOfFMMaps === 3) {
             currentModContainers.push(fmSection3MapsEl)
-        } else if (allBeatmaps[i].mod === "FM" && noOfFMMaps === 2) {
+        } else if (currentMap.mod === "FM" && noOfFMMaps === 2) {
             currentModContainers.push(fmSection2MapsPart1El, fmSection2MapsPart2El)
             fmMappoolTagEl.classList.add("fm-mappool-tag-2-maps")
             fmSectionTitleEl.classList.add("fm-section-title-2-maps")
+            currentNoOfMaps = noOfFMMaps
         }
+
+        // Map Tile
+        const mapTile = document.createElement("div")
+        mapTile.classList.add("map-tile")
+
+        // Map Background
+        const mapBackground = document.createElement("div")
+        mapBackground.classList.add("map-background")
+        mapBackground.style.backgroundImage = `url("https://assets.ppy.sh/beatmaps/${currentMap.beatmapset_id}/covers/cover.jpg")`
+
+        // Map Identifier Section
+        const mapIdentifierSection = document.createElement("div")
+        mapIdentifierSection.classList.add("map-identifier-section")
+        const mapWarpImage = document.createElement("img")
+        mapWarpImage.setAttribute("src", `static/mappool-warp-font/${currentMap.mod}${currentMap.order}.png`)
+        const mapIdentifierImage = document.createElement("img")
+        mapIdentifierImage.setAttribute("src", `static/mappool-font/${currentMap.mod}${currentMap.order}.png`)
+        mapIdentifierImage.classList.add("map-identifier-title-font")
+        mapIdentifierSection.append(mapWarpImage, mapIdentifierImage)
+
+        // Song Metadata
+        const mapSongTitle = document.createElement("div")
+        mapSongTitle.classList.add("map-song-metadata", "map-song-title")
+        mapSongTitle.textContent = `[${currentMap.title}`
+        const mapSongArtist = document.createElement("div")
+        mapSongArtist.classList.add("map-song-metadata", "map-song-artist")
+        mapSongArtist.innerHTML = `${currentMap.artist} <span class="map-song-artist-end">]</span>`
+
+        // Append everything
+        mapBackground.append(mapIdentifierSection)
+        mapTile.append(mapBackground, mapSongTitle, mapSongArtist)
+        
+        currentModContainers[(currentModContainers.length > 1 && currentMap.order > currentNoOfMaps / 2) ? 1 : 0].append(mapTile)
     }
 }
 const noOfMapsFromMod = mod => allBeatmaps.filter(map => map.mod === mod).length
