@@ -70,9 +70,16 @@ video {
     color: var(--lightPink);
     position: absolute;
     top: 50px;
+    transform: scaleX(0.85);
 }
-.red-country-name { left: var(--country-name-x); }
-.blue-country-name { right: var(--country-name-x); }
+.red-country-name {
+    left: var(--country-name-x);
+    transform-origin: top left;
+}
+.blue-country-name {
+    right: var(--country-name-x);
+    transform-origin: top right;
+}
 
 /* Country Stars */
 .country-star-container {
