@@ -37,6 +37,8 @@ async function getBetmaps() {
     setDefaultStarCount(bestOf, redTeamStarContainerEl, blueTeamStarContainerEl)
 }
 getBetmaps()
+// Find Beatmaps
+const findBeatmap = beatmapId => allBeatmaps.find(beatmap => beatmap.beatmap_id == beatmapId)
 
 // NM Mod containers
 const nmSectionPart1El = document.getElementById("nm-section-part-1")
@@ -122,11 +124,28 @@ function renderMaps() {
         // Map Tile
         const mapTile = document.createElement("div")
         mapTile.classList.add("map-tile")
+        mapTile.addEventListener("mousedown", mapClickEvent)
+        mapTile.addEventListener("contextmenu", event => event.preventDefault())
+        mapTile.setAttribute("id", currentMap.beatmap_id)
 
         // Map Background
         const mapBackground = document.createElement("div")
         mapBackground.classList.add("map-background")
         mapBackground.style.backgroundImage = `url("https://assets.ppy.sh/beatmaps/${currentMap.beatmapset_id}/covers/cover.jpg")`
+
+        // Map Background Overlay
+        const mapBackgroundOverlay = document.createElement("div")
+        mapBackgroundOverlay.classList.add("map-background-overlay")
+
+        // Pick Ban Protect Overlay
+        const pickBanProtectOverlay = document.createElement("div")
+        pickBanProtectOverlay.classList.add("pick-ban-protect-overlay")
+        const pickBanProtectImage = document.createElement("img")
+        pickBanProtectImage.setAttribute("src", "https://osuflags.omkserver.nl/US-42.png")
+        pickBanProtectImage.classList.add("pick-ban-protect-image")
+        const pickBanProtectText = document.createElement("div")
+        pickBanProtectText.classList.add("pick-ban-protect-text")
+        pickBanProtectText.textContent = "PROTECT"
 
         // Map Identifier Section
         const mapIdentifierSection = document.createElement("div")
@@ -147,13 +166,97 @@ function renderMaps() {
         mapSongArtist.innerHTML = `${currentMap.artist} <span class="map-song-artist-end">]</span>`
 
         // Append everything
-        mapBackground.append(mapIdentifierSection)
+        pickBanProtectOverlay.append(pickBanProtectImage, pickBanProtectText)
+        mapBackground.append(mapBackgroundOverlay, pickBanProtectOverlay, mapIdentifierSection)
         mapTile.append(mapBackground, mapSongTitle, mapSongArtist)
         
         currentModContainers[(currentModContainers.length > 1 && currentMap.order > currentNoOfMaps / 2) ? 1 : 0].append(mapTile)
     }
 }
 const noOfMapsFromMod = mod => allBeatmaps.filter(map => map.mod === mod).length
+
+const svgs = {
+    protect: `<svg class="pickBanProtectSVG" xmlns="http://www.w3.org/2000/svg" height="12" width="12" viewBox="0 0 512 512"><path fill="#000000" d="M256 0c4.6 0 9.2 1 13.4 2.9L457.7 82.8c22 9.3 38.4 31 38.3 57.2c-.5 99.2-41.3 280.7-213.6 363.2c-16.7 8-36.1 8-52.8 0C57.3 420.7 16.5 239.2 16 140c-.1-26.2 16.3-47.9 38.3-57.2L242.7 2.9C246.8 1 251.4 0 256 0z"/></svg>`,
+    ban: `<svg class="pickBanProtectSVG" xmlns="http://www.w3.org/2000/svg" height="15" width="15" viewBox="0 0 384 512"><path fill="#000000" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>`,
+    pick: `<svg class="pickBanProtectSVG" xmlns="http://www.w3.org/2000/svg" height="15" width="15" viewBox="0 0 448 512"><path fill="#000000" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>`
+}
+
+// Track whether Z is currently pressed
+let zHeld = false
+
+// Use event.code for the physical "Z" key regardless of layout
+function onKeyDown(e) {
+    if (e.code === "KeyZ" || (e.key && e.key.toLowerCase() === "z")) {
+      zHeld = true
+    }
+}
+function onKeyUp(e) {
+    if (e.code === "KeyZ" || (e.key && e.key.toLowerCase() === "z")) {
+      zHeld = false
+    }
+}
+window.addEventListener("keydown", onKeyDown)
+window.addEventListener("keyup", onKeyUp)
+
+// Map Click Event
+function mapClickEvent(event) {
+    // Team
+    let team
+    if (event.button === 0) team = "red"
+    else if (event.button === 2) team = "blue"
+    if (!team) return
+
+    // Action
+    let action = "pick"
+    if (event.ctrlKey) action = "ban"
+    if (event.shiftKey) action = "protect"
+    if (zHeld) action = "clear"
+
+    // Pick Ban Protect Container
+    const pickBanProtectContainer = this.children[0].children[1]
+    const tileBackgroundOverlay = this.children[0].children[0]
+    const normalOverlay = "rgba(0,0,0,0.5)"
+    const darkOverlay = "rgba(0,0,0,0.8)"
+    tileBackgroundOverlay.style.backgroundColor = normalOverlay
+    console.log(pickBanProtectContainer)
+
+    // Remove map
+    if (action  === "clear") {
+        pickBanProtectContainer.classList.remove("pick-ban-protect-overlay-keyframe")
+        pickBanProtectContainer.style.clipPath = "polygon(0% 0%, 0% 100%, 0% 100%, 0% 0%)"
+    } else {
+        // Add correct classes
+        pickBanProtectContainer.classList.add("pick-ban-protect-overlay-keyframe")
+        pickBanProtectContainer.classList.remove("pick-ban-protect-overlay-protect")
+        pickBanProtectContainer.classList.remove("pick-ban-protect-overlay-pick")
+        pickBanProtectContainer.classList.remove("pick-ban-protect-overlay-ban")
+        pickBanProtectContainer.classList.add(`pick-ban-protect-overlay-${action}`)
+
+        // Add flag
+        const currentCountry = findCountryByName(team === "red" ? currentRedCountryName : currentBlueCountryName)
+        pickBanProtectContainer.children[0].setAttribute("src", `https://osuflags.omkserver.nl/${currentCountry.flag_code}-42.png`)
+
+        // Add text
+        pickBanProtectContainer.children[1].textContent = action.toUpperCase()
+
+        // Remove existing svgs
+        while (pickBanProtectContainer.childElementCount > 2) {
+            pickBanProtectContainer.lastElementChild.remove()
+        }
+
+        // Add new svg
+        pickBanProtectContainer.innerHTML += svgs[action]
+
+        // Dark overlay for bans
+        if (action === "ban") tileBackgroundOverlay.style.backgroundColor = darkOverlay
+
+        // Set cookie for picks
+        if (action !== "pick") return
+        document.cookie = `currentTeamPick=${team}; path=/`
+        if (team === "red") currentPickerRedEl.click()
+        else currentPickerBlueEl.click()
+    }
+}
 
 // Country
 const redCountryFlagEl = document.getElementById("red-country-flag")
@@ -165,6 +268,12 @@ let currentRedCountryName, currentBlueCountryName
 // Chat Display
 const chatContainerEl = document.getElementById("chat-container")
 let chatLen
+
+// Beatmap ID
+let beatmapID
+let currentIpcState
+let currentMappoolBeatmap
+let hasAutopicked = false
 
 // Socket
 const socket = createTosuWsSocket()
@@ -179,7 +288,7 @@ socket.onmessage = event => {
     if (currentBlueCountryName !== data.tourney.team.right) {
         currentBlueCountryName = setCountryDetails(data.tourney.team.right, blueCountryNameEl, blueCountryFlagEl)
     }
-    
+
     // This is also mostly taken from Victim Crasher: https://github.com/VictimCrasher/static/tree/master/WaveTournament
     if (chatLen !== data.tourney.chat.length) {
         (chatLen === 0 || chatLen > data.tourney.chat.length) ? (chatContainerEl.innerHTML = "", chatLen = 0) : null
@@ -210,6 +319,60 @@ socket.onmessage = event => {
         chatContainerEl.append(fragment)
         chatLen = data.tourney.chat.length
         chatContainerEl.scrollTop = chatContainerEl.scrollHeight
+    }
+
+    if (beatmapID !== data.beatmap.id && data.beatmap.id !== 0 && allBeatmaps) { 
+        beatmapID = data.beatmap.id
+        currentMappoolBeatmap = findBeatmap(beatmapID)
+
+        console.log(currentMappoolBeatmap)
+
+        const targetElement = document.getElementById(`${beatmapID}`)
+
+        console.log(targetElement)
+
+        if (document.contains(targetElement) && isAutopickOn && !hasAutopicked) {
+            const isRed = nextAutopickNextEl.innerText === 'RED'
+            const event = new MouseEvent('mousedown', {
+                bubbles: true,
+                cancelable: true,
+                view: window,
+                button: isRed ? 0 : 2
+            })
+            targetElement.dispatchEvent(event)
+            setAutopicker(isRed ? 'Blue' : 'Red')
+            hasAutopicked = true
+        }
+    }
+
+    // Autopicking
+    if (currentIpcState !== data.tourney.ipcState) {
+        currentIpcState = data.tourney.ipcState
+
+        if (currentIpcState === 4) {
+            hasAutopicked = false
+        }
+    }
+
+    if (currentIpcState === 2 || currentIpcState === 3) {
+        currentLeftTeamScore = 0
+        currentRightTeamScore = 0
+        currentScoreDelta = 0
+        
+        for (let i = 0; i < data.tourney.clients.length; i++) {
+            const currentPlayer = data.tourney.clients[i]
+            let currentScore = currentPlayer.play.score            
+            // Check for EZ, EZHD, and multiplier
+            if (currentMappoolBeatmap && currentMappoolBeatmap.mod === "FM") {
+                const mods = getMods(currentPlayer.play.mods.number)
+                if (mods.includes("EZ") && mods.includes("HD")) currentScore *= currentMappoolBeatmap.EZHDMulti
+                else if (mods.includes("EZ")) currentScore *= currentMappoolBeatmap.EZMulti
+            }
+
+            // Add score to correct team
+            if (currentPlayer.team === "left") currentLeftTeamScore += currentScore
+            else if (currentPlayer.team === "right") currentRightTeamScore += currentScore
+        }
     }
 }
 
@@ -243,6 +406,13 @@ let isAutopickOn = false, currentPicker = "none"
 // Toggle stars button
 const toggleStarButtonEl = document.getElementById("toggle-stars-button")
 const toggleStarsOnOffEl = document.getElementById("toggle-stars-on-off")
+
+// Setting current picker
+const currentPickerTextEl = document.getElementById("current-picker-text")
+const currentPickerRedEl = document.getElementById("current-picker-red")
+const currentPickerBlueEl = document.getElementById("current-picker-blue")
+const currentPickerNoneEl = document.getElementById("current-picker-none")
+
 document.addEventListener("DOMContentLoaded", () => {
     toggleStarButtonEl.addEventListener("click", () => toggleStars(toggleStarsOnOffEl, toggleStarButtonEl, redTeamStarContainerEl, blueTeamStarContainerEl))
     document.cookie = `toggleStarContainers=${true}; path=/`
@@ -271,19 +441,21 @@ document.addEventListener("DOMContentLoaded", () => {
     currentPickerNoneEl.addEventListener("click", () => updateCurrentPicker("none"))
     currentPickerNoneEl.click()
 })
-
-// Setting current picker
-const currentPickerTextEl = document.getElementById("current-picker-text")
-const currentPickerRedEl = document.getElementById("current-picker-red")
-const currentPickerBlueEl = document.getElementById("current-picker-blue")
-const currentPickerNoneEl = document.getElementById("current-picker-none")
 function updateCurrentPicker(side) {
-    currentPickerTextEl.textContent = side
+    currentPickerTextEl.textContent = side.toUpperCase()
     document.cookie = `currentPicker=${side}; path=/`
 }
 
 // Set Autopicker
 function setAutopicker(picker) {
     currentPicker = picker
-    nextAutopickNextEl.textContent = `${currentPicker.substring(0, 1).toUpperCase()}${currentPicker.substring(1)}`
+    nextAutopickNextEl.textContent = picker.toUpperCase()
 }
+
+// Updating Score
+const currentScoreLeftEl = document.getElementById("current-score-left")
+const currentScoreRightEl = document.getElementById("current-score-right")
+setInterval(() => {
+    currentScoreLeftEl.textContent = getCookie("redStarCount")
+    currentScoreRightEl.textContent = getCookie("blueStarCount")
+}, 50)

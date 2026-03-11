@@ -34,19 +34,6 @@ async function getBeatmaps() {
 // Find Beatmaps
 const findBeatmap = beatmapId => allBeatmaps.find(beatmap => beatmap.beatmap_id == beatmapId)
 
-// Toggle stars
-let isStarOn = true
-function toggleStars() {
-    isStarOn = !isStarOn
-    if (isStarOn) {
-        leftTeamStarContainerEl.style.display = "flex"
-        rightTeamStarContainerEl.style.display = "flex"
-    } else {
-        leftTeamStarContainerEl.style.display = "none"
-        rightTeamStarContainerEl.style.display = "none"
-    }
-}
-
 let allTeams
 async function initialise() {
     await getApi()
@@ -346,6 +333,10 @@ function displayLength(second) {
     nowPlayingStatsLengthEl.innerText = `${minutes < 10? minutes.toString().padStart(2, "0") : minutes}:${seconds < 10? seconds.toString().padStart(2, "0") : seconds}`
 }
 
+// Create Star Display
+const leftTeamStarContainerEl = document.getElementById("left-team-star-container")
+const rightTeamStarContainerEl = document.getElementById("right-team-star-container")
+
 // Picker Colour
 let pickerColour
 setInterval(() => {
@@ -359,42 +350,6 @@ setInterval(() => {
         document.cookie = `currentTeamPick=none; path=/`
     }
 
-    // Get stars
-    currentLeftStars = Number(getCookie("currentLeftStars"))
-    currentRightStars = Number(getCookie("currentRightStars"))
-
-    createStarDisplay()
-
-    // Toggle Stars
-    const isStarOn = getCookie("toggleStars")
-    if (isStarOn === "true") {
-        leftTeamStarContainerEl.style.display = "flex"
-        rightTeamStarContainerEl.style.display = "flex"
-    } else if (isStarOn === "false") {
-        leftTeamStarContainerEl.style.display = "none"
-        rightTeamStarContainerEl.style.display = "none"
-    }
+    renderStars(leftTeamStarContainerEl, rightTeamStarContainerEl)
+    toggleStarContainers(leftTeamStarContainerEl, rightTeamStarContainerEl)
 }, 200)
-
-// Create Star Display
-const leftTeamStarContainerEl = document.getElementById("left-team-star-container")
-const rightTeamStarContainerEl = document.getElementById("right-team-star-container")
-function createStarDisplay() {
-    leftTeamStarContainerEl.innerHTML = ""
-    rightTeamStarContainerEl.innerHTML = ""
-
-    let i = 0
-    for (i; i < currentLeftStars; i++) leftTeamStarContainerEl.append(createStar("full"))
-    for (i; i < currentFirstTo; i++) leftTeamStarContainerEl.append(createStar("empty"))
-
-    i = 0
-    for (i; i < currentRightStars; i++) rightTeamStarContainerEl.append(createStar("full"))
-    for (i; i < currentFirstTo; i++) rightTeamStarContainerEl.append(createStar("empty"))
-
-    // Create Star
-    function createStar(status) {
-        const newStar = document.createElement("img")
-        newStar.setAttribute("src", `static/star-${status}.png`)
-        return newStar
-    }
-}

@@ -18,8 +18,8 @@ setInterval(() => {
     if (!allTeams) return
 
     // Set Stars
-    let currentLeftStars = Number(getCookie("currentLeftStars"))
-    let currentRightStars = Number(getCookie("currentRightStars"))
+    let currentLeftStars = Number(getCookie("redStarCount"))
+    let currentRightStars = Number(getCookie("blueStarCount"))
     let currentFirstTo = Number(getCookie("currentFirstTo"))
 
     // Update team names and scores if they have changed
@@ -48,10 +48,7 @@ setInterval(() => {
     if (currentLeftStars === currentFirstTo) winningTeam = findTeam(currentLeftTeamName)
     else if (currentRightStars === currentFirstTo) winningTeam = findTeam(currentRightTeamName)
 
-    if (!winningTeam)
-        return;
-
-    console.log(winningTeam)
+    if (!winningTeam) return
 
     // Set elements
     // Set Flag
