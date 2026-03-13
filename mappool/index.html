@@ -99,19 +99,19 @@
         </div>
 
         <!-- Tiebreaker -->
-        <div class="tiebreaker-cell tiebreaker-cell-keyframe-open">
+        <div class="tiebreaker-cell" id="tiebreaker-cell">
             <div class="tiebreaker-cell-overlay"></div>
-            <div class="tiebreaker-center-x tiebreaker-regular-text tiebreaker-artist">Artist</div>
-            <div class="tiebreaker-center-x tiebreaker-regular-text tiebreaker-title">Title</div>
+            <div class="tiebreaker-center-x tiebreaker-regular-text tiebreaker-artist" id="tiebreaker-artist">Artist</div>
+            <div class="tiebreaker-center-x tiebreaker-regular-text tiebreaker-title" id="tiebreaker-title">Title</div>
             <div class="tiebreaker-center-x tiebreaker-regular-text tiebreaker-difficulty-mapper"><span id="tiebreaker-difficulty">[difficulty name]</span> - mapped by <span id="tiebreaker-mapper">mapper</span></div>
             <div class="tiebreaker-center-x tiebreaker-text">TIEBREAKER COMING...</div>
             <div class="tiebreaker-center-x tiebreaker-regular-text tiebreaker-stats">
-                CS <span>4.0</span> | 
-                AR <span>9.7</span> | 
-                OD <span>10.2</span> | 
-                BPM <span>200</span> | 
-                LENGTH <span>05:11</span> | 
-                SR <span>10.00</span> ★
+                CS <span id="tiebreaker-cs">4.0</span> | 
+                AR <span id="tiebreaker-ar">9.7</span> | 
+                OD <span id="tiebreaker-od">10.2</span> | 
+                BPM <span id="tiebreaker-bpm">200</span> | 
+                LENGTH <span id="tiebreaker-len">05:11</span> | 
+                SR <span id="tiebreaker-sr">10.00</span> ★
             </div>
         </div>
     </div>
@@ -149,6 +149,14 @@
                     <button class="sidebar-button" id="current-picker-red">Red</button>
                     <button class="sidebar-button" id="current-picker-blue">Blue</button>
                     <button class="sidebar-button full-size-button" id="current-picker-none">None</button>
+                </div>
+            </div>
+            <!-- Tiebreaker Trigger -->
+            <div class="sidebar-section">
+                <h1>Tiebreaker<br>Trigger</h1>
+                <div class="sidebar-button-container">
+                    <button class="sidebar-button" onclick="triggerTiebreaker(true)">On</button>
+                    <button class="sidebar-button" onclick="triggerTiebreaker(false)">Off</button>
                 </div>
             </div>
         </div>

@@ -11,6 +11,22 @@ const findCountryByName = (name) => allCountries.find((c) => c.country_name.toLo
 const redTeamStarContainerEl = document.getElementById("red-country-star-container")
 const blueTeamStarContainerEl = document.getElementById("blue-country-star-container")
 
+// Tiebreaker Details
+const tiebreakerCellEl = document.getElementById("tiebreaker-cell")
+const tiebreakerArtistEl = document.getElementById("tiebreaker-artist")
+const tiebreakerTitleEl = document.getElementById("tiebreaker-title")
+const tiebreakerDifficultyEl = document.getElementById("tiebreaker-difficulty")
+const tiebreakerMapperEl = document.getElementById("tiebreaker-mapper")
+const tiebreakerCsEl = document.getElementById("tiebreaker-cs")
+const tiebreakerArEl = document.getElementById("tiebreaker-ar")
+const tiebreakerOdEl = document.getElementById("tiebreaker-od")
+const tiebreakerBpmEl = document.getElementById("tiebreaker-bpm")
+const tiebreakerLenEl = document.getElementById("tiebreaker-len")
+const tiebreakerSrEl = document.getElementById("tiebreaker-sr")
+let preloadedWithBg = false
+
+// Find Beatmaps
+const findBeatmap = beatmapId => allBeatmaps.find(beatmap => beatmap.beatmap_id == beatmapId)
 // Extract Beatmap Data
 let allBeatmaps
 async function getBetmaps() {
@@ -35,10 +51,68 @@ async function getBetmaps() {
 
     // Set default star count
     setDefaultStarCount(bestOf, redTeamStarContainerEl, blueTeamStarContainerEl)
+
+    // Set tiebreaker information
+    const tbMap = allBeatmaps[allBeatmaps.length - 1]
+    const tbImagePath = `http://127.0.0.1:24050/Songs/${tbMap.beatmapset_id} ${tbMap.artist} - ${tbMap.title}`
+    const filePathFound = await urlAccessible(`${tbImagePath}`)
+    if (filePathFound) {
+        const image = await findImageFromDirListing(tbImagePath)
+        tiebreakerCellEl.style.backgroundImage = `url(${image})`
+        preloadedWithBg = true
+    } else {
+        tiebreakerCellEl.style.backgroundImage = `url(https://assets.ppy.sh/beatmaps/${tbMap.beatmapset_id}/covers/cover.jpg)`
+    }
+    tiebreakerArtistEl.textContent = tbMap.artist
+    tiebreakerTitleEl.textContent = tbMap.title
+    tiebreakerDifficultyEl.textContent = `[${tbMap.version}]`
+    tiebreakerMapperEl.textContent = tbMap.creator
+    tiebreakerCsEl.textContent = Math.round(Number(tbMap.diff_size) * 10) / 10
+    tiebreakerArEl.textContent = Math.round(Number(tbMap.diff_approach) * 10) / 10
+    tiebreakerOdEl.textContent = Math.round(Number(tbMap.diff_overall) * 10) / 10
+    tiebreakerBpmEl.textContent = Number(tbMap.bpm)
+    tiebreakerLenEl.textContent = `${Math.floor(tbMap.total_length / 60)}:${String(Math.floor(tbMap.total_length % 60)).padStart(2,'0')}`
+    tiebreakerSrEl.textContent = Math.round(Number(tbMap.difficultyrating) * 100) / 100
 }
 getBetmaps()
-// Find Beatmaps
-const findBeatmap = beatmapId => allBeatmaps.find(beatmap => beatmap.beatmap_id == beatmapId)
+
+// fetchPing.js
+async function urlAccessible(url, timeoutMs = 3000) {
+    const controller = new AbortController()
+    const timeout = setTimeout(() => controller.abort(), timeoutMs)
+
+    try {
+        res = await fetch(url, { method: 'GET', signal: controller.signal })
+        clearTimeout(timeout);
+        return { ok: res.ok, status: res.status, statusText: res.statusText }
+    } catch (err) {
+        clearTimeout(timeout);
+        // If CORS blocked the response, fetch throws a TypeError and we can't tell more.
+        // Distinguish abort vs network/CORS if needed:
+        if (err.name === 'AbortError') return { ok: false, error: 'timeout' }
+        return { ok: false, error: 'network_or_cors' }
+    }
+}
+
+async function findImageFromDirListing(url) {
+    try {
+        const res = await fetch(url, { method: 'GET' })
+        if (!res.ok) return null
+        const html = await res.text()
+        // Basic href extraction; adjust if server formats differently
+        const doc = new DOMParser().parseFromString(html, 'text/html')
+        const anchors = Array.from(doc.querySelectorAll('a'))
+        const image = anchors
+            .map(a => a.getAttribute('href'))
+            .filter(Boolean)
+            .find(href => /\.(jpe?g|png|gif|webp|avif)$/i.test(href))
+        if (!image) return null
+        // Resolve relative URL
+        return new URL(image, url).href
+    } catch (err) {
+        return null
+    }
+}
 
 // NM Mod containers
 const nmSectionPart1El = document.getElementById("nm-section-part-1")
@@ -275,9 +349,13 @@ let currentIpcState
 let currentMappoolBeatmap
 let hasAutopicked = false
 
+// Tiebreaker Trigger
+let tiebreakerTriggered = false
+let tiebreakerTriggeredAuto = false
+
 // Socket
 const socket = createTosuWsSocket()
-socket.onmessage = event => {
+socket.onmessage = async event => {
     const data = JSON.parse(event.data)
     console.log(data)
 
@@ -324,12 +402,7 @@ socket.onmessage = event => {
     if (beatmapID !== data.beatmap.id && data.beatmap.id !== 0 && allBeatmaps) { 
         beatmapID = data.beatmap.id
         currentMappoolBeatmap = findBeatmap(beatmapID)
-
-        console.log(currentMappoolBeatmap)
-
         const targetElement = document.getElementById(`${beatmapID}`)
-
-        console.log(targetElement)
 
         if (document.contains(targetElement) && isAutopickOn && !hasAutopicked) {
             const isRed = nextAutopickNextEl.innerText === 'RED'
@@ -343,6 +416,14 @@ socket.onmessage = event => {
             setAutopicker(isRed ? 'Blue' : 'Red')
             hasAutopicked = true
         }
+
+        if (currentMappoolBeatmap.mod === "TB" && !preloadedWithBg) {
+            // Set tiebreaker information
+            const tbImagePath = `http://127.0.0.1:24050/Songs/${data.directPath.beatmapBackground}`
+            const filePathFound = await urlAccessible(`${tbImagePath}`)
+            tiebreakerCellEl.style.backgroundImage = `url(${filePathFound ? tbImagePath : `https://assets.ppy.sh/beatmaps/${currentMappoolBeatmap.beatmapset_id}/covers/cover.jpg`})`
+            triggerTiebreaker(true)
+        }
     }
 
     // Autopicking
@@ -351,6 +432,7 @@ socket.onmessage = event => {
 
         if (currentIpcState === 4) {
             hasAutopicked = false
+            tiebreakerTriggeredAuto = false
         }
     }
 
@@ -374,6 +456,15 @@ socket.onmessage = event => {
             else if (currentPlayer.team === "right") currentRightTeamScore += currentScore
         }
     }
+
+    // Tiebreaker Triggered Auto
+    const firstTo = Number(getCookie("firstTo"))
+    if (Number(getCookie("redStarCount")) >= firstTo && Number(getCookie("blueStarCount")) >= firstTo && !tiebreakerTriggeredAuto) {
+        tiebreakerTriggeredAuto = true
+        if (!tiebreakerTriggered) {
+            triggerTiebreaker(true)
+        }
+    }
 }
 
 // Set Country Details
@@ -387,6 +478,18 @@ function setCountryDetails(countryName, countryNameEl, countryFlagEl) {
         countryFlagEl.style.display = "none"
     }
     return countryName
+}
+
+// Trigger Tiebreaker
+function triggerTiebreaker(value) {
+    tiebreakerTriggered = value
+    if (tiebreakerTriggered) {
+        tiebreakerCellEl.classList.add("tiebreaker-cell-keyframe-open")
+        tiebreakerCellEl.classList.remove("tiebreaker-cell-keyframe-close")
+    } else {
+        tiebreakerCellEl.classList.remove("tiebreaker-cell-keyframe-open")
+        tiebreakerCellEl.classList.add("tiebreaker-cell-keyframe-close")
+    }
 }
 
 // Update Star Count Buttons
