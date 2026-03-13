@@ -255,23 +255,6 @@ const svgs = {
     pick: `<svg class="pickBanProtectSVG" xmlns="http://www.w3.org/2000/svg" height="15" width="15" viewBox="0 0 448 512"><path fill="#000000" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>`
 }
 
-// Track whether Z is currently pressed
-let zHeld = false
-
-// Use event.code for the physical "Z" key regardless of layout
-function onKeyDown(e) {
-    if (e.code === "KeyZ" || (e.key && e.key.toLowerCase() === "z")) {
-      zHeld = true
-    }
-}
-function onKeyUp(e) {
-    if (e.code === "KeyZ" || (e.key && e.key.toLowerCase() === "z")) {
-      zHeld = false
-    }
-}
-window.addEventListener("keydown", onKeyDown)
-window.addEventListener("keyup", onKeyUp)
-
 // Map Click Event
 function mapClickEvent(event) {
     // Team
@@ -284,7 +267,7 @@ function mapClickEvent(event) {
     let action = "pick"
     if (event.ctrlKey) action = "ban"
     if (event.shiftKey) action = "protect"
-    if (zHeld) action = "clear"
+    if (event.altKey) action = "clear"
 
     // Pick Ban Protect Container
     const pickBanProtectContainer = this.children[0].children[1]
