@@ -459,7 +459,7 @@ socket.onmessage = async event => {
 
     // Tiebreaker Triggered Auto
     const firstTo = Number(getCookie("firstTo"))
-    if (Number(getCookie("redStarCount")) >= firstTo && Number(getCookie("blueStarCount")) >= firstTo && !tiebreakerTriggeredAuto) {
+    if (Number(getCookie("redStarCount")) >= firstTo - 1 && Number(getCookie("blueStarCount")) >= firstTo - 1 && !tiebreakerTriggeredAuto) {
         tiebreakerTriggeredAuto = true
         if (!tiebreakerTriggered) {
             triggerTiebreaker(true)
