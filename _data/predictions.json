@@ -19,6 +19,7 @@
     },
     {
         "country_name": "Argentina",
+        "seed": 34,
         "flag_code": "AR",
         "last_seed": "31",
         "last_placement": "25-32",
@@ -70,6 +71,7 @@
     },
     {
         "country_name": "Australia",
+        "seed": 12,
         "flag_code": "AU",
         "last_seed": "6",
         "last_placement": "2",
@@ -121,6 +123,7 @@
     },
     {
         "country_name": "Austria",
+        "seed": 37,
         "flag_code": "AT",
         "last_seed": "32",
         "last_placement": "25-32",
@@ -172,6 +175,7 @@
     },
     {
         "country_name": "Belarus",
+        "seed": 40,
         "flag_code": "BY",
         "last_seed": "42",
         "last_placement": "DNQ",
@@ -223,6 +227,7 @@
     },
     {
         "country_name": "Belgium",
+        "seed": 38,
         "flag_code": "BE",
         "last_seed": "39",
         "last_placement": "DNQ",
@@ -290,6 +295,7 @@
     },
     {
         "country_name": "Brazil",
+        "seed": 6,
         "flag_code": "BR",
         "last_seed": "7",
         "last_placement": "7-8",
@@ -341,6 +347,7 @@
     },
     {
         "country_name": "Canada",
+        "seed": 4,
         "flag_code": "CA",
         "last_seed": "4",
         "last_placement": "4",
@@ -392,6 +399,7 @@
     },
     {
         "country_name": "Chile",
+        "seed": 7,
         "flag_code": "CL",
         "last_seed": "17",
         "last_placement": "9-12",
@@ -443,6 +451,7 @@
     },
     {
         "country_name": "China",
+        "seed": 14,
         "flag_code": "CN",
         "last_seed": "13",
         "last_placement": "9-12",
@@ -545,6 +554,7 @@
     },
     {
         "country_name": "Czechia",
+        "seed": 19,
         "flag_code": "CZ",
         "last_seed": "15",
         "last_placement": "17-24",
@@ -596,6 +606,7 @@
     },
     {
         "country_name": "Denmark",
+        "seed": 29,
         "flag_code": "DK",
         "last_seed": "40",
         "last_placement": "DNQ",
@@ -665,6 +676,7 @@
     },
     {
         "country_name": "Finland",
+        "seed": 36,
         "flag_code": "FI",
         "last_seed": "30",
         "last_placement": "17-24",
@@ -716,6 +728,7 @@
     },
     {
         "country_name": "France",
+        "seed": 9,
         "flag_code": "FR",
         "last_seed": "8",
         "last_placement": "7-8",
@@ -767,6 +780,7 @@
     },
     {
         "country_name": "Germany",
+        "seed": 3,
         "flag_code": "DE",
         "last_seed": "2",
         "last_placement": "5-6",
@@ -818,6 +832,7 @@
     },
     {
         "country_name": "Hong Kong",
+        "seed": 10,
         "flag_code": "HK",
         "last_seed": "14",
         "last_placement": "9-12",
@@ -963,6 +978,7 @@
     },
     {
         "country_name": "Indonesia",
+        "seed": 21,
         "flag_code": "ID",
         "last_seed": "24",
         "last_placement": "17-24",
@@ -1116,6 +1132,7 @@
     },
     {
         "country_name": "Italy",
+        "seed": 27,
         "flag_code": "IT",
         "last_seed": "51",
         "last_placement": "DNQ",
@@ -1167,6 +1184,7 @@
     },
     {
         "country_name": "Japan",
+        "seed": 20,
         "flag_code": "JP",
         "last_seed": "25",
         "last_placement": "25-32",
@@ -1218,6 +1236,7 @@
     },
     {
         "country_name": "Kazakhstan",
+        "seed": 30,
         "flag_code": "KZ",
         "last_seed": "23",
         "last_placement": "17-24",
@@ -1371,6 +1390,7 @@
     },
     {
         "country_name": "Malaysia",
+        "seed": 26,
         "flag_code": "MY",
         "last_seed": "26",
         "last_placement": "25-32",
@@ -1422,6 +1442,7 @@
     },
     {
         "country_name": "Mexico",
+        "seed": 24,
         "flag_code": "MX",
         "last_seed": "27",
         "last_placement": "25-32",
@@ -1489,6 +1510,7 @@
     },
     {
         "country_name": "Netherlands",
+        "seed": 18,
         "flag_code": "NL",
         "last_seed": "16",
         "last_placement": "17-24",
@@ -1689,6 +1711,7 @@
     },
     {
         "country_name": "Peru",
+        "seed": 28,
         "flag_code": "PE",
         "last_seed": "29",
         "last_placement": "25-32",
@@ -1740,6 +1763,7 @@
     },
     {
         "country_name": "Philippines",
+        "seed": 2,
         "flag_code": "PH",
         "last_seed": "5",
         "last_placement": "3",
@@ -1791,6 +1815,7 @@
     },
     {
         "country_name": "Poland",
+        "seed": 15,
         "flag_code": "PL",
         "last_seed": "21",
         "last_placement": "13-16",
@@ -1842,6 +1867,7 @@
     },
     {
         "country_name": "Portugal",
+        "seed": 31,
         "flag_code": "PT",
         "last_seed": "35",
         "last_placement": "DNQ",
@@ -1909,6 +1935,7 @@
     },
     {
         "country_name": "Romania",
+        "seed": 33,
         "flag_code": "RO",
         "last_seed": "50",
         "last_placement": "DNQ",
@@ -1956,6 +1983,7 @@
     },
     {
         "country_name": "Russian Federation",
+        "seed": 5,
         "flag_code": "RU",
         "last_seed": "3",
         "last_placement": "5-6",
@@ -2053,6 +2081,7 @@
     },
     {
         "country_name": "Singapore",
+        "seed": 23,
         "flag_code": "SG",
         "last_seed": "18",
         "last_placement": "17-24",
@@ -2173,6 +2202,7 @@
     },
     {
         "country_name": "South Korea",
+        "seed": 13,
         "flag_code": "KR",
         "last_seed": "9",
         "last_placement": "13-16",
@@ -2224,6 +2254,7 @@
     },
     {
         "country_name": "Spain",
+        "seed": 22,
         "flag_code": "ES",
         "last_seed": "19",
         "last_placement": "25-32",
@@ -2275,6 +2306,7 @@
     },
     {
         "country_name": "Sweden",
+        "seed": 16,
         "flag_code": "SE",
         "last_seed": "12",
         "last_placement": "9-12",
@@ -2326,6 +2358,7 @@
     },
     {
         "country_name": "Switzerland",
+        "seed": 39,
         "flag_code": "CH",
         "last_seed": "45",
         "last_placement": "DNQ",
@@ -2377,6 +2410,7 @@
     },
     {
         "country_name": "Taiwan",
+        "seed": 8,
         "flag_code": "TW",
         "last_seed": "11",
         "last_placement": "13-16",
@@ -2428,6 +2462,7 @@
     },
     {
         "country_name": "Thailand",
+        "seed": 25,
         "flag_code": "TH",
         "last_seed": "33",
         "last_placement": "DNQ",
@@ -2497,6 +2532,7 @@
     },
     {
         "country_name": "Türkiye",
+        "seed": 32,
         "flag_code": "TR",
         "last_seed": "34",
         "last_placement": "DNQ",
@@ -2548,6 +2584,7 @@
     },
     {
         "country_name": "Ukraine",
+        "seed": 17,
         "flag_code": "UA",
         "last_seed": "20",
         "last_placement": "17-24",
@@ -2650,6 +2687,7 @@
     },
     {
         "country_name": "United Kingdom",
+        "seed": 11,
         "flag_code": "GB",
         "last_seed": "10",
         "last_placement": "13-16",
@@ -2701,6 +2739,7 @@
     },
     {
         "country_name": "United States",
+        "seed": 1,
         "flag_code": "US",
         "last_seed": "1",
         "last_placement": "1",
@@ -2803,6 +2842,7 @@
     },
     {
         "country_name": "Vietnam",
+        "seed": 35,
         "flag_code": "VN",
         "last_seed": "22",
         "last_placement": "17-24",
