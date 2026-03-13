@@ -27,8 +27,6 @@ async function getBeatmaps() {
             currentBestOf = 13; break;
     }
     currentFirstTo = Math.ceil(currentBestOf / 2)
-
-    createStarDisplay()
 }
 
 // Find Beatmaps
@@ -179,7 +177,7 @@ socket.onmessage = event => {
             displayLength(currentLength)
             
         } else {
-            delay(250)
+            sleep(250)
         }
     }
 

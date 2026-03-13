@@ -10,7 +10,7 @@ function createTosuWsSocket(path = "/websocket/v2") {
     return socket;
 }
 
-const delay = async time => new Promise(resolve => setTimeout(resolve, time));
+const sleep = async time => new Promise(resolve => setTimeout(resolve, time));
 
 // Get Cookie
 function getCookie(cname) {
