@@ -23,34 +23,31 @@ setInterval(() => {
     let currentFirstTo = Number(getCookie("currentFirstTo"))
 
     // Update team names and scores if they have changed
-    {
-        const newLeftTeamName = getCookie("currentLeftTeamName")
-        const newRightTeamName = getCookie("currentRightTeamName")
+    const newLeftTeamName = getCookie("currentLeftTeamName")
+    const newRightTeamName = getCookie("currentRightTeamName")
 
-        const teamNamesChanged = newLeftTeamName !== currentLeftTeamName || newRightTeamName !== currentRightTeamName;
-        const scoresChanged = currentLeftStars == previousLeftStars || currentRightStars !== previousRightStars;
+    const teamNamesChanged = newLeftTeamName !== currentLeftTeamName || newRightTeamName !== currentRightTeamName;
+    const scoresChanged = currentLeftStars == previousLeftStars || currentRightStars !== previousRightStars;
 
-        if (teamNamesChanged || scoresChanged) {
-            currentLeftTeamName = newLeftTeamName
-            currentRightTeamName = newRightTeamName
+    if (teamNamesChanged || scoresChanged) {
+        currentLeftTeamName = newLeftTeamName
+        currentRightTeamName = newRightTeamName
 
-            // Commit change to team names and scores
-            let tempLeftTeamName = currentLeftTeamName
-            let tempRightTeamName = currentRightTeamName
-            if (tempLeftTeamName.toLowerCase() === "russian federation") tempLeftTeamName = "russia"
-            if (tempRightTeamName.toLowerCase() === "united arab emirates") tempRightTeamName = "uae"
-            scoreEl.innerText = `${tempLeftTeamName.toUpperCase()} ${currentLeftStars} - ${currentRightStars} ${tempRightTeamName.toUpperCase()}`
-        }
+        // Commit change to team names and scores
+        let tempLeftTeamName = currentLeftTeamName
+        let tempRightTeamName = currentRightTeamName
+        if (tempLeftTeamName.toLowerCase() === "russian federation") tempLeftTeamName = "russia"
+        if (tempRightTeamName.toLowerCase() === "united arab emirates") tempRightTeamName = "uae"
+        scoreEl.innerText = `${tempLeftTeamName.toUpperCase()} ${currentLeftStars} - ${currentRightStars} ${tempRightTeamName.toUpperCase()}`
     }
 
     // Check if there is a winner
     let winningTeam
-    if (currentLeftStars === currentFirstTo) winningTeam = findTeam(currentLeftTeamName)
-    else if (currentRightStars === currentFirstTo) winningTeam = findTeam(currentRightTeamName)
+    if (currentLeftStars > currentRightStars) winningTeam = findTeam(currentLeftTeamName)
+    else if (currentRightStars > currentLeftStars) winningTeam = findTeam(currentRightTeamName)
 
     if (!winningTeam) return
 
-    // Set elements
     // Set Flag
     winnerFlagEl.setAttribute("src", `https://osuflags.omkserver.nl/${winningTeam.flag_code}-600.png`)
 
