@@ -85,6 +85,7 @@
     top: 870px;
     height: 25px;
     background-color: var(--lightPink);
+    transition: 200ms ease-in-out;
 }
 .left-score-bar {
     right: var(--score-bar-horizontal-rule);
@@ -103,6 +104,7 @@
     font-weight: 600px;
     color: var(--lightPink);
     font-size: 2em;
+    font-variant-numeric: tabular-nums;
 }
 .left-score { right: 970px; }
 .right-score { left: 970px; }
@@ -119,6 +121,7 @@
     font-weight: 500;
     color: var(--lightPink);
     font-size: 1.25em;
+    font-variant-numeric: tabular-nums;
 }
 .left-score-difference { right: 970px; }
 .right-score-difference { left: 970px; }

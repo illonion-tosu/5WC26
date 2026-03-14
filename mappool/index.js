@@ -332,6 +332,9 @@ let currentIpcState
 let currentMappoolBeatmap
 let hasAutopicked = false
 
+// Winner
+let checkedWinner = false
+
 // Tiebreaker Trigger
 let tiebreakerTriggered = false
 let tiebreakerTriggeredAuto = false
@@ -409,34 +412,46 @@ socket.onmessage = async event => {
         }
     }
 
-    // Autopicking
+    if (currentIpcState === 2 || currentIpcState === 3) {
+        currentLeftTeamScore = 0
+        currentRightTeamScore = 0
+        // currentScoreDelta = 0
+        
+        // for (let i = 0; i < data.tourney.clients.length; i++) {
+        //     const currentPlayer = data.tourney.clients[i]
+        //     let currentScore = currentPlayer.play.score            
+        //     // Check for EZ, EZHD, and multiplier
+        //     if (currentMappoolBeatmap && currentMappoolBeatmap.mod === "FM") {
+        //         const mods = getMods(currentPlayer.play.mods.number)
+        //         if (mods.includes("EZ") && mods.includes("HD")) currentScore *= currentMappoolBeatmap.EZHDMulti
+        //         else if (mods.includes("EZ")) currentScore *= currentMappoolBeatmap.EZMulti
+        //     }
+
+        //     // Add score to correct team
+        //     if (currentPlayer.team === "left") currentLeftTeamScore += currentScore
+        //     else if (currentPlayer.team === "right") currentRightTeamScore += currentScore
+        // }
+
+        currentLeftTeamScore = data.tourney.totalScore.left
+        currentRightTeamScore = data.tourney.totalScore.right
+    }
+
+    // IPC State
     if (currentIpcState !== data.tourney.ipcState) {
         currentIpcState = data.tourney.ipcState
 
         if (currentIpcState === 4) {
             hasAutopicked = false
             tiebreakerTriggeredAuto = false
-        }
-    }
 
-    if (currentIpcState === 2 || currentIpcState === 3) {
-        currentLeftTeamScore = 0
-        currentRightTeamScore = 0
-        currentScoreDelta = 0
-        
-        for (let i = 0; i < data.tourney.clients.length; i++) {
-            const currentPlayer = data.tourney.clients[i]
-            let currentScore = currentPlayer.play.score            
-            // Check for EZ, EZHD, and multiplier
-            if (currentMappoolBeatmap && currentMappoolBeatmap.mod === "FM") {
-                const mods = getMods(currentPlayer.play.mods.number)
-                if (mods.includes("EZ") && mods.includes("HD")) currentScore *= currentMappoolBeatmap.EZHDMulti
-                else if (mods.includes("EZ")) currentScore *= currentMappoolBeatmap.EZMulti
+            if (!checkedWinner && currentMappoolBeatmap) {
+                checkedWinner = true
+                if (currentLeftTeamScore > currentRightTeamScore) {
+                    setStarRedPlusEl.click()
+                } else if (currentRightTeamScore > currentLeftTeamScore) {
+                    setStarBluePlusEl.click()
+                }
             }
-
-            // Add score to correct team
-            if (currentPlayer.team === "left") currentLeftTeamScore += currentScore
-            else if (currentPlayer.team === "right") currentRightTeamScore += currentScore
         }
     }
 

@@ -217,20 +217,23 @@ socket.onmessage = event => {
         currentRightTeamScore = 0
         currentScoreDelta = 0
         
-        for (let i = 0; i < data.tourney.clients.length; i++) {
-            const currentPlayer = data.tourney.clients[i]
-            let currentScore = currentPlayer.play.score            
-            // Check for EZ, EZHD, and multiplier
-            if (currentMappoolBeatmap && currentMappoolBeatmap.mod === "FM") {
-                const mods = getMods(currentPlayer.play.mods.number)
-                if (mods.includes("EZ") && mods.includes("HD")) currentScore *= currentMappoolBeatmap.EZHDMulti
-                else if (mods.includes("EZ")) currentScore *= currentMappoolBeatmap.EZMulti
-            }
+        // for (let i = 0; i < data.tourney.clients.length; i++) {
+        //     const currentPlayer = data.tourney.clients[i]
+        //     let currentScore = currentPlayer.play.score            
+        //     // Check for EZ, EZHD, and multiplier
+        //     if (currentMappoolBeatmap && currentMappoolBeatmap.mod === "FM") {
+        //         const mods = getMods(currentPlayer.play.mods.number)
+        //         if (mods.includes("EZ") && mods.includes("HD")) currentScore *= currentMappoolBeatmap.EZHDMulti
+        //         else if (mods.includes("EZ")) currentScore *= currentMappoolBeatmap.EZMulti
+        //     }
 
-            // Add score to correct team
-            if (currentPlayer.team === "left") currentLeftTeamScore += currentScore
-            else if (currentPlayer.team === "right") currentRightTeamScore += currentScore
-        }
+        //     // Add score to correct team
+        //     if (currentPlayer.team === "left") currentLeftTeamScore += currentScore
+        //     else if (currentPlayer.team === "right") currentRightTeamScore += currentScore
+        // }
+
+        currentLeftTeamScore = data.tourney.totalScore.left
+        currentRightTeamScore = data.tourney.totalScore.right
 
         // Set animation
         animation.leftScore.update(currentLeftTeamScore)
