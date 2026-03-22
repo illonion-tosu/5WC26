@@ -84,6 +84,7 @@ video {
 /* Country Stars */
 .country-star-container {
     position: absolute;
+    display: flex;
     top: 85px;
 }
 .country-star-container > * { width: 18px; }

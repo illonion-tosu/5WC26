@@ -452,6 +452,8 @@ socket.onmessage = async event => {
                     setStarBluePlusEl.click()
                 }
             }
+        } else {
+            checkedWinner = false
         }
     }
 
