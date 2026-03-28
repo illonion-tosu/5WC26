@@ -1,6 +1,13 @@
 :root {
     --team-flag-x: 21px;
     --team-text-x: 1259px;
+    --team-name-x: 1240px;
+
+    --red-text-shadow-8px: 0 0 8px hsla(0, 86%, 57%, 0.85);
+    --blue-text-shadow-8px: 0 0 8px hsla(241, 86%, 57%, 0.85);
+    --red-text-shadow-10px: 0 0 10px hsla(0, 86%, 57%, 0.85);
+    --blue-text-shadow-10px: 0 0 10px hsla(241, 86%, 57%, 0.85);
+    --team-name-drop-shadow: -3px 7px 18px rgba(0, 0, 0, 0.35);
 }
 
 .main {
@@ -27,17 +34,40 @@
     font-family: "Dela Gothic One";
     color: white;
     position: absolute;
-    top: 56px;
+    top: 57px;
 }
 .red-team-text {
     right: var(--team-text-x);
     text-shadow:
-        0 0 8px hsla(0, 86%, 57%, 0.85),
-        0 0 10px hsla(0, 86%, 57%, 0.85);
+        var(--red-text-shadow-8px),
+        var(--red-text-shadow-10px);
 }
 .blue-team-text {
     left: var(--team-text-x);
     text-shadow:
-        0 0 8px hsla(241, 86%, 57%, 0.85),
-        0 0 10px hsla(241, 86%, 57%, 0.85);
+        var(--blue-text-shadow-8px),
+        var(--blue-text-shadow-10px);
+}
+
+/* Team Name */
+.team-name {
+    font-size: 66px;
+    font-family: "Dela Gothic One";
+    color: white;
+    position: absolute;
+    top: 70px;
+}
+.red-team-name {
+    right: var(--team-name-x);
+    text-shadow:
+        var(--team-name-drop-shadow),
+        var(--red-text-shadow-8px),
+        var(--red-text-shadow-10px);
+}
+.blue-team-name {
+    left: var(--team-name-x);
+    text-shadow:
+        var(--team-name-drop-shadow),
+        var(--blue-text-shadow-8px),
+        var(--blue-text-shadow-10px);
 }
