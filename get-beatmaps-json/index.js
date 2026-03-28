@@ -22,7 +22,7 @@ async function getBeatmaps() {
         
         // Get API response
         const response = await fetch(`https://api.codetabs.com/v1/proxy?quest=` + encodeURIComponent(`https://osu.ppy.sh/api/get_beatmaps?k=${osuApi}&b=${allBeatmaps[i].beatmap_id}&mods=${modNumber}`))
-        await delay(1000)
+        await sleep(1000)
         let responseJson = await response.json()
         responseJson[0].mod = allBeatmaps[i].mod
         responseJson[0].order = allBeatmaps[i].order
