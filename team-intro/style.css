@@ -1,0 +1,17 @@
+.main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 1080px;
+    background-image: url("static/background.png");
+    background-size: contain;
+}
+
+/* Team Flag */
+.team-flag {
+    position: absolute;
+    top: 25px;
+}
+.red-team-flag { left: 21px; }
+.blue-team-flag { right: 21px; }
