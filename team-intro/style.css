@@ -1,3 +1,8 @@
+:root {
+    --team-flag-x: 21px;
+    --team-text-x: 1259px;
+}
+
 .main {
     position: absolute;
     top: 0;
@@ -13,5 +18,26 @@
     position: absolute;
     top: 25px;
 }
-.red-team-flag { left: 21px; }
-.blue-team-flag { right: 21px; }
+.red-team-flag { left: var(--team-flag-x); }
+.blue-team-flag { right: var(--team-flag-x); }
+
+/* Team Text */
+.team-text {
+    font-size: 24px;
+    font-family: "Dela Gothic One";
+    color: white;
+    position: absolute;
+    top: 56px;
+}
+.red-team-text {
+    right: var(--team-text-x);
+    text-shadow:
+        0 0 8px hsla(0, 86%, 57%, 0.85),
+        0 0 10px hsla(0, 86%, 57%, 0.85);
+}
+.blue-team-text {
+    left: var(--team-text-x);
+    text-shadow:
+        0 0 8px hsla(241, 86%, 57%, 0.85),
+        0 0 10px hsla(241, 86%, 57%, 0.85);
+}
