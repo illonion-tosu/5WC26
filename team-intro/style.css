@@ -120,3 +120,74 @@
 }
 .red-players-text-underline { left: var(--players-text-underline-x); }
 .blue-players-text-underline { right: var(--players-text-underline-x); }
+
+/* Team Stats Text */
+.team-stats-section-text {
+    font-size: 22px;
+    font-family: "Dela Gothic One";
+    color: white;
+    text-align: right;
+    position: absolute;
+}
+.team-stats-section-text-aim { top: 245px; }
+.team-stats-section-text-speed { top: 311px; }
+.team-stats-section-text-stamina { top: 377px; }
+.team-stats-section-text-fc { top: 443px; }
+.team-stats-section-text-precision { top: 509px; }
+.team-stats-section-text-reading { top: 575px; }
+.team-stats-section-text-technical { top: 641px; }
+.team-stats-section-text-left { right: 1245px; }
+.team-stats-section-text-right { left: 1245px; }
+
+/* Team Stats Section Bar */
+.team-stats-section-bar {
+    position: absolute;
+    border-width: 3px;
+    border-color: rgba(163, 4, 230, 0.85);
+    border-style: solid;
+    position: absolute;
+    right: 1244px;
+    width: 353px;
+    height: 20px;
+    box-shadow:
+        0 0 4px 2px rgba(163, 4, 230, 0.85), 
+        inset 0 0 4px 2px rgba(163, 4, 230, 0.85);
+}
+.team-stats-section-bar-left { right: 1244px; }
+.team-stats-section-bar-right { left: 1244px; }
+.team-stats-section-bar-aim { top: 279px; }
+.team-stats-section-bar-speed { top: 345px; }
+.team-stats-section-bar-stamina { top: 411px; }
+.team-stats-section-bar-fc { top: 477px; }
+.team-stats-section-bar-precision { top: 543px; }
+.team-stats-section-bar-reading { top: 609px; }
+.team-stats-section-bar-technical { top: 675px; }
+/* Team Stats Bar Inner */
+.team-stats-section-bar-inner {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 100px;
+    height: 12px;
+    background-color: rgba(163, 4, 230, 0.85);
+}
+.team-stats-section-bar-left .team-stats-section-bar-inner { right: 4px; }
+.team-stats-section-bar-right .team-stats-section-bar-inner { left: 4px; }
+
+/* Team Stats Section Number */
+.team-stats-section-number {
+    font-size: 22px;
+    font-family: "Dela Gothic One";
+    color: white;
+    position: absolute;
+    top: 274px;
+}
+.team-stats-section-number-left { right: 1612px; }
+.team-stats-section-number-right { left: 1612px; }
+.team-stats-section-number-aim { top: 274px; }
+.team-stats-section-number-speed { top: 340px; }
+.team-stats-section-number-stamina { top: 406px; }
+.team-stats-section-number-fc { top: 472px; }
+.team-stats-section-number-precision { top: 538px; }
+.team-stats-section-number-reading { top: 604px; }
+.team-stats-section-number-technical { top: 670px; }
