@@ -85,6 +85,10 @@ socket.onmessage = async event => {
 
         // Update metadata
         beatmapMetadataSectionEl.style.backgroundImage = `url("https://assets.ppy.sh/beatmaps/${data.beatmap.set}/covers/cover.jpg")`
+        if (data.beatmap.set <= 0) {
+            console.log(data)
+            beatmapMetadataSectionEl.style.backgroundImage = `url("http://127.0.0.1:24050/Songs/${data.directPath.beatmapBackground.replace("\\", "/")}")`
+        }
 
         songTitleEl.innerText = `${data.beatmap.artist} - ${data.beatmap.title}`
         songDifficultyEl.innerText = `[${data.beatmap.version}]`
@@ -123,7 +127,7 @@ socket.onmessage = async event => {
 
                     animateMapSlot(searchMap, fromClass, toClasses)
                 }
-                await delay(animTime)
+                await sleep(animTime)
                 currentMapSlot++    
             }
         } else if (currentMapSlot > toMapSlot) {
@@ -139,12 +143,12 @@ socket.onmessage = async event => {
                     animateMapSlot(searchMap, fromClass, toClasses)
                 }
 
-                await delay(animTime)
+                await sleep(animTime)
                 currentMapSlot--
             }
         }
 
-        await delay(250)
+        await sleep(250)
         updateStats = true
     }
 
@@ -154,7 +158,7 @@ socket.onmessage = async event => {
         circleSizeNumberEl.innerText = data.beatmap.stats.cs.converted.toFixed(1)
         approachRateNumberEl.innerText = data.beatmap.stats.ar.converted.toFixed(1)
         overallDifficultyNumberEl.innerText = data.beatmap.stats.od.converted.toFixed(1)
-        bpmNumberEl.innerText = data.beatmap.stats.bpm.common
+        bpmNumberEl.innerText = data.beatmap.stats.bpm.common.toFixed(0)
 
         let currentLen = Math.round((data.beatmap.time.lastObject - data.beatmap.time.firstObject) / 1000)
 
