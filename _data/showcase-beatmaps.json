@@ -1,89 +1,125 @@
 {
-    "roundName": "qualifiers",
+    "roundName": "Quarterfinals",
     "beatmaps": [
         {
-            "songName": "Kokuodu Slope",
-            "difficultyName": "January",
-            "mapper": "3y3s",
+            "songName": "for you",
+            "difficultyName": "Arigatou, Yuu",
+            "mapper": "Yumenexa",
             "modId": "NM1"
         },
         {
-            "songName": "NIGHTMARE INVITATION",
-            "difficultyName": "Cellina's Masquerade",
-            "mapper": "Mattay",
+            "songName": "Empyrean",
+            "difficultyName": "Bound To The Sky",
+            "mapper": "Platnuu",
             "modId": "NM2"
         },
         {
-            "songName": "ALWAYS BE WITH YOU XD",
-            "difficultyName": "Flashback?",
-            "mapper": "Rtyzen",
+            "songName": "Shuden de Tsuredashite feat. Such",
+            "difficultyName": "Bluesy_remap",
+            "mapper": "Agelatte",
             "modId": "NM3"
         },
         {
-            "songName": "Sunset Tea Cup",
-            "difficultyName": "100% Orange Juice",
-            "mapper": "iBell",
+            "songName": "All My Friends (onumi Remix)",
+            "difficultyName": "Blacky x Cappu's Desirable Endorsement",
+            "mapper": "Blacky Design",
             "modId": "NM4"
         },
         {
-            "songName": "Off-grid",
-            "difficultyName": "Another",
-            "mapper": "xidorn",
+            "songName": "Susano Habakiri",
+            "difficultyName": "Extra feat. ???",
+            "mapper": "SparkNights",
             "modId": "NM5"
         },
         {
-            "songName": "ROT FOR CLOUT",
-            "difficultyName": "fooders's CLOUT CHASER",
-            "mapper": "Ducky-",
+            "songName": "Secret Elementary School Student",
+            "difficultyName": "Incongruity",
+            "mapper": "Chai the Tea",
+            "modId": "NM6"
+        },
+        {
+            "songName": "Angel of Darkness (Video Mix) (Nightcore Mix)",
+            "difficultyName": "Nostalgia",
+            "mapper": "edbones",
             "modId": "HD1"
         },
         {
-            "songName": "The Sealer ~A Milia to Milia no Tami~",
-            "difficultyName": "Extra",
-            "mapper": "ScubDomino",
+            "songName": "Summerhead",
+            "difficultyName": "aishiteiru's Another",
+            "mapper": "app",
             "modId": "HD2"
         },
         {
-            "songName": "Hurtful & Painful",
-            "difficultyName": "WhiteCookies' Extra",
-            "mapper": "JauiPlaY",
+            "songName": "GhettoMusick",
+            "difficultyName": "FedUp",
+            "mapper": "Scub",
             "modId": "HD3"
         },
         {
-            "songName": "Up From The Bottom",
-            "difficultyName": "Apex",
-            "mapper": "Sotarks",
+            "songName": "Knife",
+            "difficultyName": "wuh",
+            "mapper": "Elcheer",
             "modId": "HR1"
         },
         {
-            "songName": "Lotus",
-            "difficultyName": "Chai's Insane+",
-            "mapper": "Wispy",
+            "songName": "Rave All Night",
+            "difficultyName": "Expert",
+            "mapper": "ellia-",
             "modId": "HR2"
         },
         {
-            "songName": "Blastix Riotz",
-            "difficultyName": "CS 3.6 OD 9.2",
-            "mapper": "raikoh",
+            "songName": "Forget About Us",
+            "difficultyName": "Kereneia",
+            "mapper": "ralsricat",
             "modId": "HR3"
         },
         {
-            "songName": "Usotsuki",
-            "difficultyName": "Collab Insane",
-            "mapper": "Cellina",
+            "songName": "Kids",
+            "difficultyName": "Crissa's Insane",
+            "mapper": "Cris-",
             "modId": "DT1"
         },
         {
-            "songName": "Last Liar Standing",
-            "difficultyName": "Lunatic",
-            "mapper": "Sanch-KK",
+            "songName": "Music",
+            "difficultyName": "Insane",
+            "mapper": "quantumvortex",
             "modId": "DT2"
         },
         {
-            "songName": "Follow Tomorrow (for future mix)",
-            "difficultyName": "ktgster's Insane",
-            "mapper": "Asaba Harumasa",
+            "songName": "Aurora",
+            "difficultyName": "Insane",
+            "mapper": "X Light",
             "modId": "DT3"
+        },
+        {
+            "songName": "ZYPRESSEN no Hanataba",
+            "difficultyName": "III.ZYPRESSEN",
+            "mapper": "Gust",
+            "modId": "DT4"
+        },
+        {
+            "songName": "Mexican Caravan",
+            "difficultyName": "0pp x Mangie_'s Extra",
+            "mapper": "careless",
+            "modId": "FM1"
+        },
+        {
+            "songName": "Forever Happiely",
+            "difficultyName": "Expert",
+            "mapper": "ktgster",
+            "modId": "FM2"
+        },
+        {
+            "songName": "Astronote.",
+            "difficultyName": "Down's Extra",
+            "mapper": "Gordon",
+            "modId": "FM3"
+        },
+        {
+            "songName": "OOPARTS",
+            "difficultyName": "Chinese citizenship test",
+            "mapper": "ellia-",
+            "modId": "TB"
         }
     ]
 }
