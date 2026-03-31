@@ -56,12 +56,13 @@ async function getBetmaps() {
     const tbMap = allBeatmaps[allBeatmaps.length - 1]
     const tbImagePath = `http://127.0.0.1:24050/Songs/${tbMap.beatmapset_id} ${tbMap.artist} - ${tbMap.title}`
     const filePathFound = await urlAccessible(`${tbImagePath}`)
-    if (filePathFound) {
-        const image = await findImageFromDirListing(tbImagePath)
-        tiebreakerCellEl.style.backgroundImage = `url(${image})`
-        preloadedWithBg = true
-    } else {
+    console.log(filePathFound)
+    if (filePathFound.error) {
         tiebreakerCellEl.style.backgroundImage = `url(https://assets.ppy.sh/beatmaps/${tbMap.beatmapset_id}/covers/cover.jpg)`
+    } else {
+        const image = await findImageFromDirListing(tbImagePath)
+        tiebreakerCellEl.style.backgroundImage = `url("${image}")`
+        preloadedWithBg = true
     }
     tiebreakerArtistEl.textContent = tbMap.artist
     tiebreakerTitleEl.textContent = tbMap.title
