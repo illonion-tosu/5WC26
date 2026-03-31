@@ -3,8 +3,8 @@
     --team-text-x: 1259px;
     --team-name-x: 1240px;
     --team-stats-text-x: 315px;
-    --players-text-x: 166px;
-    --players-text-underline-x: 167px;
+    --players-text-x: 162px;
+    --players-text-underline-x: 163px;
 
     --red-text-shadow-8px: 0 0 8px hsla(0, 86%, 57%, 0.85);
     --blue-text-shadow-8px: 0 0 8px hsla(241, 86%, 57%, 0.85);
@@ -206,4 +206,7 @@
 }
 .players-names-container > * { width: 300px; }
 .players-names-container-left { left: 36px; }
-.players-names-container-right { right: 36px; }
+.players-names-container-right {
+    right: 36px;
+    justify-content: end;
+}
