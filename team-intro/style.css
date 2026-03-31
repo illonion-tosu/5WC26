@@ -3,6 +3,8 @@
     --team-text-x: 1259px;
     --team-name-x: 1240px;
     --team-stats-text-x: 315px;
+    --players-text-x: 158px;
+    --players-text-underline-x: 159px;
 
     --red-text-shadow-8px: 0 0 8px hsla(0, 86%, 57%, 0.85);
     --blue-text-shadow-8px: 0 0 8px hsla(241, 86%, 57%, 0.85);
@@ -96,3 +98,25 @@
 }
 .red-team-stats-underline { left: var(--team-stats-text-x); }
 .blue-team-stats-underline { right: var(--team-stats-text-x); }
+
+/* Players Text */
+.players-text {
+    font-size: 64px;
+    font-family: "Dela Gothic One";
+    color: white;
+    text-shadow: 0px 10px 4px rgba(0, 0, 0, 0.35);
+    position: absolute;
+    top: 770px;
+}
+.red-players-text { left: var(--players-text-x); }
+.blue-players-text { right: var(--players-text-x); }
+.players-text-underline {
+    position: absolute;
+    top: 856px;
+    width: 393px;
+    height: 3px;
+    background-color: white;
+    text-shadow: 0px 10px 4px rgba(0, 0, 0, 0.39);
+}
+.red-players-text-underline { left: var(--players-text-underline-x); }
+.blue-players-text-underline { right: var(--players-text-underline-x); }
