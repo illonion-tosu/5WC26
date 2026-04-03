@@ -1,6 +1,6 @@
 :root {
     --team-flag-x: 21px;
-    --team-text-x: 1259px;
+    --team-text-x: 1240px;
     --team-name-x: 1240px;
     --team-stats-text-x: 315px;
     --players-text-x: 162px;
@@ -57,8 +57,12 @@
     color: white;
     position: absolute;
     top: 70px;
+    width: 450px;
+    white-space: nowrap;
+    overflow-x: hidden;
 }
 .red-team-name {
+    text-align: right;
     right: var(--team-name-x);
     text-shadow:
         var(--team-name-drop-shadow),
@@ -141,7 +145,7 @@
 .team-stats-section-bar {
     position: absolute;
     border-width: 3px;
-    border-color: rgba(163, 4, 230, 0.85);
+    border-color: rgba(215, 121, 255, 0.85);
     border-style: solid;
     position: absolute;
     right: 1244px;
@@ -167,7 +171,8 @@
     right: 4px;
     width: 100px;
     height: 12px;
-    background-color: rgba(163, 4, 230, 0.85);
+    /* background-color: rgba(163, 4, 230, 0.85); */
+    background-color: rgba(215, 121, 255, 0.85);
 }
 .team-stats-section-bar-left .team-stats-section-bar-inner { right: 4px; }
 .team-stats-section-bar-right .team-stats-section-bar-inner { left: 4px; }
@@ -210,3 +215,71 @@
     right: 36px;
     justify-content: end;
 }
+
+/* Sidebar */
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: 1920px;
+    width: 250px;
+    height: 1080px;;
+    background-color: #1C124C;
+    overfloW: hidden;
+    color: white;
+    font-family: "Dela Gothic One";
+}
+select {
+    width: 250px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: inherit;;
+}
+select::-webkit-scrollbar {
+    display: none;
+}
+option {
+    text-align: center;
+}
+/* Sidebar Section */
+.sidebar-section {
+    padding-bottom: 13px;
+    border-bottom: 3px solid white;
+}
+/* Sidebar H1s */
+.sidebar-section h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 1.4em;
+}
+.sidebar-section h2 {
+    text-align: center;
+    width: 100%;
+    font-size: 1.15em;
+}
+/* Sidebar Button Container */
+.sidebar-button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* Sidebar Button */
+.sidebar-button {
+    --height: 30px;
+    width: 110px;
+    height: var(--height);
+    margin: 5px;
+    border-radius: calc(var(--height) / 2);
+    border: 2px solid white;
+    background-color: transparent;
+    font-size: 1em;
+    font-family: inherit;
+    color: inherit;
+}
+.sidebar-button:active {
+    background-color: white;
+    color: var(--sidebar-background-colour);
+}
+/* Full Size Button */
+.full-size-button { width: 230px; }
+.full-size-button:active { color: var(--sidebar-background-colour); }

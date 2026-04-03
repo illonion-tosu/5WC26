@@ -18,16 +18,16 @@
     </video>
     <div class="main">
         <!-- Flags -->
-        <img class="team-flag red-team-flag" src="https://osuflags.omkserver.nl/AU-163.png">
-        <img class="team-flag blue-team-flag" src="https://osuflags.omkserver.nl/AU-163.png">
+        <img class="team-flag red-team-flag" id="red-team-flag" src="https://osuflags.omkserver.nl/AU-163.png">
+        <img class="team-flag blue-team-flag" id="blue-team-flag" src="https://osuflags.omkserver.nl/AU-163.png">
 
         <!-- Team Texts -->
         <div class="team-text red-team-text">RED TEAM</div>
         <div class="team-text blue-team-text">BLUE TEAM</div>
 
         <!-- Team Names -->
-        <div class="team-name red-team-name">CANADA</div>
-        <div class="team-name blue-team-name">CANADA</div>
+        <div class="team-name red-team-name" id="red-team-name">CZECHIA</div>
+        <div class="team-name blue-team-name" id="blue-team-name">S.KOREA</div>
 
         <!-- Team Stats Text -->
         <div class="team-stats-text red-team-stats-text">TEAM STATS</div>
@@ -53,63 +53,63 @@
         
         <!-- Team Stats Section Bar -->
         <div class="team-stats-section-bar team-stats-section-bar-aim team-stats-section-bar-left">
-            <div class="team-stats-section-bar-inner"></div>
+            <div class="team-stats-section-bar-inner" id="team-stats-section-bar-aim-left"></div>
         </div>
         <div class="team-stats-section-bar team-stats-section-bar-aim team-stats-section-bar-right">
-            <div class="team-stats-section-bar-inner"></div>
+            <div class="team-stats-section-bar-inner" id="team-stats-section-bar-aim-right"></div>
         </div>
         <div class="team-stats-section-bar team-stats-section-bar-speed team-stats-section-bar-left">
-            <div class="team-stats-section-bar-inner"></div>
+            <div class="team-stats-section-bar-inner" id="team-stats-section-bar-speed-left"></div>
         </div>
         <div class="team-stats-section-bar team-stats-section-bar-speed team-stats-section-bar-right">
-            <div class="team-stats-section-bar-inner"></div>
+            <div class="team-stats-section-bar-inner" id="team-stats-section-bar-speed-right"></div>
         </div>
         <div class="team-stats-section-bar team-stats-section-bar-stamina team-stats-section-bar-left">
-            <div class="team-stats-section-bar-inner"></div>
+            <div class="team-stats-section-bar-inner" id="team-stats-section-bar-stamina-left"></div>
         </div>
         <div class="team-stats-section-bar team-stats-section-bar-stamina team-stats-section-bar-right">
-            <div class="team-stats-section-bar-inner"></div>
+            <div class="team-stats-section-bar-inner" id="team-stats-section-bar-stamina-right"></div>
         </div>
         <div class="team-stats-section-bar team-stats-section-bar-fc team-stats-section-bar-left">
-            <div class="team-stats-section-bar-inner"></div>
+            <div class="team-stats-section-bar-inner" id="team-stats-section-bar-fc-left"></div>
         </div>
         <div class="team-stats-section-bar team-stats-section-bar-fc team-stats-section-bar-right">
-            <div class="team-stats-section-bar-inner"></div>
+            <div class="team-stats-section-bar-inner" id="team-stats-section-bar-fc-right"></div>
         </div>
         <div class="team-stats-section-bar team-stats-section-bar-precision team-stats-section-bar-left">
-            <div class="team-stats-section-bar-inner"></div>
+            <div class="team-stats-section-bar-inner" id="team-stats-section-bar-precision-left"></div>
         </div>
         <div class="team-stats-section-bar team-stats-section-bar-precision team-stats-section-bar-right">
-            <div class="team-stats-section-bar-inner"></div>
+            <div class="team-stats-section-bar-inner" id="team-stats-section-bar-precision-right"></div>
         </div>
         <div class="team-stats-section-bar team-stats-section-bar-reading team-stats-section-bar-left">
-            <div class="team-stats-section-bar-inner"></div>
+            <div class="team-stats-section-bar-inner" id="team-stats-section-bar-reading-left"></div>
         </div>
         <div class="team-stats-section-bar team-stats-section-bar-reading team-stats-section-bar-right">
-            <div class="team-stats-section-bar-inner"></div>
+            <div class="team-stats-section-bar-inner" id="team-stats-section-bar-reading-right"></div>
         </div>
         <div class="team-stats-section-bar team-stats-section-bar-technical team-stats-section-bar-left">
-            <div class="team-stats-section-bar-inner"></div>
+            <div class="team-stats-section-bar-inner" id="team-stats-section-bar-technical-left"></div>
         </div>
         <div class="team-stats-section-bar team-stats-section-bar-technical team-stats-section-bar-right">
-            <div class="team-stats-section-bar-inner"></div>
+            <div class="team-stats-section-bar-inner" id="team-stats-section-bar-technical-right"></div>
         </div>
 
         <!-- Team Stats Section Text -->
-        <div class="team-stats-section-number team-stats-section-number-aim team-stats-section-number-left">0.00</div>
-        <div class="team-stats-section-number team-stats-section-number-aim team-stats-section-number-right">0.00</div>
-        <div class="team-stats-section-number team-stats-section-number-speed team-stats-section-number-left">0.00</div>
-        <div class="team-stats-section-number team-stats-section-number-speed team-stats-section-number-right">0.00</div>
-        <div class="team-stats-section-number team-stats-section-number-stamina team-stats-section-number-left">0.00</div>
-        <div class="team-stats-section-number team-stats-section-number-stamina team-stats-section-number-right">0.00</div>
-        <div class="team-stats-section-number team-stats-section-number-fc team-stats-section-number-left">0.00</div>
-        <div class="team-stats-section-number team-stats-section-number-fc team-stats-section-number-right">0.00</div>
-        <div class="team-stats-section-number team-stats-section-number-precision team-stats-section-number-left">0.00</div>
-        <div class="team-stats-section-number team-stats-section-number-precision team-stats-section-number-right">0.00</div>
-        <div class="team-stats-section-number team-stats-section-number-reading team-stats-section-number-left">0.00</div>
-        <div class="team-stats-section-number team-stats-section-number-reading team-stats-section-number-right">0.00</div>
-        <div class="team-stats-section-number team-stats-section-number-technical team-stats-section-number-left">0.00</div>
-        <div class="team-stats-section-number team-stats-section-number-technical team-stats-section-number-right">0.00</div>
+        <div class="team-stats-section-number team-stats-section-number-aim team-stats-section-number-left" id="team-stats-section-number-aim-left">0.00</div>
+        <div class="team-stats-section-number team-stats-section-number-aim team-stats-section-number-right" id="team-stats-section-number-aim-right">0.00</div>
+        <div class="team-stats-section-number team-stats-section-number-speed team-stats-section-number-left" id="team-stats-section-number-speed-left">0.00</div>
+        <div class="team-stats-section-number team-stats-section-number-speed team-stats-section-number-right" id="team-stats-section-number-speed-right">0.00</div>
+        <div class="team-stats-section-number team-stats-section-number-stamina team-stats-section-number-left" id="team-stats-section-number-stamina-left">0.00</div>
+        <div class="team-stats-section-number team-stats-section-number-stamina team-stats-section-number-right" id="team-stats-section-number-stamina-right">0.00</div>
+        <div class="team-stats-section-number team-stats-section-number-fc team-stats-section-number-left" id="team-stats-section-number-fc-left">0.00</div>
+        <div class="team-stats-section-number team-stats-section-number-fc team-stats-section-number-right" id="team-stats-section-number-fc-right">0.00</div>
+        <div class="team-stats-section-number team-stats-section-number-precision team-stats-section-number-left" id="team-stats-section-number-precision-left">0.00</div>
+        <div class="team-stats-section-number team-stats-section-number-precision team-stats-section-number-right" id="team-stats-section-number-precision-right">0.00</div>
+        <div class="team-stats-section-number team-stats-section-number-reading team-stats-section-number-left" id="team-stats-section-number-reading-left">0.00</div>
+        <div class="team-stats-section-number team-stats-section-number-reading team-stats-section-number-right" id="team-stats-section-number-reading-right">0.00</div>
+        <div class="team-stats-section-number team-stats-section-number-technical team-stats-section-number-left" id="team-stats-section-number-technical-left">0.00</div>
+        <div class="team-stats-section-number team-stats-section-number-technical team-stats-section-number-right" id="team-stats-section-number-technical-right">0.00</div>
 
         <!-- Player Text -->
         <div class="players-text red-players-text">PLAYERS</div>
@@ -118,7 +118,7 @@
         <div class="players-text-underline blue-players-text-underline"></div>
 
         <!-- Player Names -->
-        <div class="players-names-container players-names-container-left">
+        <div class="players-names-container players-names-container-left" id="players-names-container-left">
             <div>xxxxxxxxxxxxxxx</div>
             <div>xxxxxxxxxxxxxxx</div>
             <div>xxxxxxxxxxxxxxx</div>
@@ -128,7 +128,7 @@
             <div>xxxxxxxxxxxxxxx</div>
             <div>xxxxxxxxxxxxxxx</div>
         </div>
-        <div class="players-names-container players-names-container-right">
+        <div class="players-names-container players-names-container-right" id="players-names-container-right">
             <div>xxxxxxxxxxxxxxx</div>
             <div>xxxxxxxxxxxxxxx</div>
             <div>xxxxxxxxxxxxxxx</div>
@@ -139,5 +139,49 @@
             <div>xxxxxxxxxxxxxxx</div>
         </div>
     </div>
+
+    <div class="sidebar">
+        <div class="sidebar-section">
+            <h1>Star Control</h1>
+            <h2>Pick a country</h2>
+            <select size="24" id="country">
+                <option value="brazil">Brazil</option>
+                <option value="hong kong">Hong Kong</option>
+                <option value="australia">Australia</option>
+                <option value="ukraine">Ukraine</option>
+                <option value="russian federation">Russian Federation</option>
+                <option value="china">China</option>
+                <option value="taiwan">Taiwan</option>
+                <option value="singapore">Singapore</option>
+                <option value="poland">Poland</option>
+                <option value="denmark">Denmark</option>
+                <option value="sweden">Sweden</option>
+                <option value="kazakhstan">Kazakhstan</option>
+                <option value="japan">Japan</option>
+                <option value="czechia">Czechia</option>
+                <option value="indonesia">Indonesia</option>
+                <option value="malaysia">Malaysia</option>
+                <option value="united states">United States</option>
+                <option value="canada">Canada</option>
+                <option value="philippines">Philippines</option>
+                <option value="germany">Germany</option>
+                <option value="south korea">South Korea</option>
+                <option value="united kingdom">United Kingdom</option>
+                <option value="chile">Chile</option>
+                <option value="france">France</option>
+            </select>
+            <h2>Pick a side</h2>
+            <select size="2" id="side">
+                <option value="left">Left</option>
+                <option value="right">Right</option>
+            </select>
+            <div class="sidebar-button-container">
+                <button class="sidebar-button full-size-button" id="select-button" onclick="setDetails()">Select</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
