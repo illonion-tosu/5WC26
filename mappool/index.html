@@ -169,6 +169,24 @@
                 </div>
             </div>
         </div>
+        <div class="divider"></div>
+        <div class="column column-2">
+            <div class="sidebar-section">
+                <h1>Scene Management</h1>
+                <div class="sidebar-button-container">
+                    <button id="auto-advance-button" class="sidebar-button full-size-button" style="height: 35px;">AUTO ADVANCE: OFF</button>
+                </div>
+                <div id="autoAdvanceTimer" class="controlLabel">
+                    <span id="autoAdvanceTimerLabel"></span> <span id="autoAdvanceTimerTime"></span>
+                </div><br>
+                <h1>Scenes<br>(click to override)</h1>
+                <div id="sceneCollection" class="sidebar-button-container">
+                    <template id="sceneButtonTemplate">
+                        <div class="sidebar-button full-size-button">SWITCH TO __SCENE_NAME__</div>
+                    </template>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="index.js"></script>

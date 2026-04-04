@@ -13,6 +13,9 @@
     --fourth-row-mappool-tag-top: calc(var(--top-row-mappool-tag-top) + var(--mappool-tag-gap) * 3);
     --nm-mappool-tag-5-maps-left: 166.5px;
 
+    /* Sidebar */
+    --sidebar-column-width: 250px;
+
     --lightPink: #F3BBFF;
 }
 
@@ -354,7 +357,7 @@ video {
     position: absolute;
     top: 0;
     left: 1920px;
-    width: 250px;
+    width: 500px;
     height: 1080px;;
     background-color: #1C124C;
     overfloW: hidden;
@@ -419,6 +422,7 @@ video {
     font-size: 1em;
     font-family: inherit;
     color: inherit;
+    text-align: center;
 }
 .sidebar-button:active {
     background-color: white;
@@ -537,3 +541,13 @@ video {
 .tiebreaker-difficulty-mapper { top: 145px; }
 .tiebreaker-stats { bottom: 45px; }
 .tiebreaker-stats span { font-weight: 900; }
+
+/* Divider */
+.divider {
+    position: absolute;
+    top: 0;
+    left: 249px;
+    width: 2px;
+    height: 1080px;
+    background-color: white;
+}

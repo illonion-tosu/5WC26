@@ -57,7 +57,7 @@ async function getBetmaps() {
     const tbImagePath = `http://127.0.0.1:24050/Songs/${tbMap.beatmapset_id} ${tbMap.artist} - ${tbMap.title}`
     const filePathFound = await urlAccessible(`${tbImagePath}`)
     console.log(filePathFound)
-    if (filePathFound.error) {
+    if (filePathFound.error || filePathFound.status < 200 || filePathFound.status > 299 || filePathFound.ok == false) {
         tiebreakerCellEl.style.backgroundImage = `url(https://assets.ppy.sh/beatmaps/${tbMap.beatmapset_id}/covers/cover.jpg)`
     } else {
         const image = await findImageFromDirListing(tbImagePath)
@@ -544,6 +544,8 @@ document.addEventListener("DOMContentLoaded", () => {
     currentPickerBlueEl.addEventListener("click", () => updateCurrentPicker("blue"))
     currentPickerNoneEl.addEventListener("click", () => updateCurrentPicker("none"))
     currentPickerNoneEl.click()
+
+    autoadvance_button.addEventListener("click", () => switchAutoAdvance())
 })
 function updateCurrentPicker(side) {
     currentPickerTextEl.textContent = side.toUpperCase()
@@ -563,3 +565,74 @@ setInterval(() => {
     currentScoreLeftEl.textContent = getCookie("redStarCount")
     currentScoreRightEl.textContent = getCookie("blueStarCount")
 }, 50)
+
+// OBS Information
+const sceneCollection = document.getElementById("sceneCollection")
+let autoadvance_button = document.getElementById('auto-advance-button')
+let autoadvance_timer_container = document.getElementById('autoAdvanceTimer')
+let autoadvance_timer_label = document.getElementById('autoAdvanceTimerLabel')
+const pick_to_transition_delay_ms = 10000;
+let enableAutoAdvance = false
+const gameplay_scene_name = "Gameplay Scene"
+const mappool_scene_name = "Mappool Scene"
+const winner_scene_name = "Winner Scene"
+
+let sceneTransitionTimeoutID;
+
+autoadvance_timer_container.style.opacity = '0';
+
+
+function switchAutoAdvance() {
+    enableAutoAdvance = !enableAutoAdvance
+    if (enableAutoAdvance) {
+        autoadvance_button.innerText = 'AUTO ADVANCE: ON'
+    } else {
+        autoadvance_button.innerText = 'AUTO ADVANCE: OFF'
+    }
+}
+
+const obsGetCurrentScene = window.obsstudio?.getCurrentScene ?? (() => {})
+const obsGetScenes = window.obsstudio?.getScenes ?? (() => {})
+const obsSetCurrentScene = window.obsstudio?.setCurrentScene ?? (() => {})
+
+obsGetScenes(scenes => {
+    for (const scene of scenes) {
+        let clone = document.getElementById("sceneButtonTemplate").content.cloneNode(true)
+        let buttonNode = clone.querySelector('div')
+        buttonNode.id = `scene__${scene}`
+        buttonNode.textContent = `GO TO: ${scene}`
+        buttonNode.onclick = function() { obsSetCurrentScene(scene); }
+        sceneCollection.appendChild(clone)
+    }
+
+    obsGetCurrentScene((scene) => { document.getElementById(`scene__${scene.name}`).classList.add("active-scene") })
+})
+
+function scheduleSceneTransition(targetSceneName, delay) {
+    const createTransitionTask = (duration) => setTimeout(() => {
+        obsGetCurrentScene((currentScene) => {
+            if (currentScene.name === targetSceneName) {
+                autoadvance_timer_label.textContent = `Already on ${targetSceneName}\n`;
+                return;
+            }
+            obsSetCurrentScene(targetSceneName);
+            autoadvance_timer_container.style.opacity = '0';
+        });
+    }, duration)
+
+    // use global timeout for this overlay, the pick/ban style doesn't lend to repeated pick events so
+    // no point in idempotence
+    clearTimeout(sceneTransitionTimeoutID);
+    sceneTransitionTimeoutID = createTransitionTask(delay);
+
+    let autoadvance_timer_time = new CountUp('autoAdvanceTimerTime',
+        delay / 1000,
+        0,
+        1,
+        delay / 1000,
+        {useEasing: false, suffix: 's'}
+    );
+    autoadvance_timer_time.start();
+    autoadvance_timer_container.style.opacity = '1';
+    autoadvance_timer_label.textContent = `Switching to ${targetSceneName} in`;
+}
