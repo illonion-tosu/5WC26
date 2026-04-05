@@ -456,6 +456,18 @@ socket.onmessage = async event => {
         } else {
             checkedWinner = false
         }
+
+        const firstTo = Number(getCookie("firstTo"))
+        const redStarCount = Number(getCookie("redStarCount"))
+        const blueStarCount = Number(getCookie("blueStarCount"))
+
+        if (currentIpcState === 4 && isStarOn() && enableAutoAdvance && redStarCount !== firstTo && blueStarCount !== firstTo) {
+            scheduleSceneTransition(mappool_scene_name, pick_to_transition_delay_ms)
+        } else if (currentIpcState === 4 && isStarOn() && enableAutoAdvance && (redStarCount === firstTo || blueStarCount == firstTo)) {
+            scheduleSceneTransition(winner_scene_name, pick_to_transition_delay_ms)
+        } else if ((currentIpcState === 2 || currentIpcState === 3) && enableAutoAdvance) {
+            scheduleSceneTransition(gameplay_scene_name, 0)
+        }
     }
 
     // Tiebreaker Triggered Auto
@@ -573,9 +585,9 @@ let autoadvance_timer_container = document.getElementById('autoAdvanceTimer')
 let autoadvance_timer_label = document.getElementById('autoAdvanceTimerLabel')
 const pick_to_transition_delay_ms = 10000;
 let enableAutoAdvance = false
-const gameplay_scene_name = "Gameplay Scene"
-const mappool_scene_name = "Mappool Scene"
-const winner_scene_name = "Winner Scene"
+const gameplay_scene_name = "Gameplay"
+const mappool_scene_name = "Mappool"
+const winner_scene_name = "Winner"
 
 let sceneTransitionTimeoutID;
 
