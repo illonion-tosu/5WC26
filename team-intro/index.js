@@ -76,16 +76,9 @@ function setDetails() {
     const teamText = document.getElementById(`${colour}-team-name`)
     let currentTeamName = countryEl.value
     switch (currentTeamName) {
-        case "hong kong": currentTeamName = "HKG"; break;
-        case "australia": currentTeamName = "AUS"; break;
         case "russian federation": currentTeamName = "RUSSIA"; break;
-        case "singapore": currentTeamName = "SGP"; break;
-        case "kazakhstan": currentTeamName = "KAZ"; break;
-        case "indonesia": currentTeamName = "IDN"; break;
-        case "united states": currentTeamName = "USA"; break;
-        case "philippines": currentTeamName = "PHL"; break;
-        case "south korea": currentTeamName = "KOR"; break;
-        case "united kingdom": currentTeamName = "GBR"; break;
+        case "united states": currentTeamName = "U.S.A"; break;
+        case "united kingdom": currentTeamName = "U. KINGDOM"; break;
         default: currentTeamName = currentTeamName
     }
     teamText.textContent = currentTeamName.toUpperCase()

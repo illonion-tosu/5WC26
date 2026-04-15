@@ -1,10 +1,10 @@
 :root {
     --team-flag-x: 21px;
-    --team-text-x: 1240px;
-    --team-name-x: 1240px;
-    --team-stats-text-x: 315px;
-    --players-text-x: 162px;
-    --players-text-underline-x: 163px;
+    --team-text-x: 1090px;
+    --team-name-x: 1090px;
+    --team-stats-text-x: 465px;
+    --players-text-x: 237px;
+    --players-text-underline-x: 238px;
 
     --red-text-shadow-8px: 0 0 8px hsla(0, 86%, 57%, 0.85);
     --blue-text-shadow-8px: 0 0 8px hsla(241, 86%, 57%, 0.85);
@@ -57,7 +57,7 @@
     color: white;
     position: absolute;
     top: 70px;
-    width: 450px;
+    width: 620px;
     white-space: nowrap;
     overflow-x: hidden;
 }
@@ -138,8 +138,8 @@
 .team-stats-section-text-precision { top: 509px; }
 .team-stats-section-text-reading { top: 575px; }
 .team-stats-section-text-technical { top: 641px; }
-.team-stats-section-text-left { right: 1245px; }
-.team-stats-section-text-right { left: 1245px; }
+.team-stats-section-text-left { right: 1095px; }
+.team-stats-section-text-right { left: 1095px; }
 
 /* Team Stats Section Bar */
 .team-stats-section-bar {
@@ -155,8 +155,8 @@
         0 0 4px 2px rgba(163, 4, 230, 0.85), 
         inset 0 0 4px 2px rgba(163, 4, 230, 0.85);
 }
-.team-stats-section-bar-left { right: 1244px; }
-.team-stats-section-bar-right { left: 1244px; }
+.team-stats-section-bar-left { right: 1094px; }
+.team-stats-section-bar-right { left: 1094px; }
 .team-stats-section-bar-aim { top: 279px; }
 .team-stats-section-bar-speed { top: 345px; }
 .team-stats-section-bar-stamina { top: 411px; }
@@ -185,8 +185,8 @@
     position: absolute;
     top: 274px;
 }
-.team-stats-section-number-left { right: 1612px; }
-.team-stats-section-number-right { left: 1612px; }
+.team-stats-section-number-left { right: 1462px; }
+.team-stats-section-number-right { left: 1462px; }
 .team-stats-section-number-aim { top: 274px; }
 .team-stats-section-number-speed { top: 340px; }
 .team-stats-section-number-stamina { top: 406px; }
@@ -204,12 +204,12 @@
     color: white;
     display: flex;
     flex-wrap: wrap;
-    width: 700px;
+    width: 850px;
     text-align: center;
     row-gap: 2px;
     column-gap: 39px;
 }
-.players-names-container > * { width: 300px; }
+.players-names-container > * { width: 375px; }
 .players-names-container-left { left: 36px; }
 .players-names-container-right {
     right: 36px;
